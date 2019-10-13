@@ -1,0 +1,123 @@
+{
+ "votos_nulos": 5168, 
+ "code": "23", 
+ "porcentaje_censo_escrutado": 100.0, 
+ "porcentaje_votos_blanco": 0.68, 
+ "abstencion": 123064, 
+ "porcentaje_total_votantes": 76.07, 
+ "mesas_totales": 915, 
+ "total_votantes": 391253, 
+ "year": 2019, 
+ "id_registro": "CI", 
+ "porcentaje_abstencion": 23.93, 
+ "prov_code": "23", 
+ "censo": 514317, 
+ "ccaa_code": "01", 
+ "votos_blanco": 2610, 
+ "type": "generales_congreso", 
+ "censo_escrutado": 514317, 
+ "ccaaName": "Andalucía", 
+ "diputados": 5, 
+ "porcentaje_votos_nulos": 1.32, 
+ "partidos": [
+  {
+   "color": "#ea433e", 
+   "diputados": 3, 
+   "votos": 152508, 
+   "porcentaje_votos": 39.5, 
+   "siglas": "PSOE", 
+   "id": "0096"
+  }, 
+  {
+   "color": "#ee8444", 
+   "diputados": 1, 
+   "votos": 61340, 
+   "porcentaje_votos": 15.89, 
+   "siglas": "Cs", 
+   "id": "0022"
+  }, 
+  {
+   "color": "#33b0df", 
+   "diputados": 1, 
+   "votos": 75668, 
+   "porcentaje_votos": 19.6, 
+   "siglas": "PP", 
+   "id": "0083"
+  }, 
+  {
+   "color": "#b50c17", 
+   "diputados": 0, 
+   "votos": 434, 
+   "porcentaje_votos": 0.11, 
+   "siglas": "PCPA", 
+   "id": "0058"
+  }, 
+  {
+   "color": "#95c955", 
+   "diputados": 0, 
+   "votos": 46856, 
+   "porcentaje_votos": 12.14, 
+   "siglas": "VOX", 
+   "id": "0117"
+  }, 
+  {
+   "color": "#505050", 
+   "diputados": 0, 
+   "votos": 648, 
+   "porcentaje_votos": 0.17, 
+   "siglas": "AxSI", 
+   "id": "0011"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "diputados": 0, 
+   "votos": 390, 
+   "porcentaje_votos": 0.1, 
+   "siglas": "RECORTES CERO-GV", 
+   "id": "0104"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 188, 
+   "porcentaje_votos": 0.05, 
+   "siglas": "RISA", 
+   "id": "0106"
+  }, 
+  {
+   "color": "#101977", 
+   "diputados": 0, 
+   "votos": 322, 
+   "porcentaje_votos": 0.08, 
+   "siglas": "PUM+J", 
+   "id": "0100"
+  }, 
+  {
+   "color": "#93a607", 
+   "diputados": 0, 
+   "votos": 3360, 
+   "porcentaje_votos": 0.87, 
+   "siglas": "PACMA", 
+   "id": "0054"
+  }, 
+  {
+   "color": "#854383", 
+   "diputados": 0, 
+   "votos": 40682, 
+   "porcentaje_votos": 10.54, 
+   "siglas": "UNIDAS PODEMOS", 
+   "id": "0077"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "diputados": 0, 
+   "votos": 1079, 
+   "porcentaje_votos": 0.28, 
+   "siglas": "CILU-LINARES", 
+   "id": "0018"
+  }
+ ], 
+ "result_ccaa": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+ "slug": "jaen", 
+ "name": "Jaén"
+}

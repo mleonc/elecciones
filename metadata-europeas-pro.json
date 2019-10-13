@@ -1,0 +1,535 @@
+{
+	"cabecera_name": "EL MUNDO",
+	"01": {
+		"name": "Andalucía",
+		"seo_name": "Elecciones Europeas Andalucía ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones Europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-andalucia",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"02": {
+		"name": "Aragón",
+		"seo_name": "Elecciones Europeas Aragón ",
+		"theme": "Elecciones-europeas",
+		"section": "Aragon",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-aragon",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"03": {
+		"name": "Principado de Asturias",
+		"seo_name": "Elecciones Europeas Asturias ",
+		"theme": "elecciones-europeas",
+		"section": "Asturias",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-asturias",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"04": {
+		"name": "Islas Baleares",
+		"seo_name": "Elecciones Europeas Islas Baleares ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-baleares",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"05": {
+		"name": "Canarias",
+		"seo_name": "Elecciones Europeas Canarias ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-canarias",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"06": {
+		"name": "Cantabria",
+		"seo_name": "Elecciones Europeas Cantabria ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-cantabria",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"07": {
+		"name": "Castilla - La Mancha",
+		"seo_name": "Elecciones Europeas Castilla La Mancha ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-castilla-la-mancha",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"08": {
+		"name": "Castilla y León",
+		"seo_name": "Elecciones Europeas Castilla y León ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-castilla-leon",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"09": {
+		"name": "Cataluña",
+		"seo_name": "Elecciones Europeas Cataluña ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-cataluna",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"10": {
+		"name": "Extremadura",
+		"seo_name": "Elecciones Europeas Extremadura ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-extremadura",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"11": {
+		"name": "Galicia",
+		"seo_name": "Elecciones Europeas Galicia ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-galicia",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"12": {
+		"name": "Comunidad de Madrid",
+		"seo_name": "Elecciones Europeas Comunidad de Madrid ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-madrid",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"13": {
+		"name": "Comunidad Foral de Navarra",
+		"seo_name": "Elecciones Europeas Navarra ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-navarra",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"14": {
+		"name": "País Vasco",
+		"seo_name": "Elecciones Europeas País Vasco ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-pais-vasco",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"15": {
+		"name": "Murcia",
+		"seo_name": "Elecciones Europeas Murcia ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-murcia",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"16": {
+		"name": "La Rioja",
+		"seo_name": "Elecciones Europeas La Rioja ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-la-rioja",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"17": {
+		"name": "Valencia",
+		"seo_name": "Elecciones Europeas Comunidad Valenciana",
+		"theme": "elecciones-europeas",
+		"section": "Comunidad-valenciana",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-valencia",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"18": {
+		"name": "Ceuta",
+		"seo_name": "Elecciones Europeas Ceuta",
+		"theme": "elecciones-europeas",
+		"section": "Ceuta",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-ceuta",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+
+	"19": {
+		"name": "Melilla",
+		"seo_name": "Elecciones Europeas Melilla",
+		"theme": "elecciones-europeas",
+		"section": "Melilla",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas-melilla",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/es/p99.json"
+	},
+	"hr": {
+		"name": "Croacia",
+		"seo_name": "Elecciones Europeas Croacia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "croacia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"uk": {
+		"name": "Reino Unido",
+		"seo_name": "Elecciones Europeas Reino Unido",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "reino-unido elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"se": {
+		"name": "Suecia",
+		"seo_name": "Elecciones Europeas Suecia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "suecia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"fi": {
+		"name": "Finlandia",
+		"seo_name": "Elecciones Europeas Finlandia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "finlandia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"sk": {
+		"name": "Eslovaquia",
+		"seo_name": "Elecciones Europeas Eslovaquia ",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "eslovaquia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"si": {
+		"name": "Eslovenia",
+		"seo_name": "Elecciones Europeas Eslovenia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "eslovenia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"ro": {
+		"name": "Rumanía",
+		"seo_name": "Elecciones Europeas Rumanía",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "rumania elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"pl": {
+		"name": "Polonia",
+		"seo_name": "Elecciones Europeas Polonia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "polonia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"at": {
+		"name": "Austria",
+		"seo_name": "Elecciones Europeas Austria",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "polonia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"pt": {
+		"name": "Portugal",
+		"seo_name": "Elecciones Europeas Portugal",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "portugal elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"nl": {
+		"name": "Países Bajos",
+		"seo_name": "Elecciones Europeas Países Bajos",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "portugal elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"mt": {
+		"name": "Malta",
+		"seo_name": "Elecciones Europeas Malta",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "paises-bajos elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"hu": {
+		"name": "Hungría",
+		"seo_name": "Elecciones Europeas Hungría",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "hungria elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"lu": {
+		"name": "Luxemburgo",
+		"seo_name": "Elecciones Europeas Luxemburgo",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "luxemburgo elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"lt": {
+		"name": "Lituania",
+		"seo_name": "Elecciones Europeas Lituania",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "lituania elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"lv": {
+		"name": "Letonia",
+		"seo_name": "Elecciones Europeas Letonia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "letonia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"cy": {
+		"name": "Chipre",
+		"seo_name": "Elecciones Europeas Chipre",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "chipre elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"it": {
+		"name": "Italia",
+		"seo_name": "Elecciones Europeas Italia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "italia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"fr": {
+		"name": "Francia",
+		"seo_name": "Elecciones Europeas Francia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "francia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"es": {
+		"name": "España",
+		"seo_name": "Elecciones Europeas España",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "espana elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"el": {
+		"name": "Grecia",
+		"seo_name": "Elecciones Europeas Grecia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "grecia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"ie": {
+		"name": "Irlanda",
+		"seo_name": "Elecciones Europeas Irlanda",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "irlanda elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"ee": {
+		"name": "Estonia",
+		"seo_name": "Elecciones Europeas Estonia",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "estonia elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"de": {
+		"name": "Alemania",
+		"seo_name": "Elecciones Europeas Alemania",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "alemania elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"dk": {
+		"name": "Dinamarca",
+		"seo_name": "Elecciones Europeas Dinamarca",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "dinamarca elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"cz": {
+		"name": "República Checa",
+		"seo_name": "Elecciones Europeas República Checa",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "republica-checa elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"bg": {
+		"name": "Bulgaria",
+		"seo_name": "Elecciones Europeas Bulgaria",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "bulgaria elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"be": {
+		"name": "Bélgica",
+		"seo_name": "Elecciones Europeas Bélgica",
+		"theme": "elecciones-europeas-belgica",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "belgica elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},
+	"99": {
+		"name": "Europa",
+		"seo_name": "Elecciones Europeas",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "europa elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},	
+	"eu": {
+		"name": "Europa",
+		"seo_name": "Elecciones Europeas",
+		"theme": "elecciones-europeas",
+		"section": "Elecciones-europeas",
+		"last_election_year": "2014",
+		"bodyClass": "europa elecciones-europeas",
+		"json_file": "https://elecciones.unidadeditorial.es/elecciones-europeas/resultados/2019/pe99.json"
+	},	
+	"filer_path": "/mnt/filer/html/produccion/DATOS/portales/es/elmundo/www/includes/",
+	"election_url": "https://www.elmundo.es/elecciones",
+	"miga": {
+		"type": "import",
+		"main": "migas/elecciones/elecciones_europeas/miga_b.html",
+		"hijos": "migas/elecciones/elecciones_europeas/miga_c.html",
+		"mobile": "migas/elecciones/elecciones_europeas/miga_mb.html"
+	},
+	"dfp_section": "espana",
+	"seo_name": "Elecciones Europeas",
+	"dfp": "/mnt/filer/html/produccion/DATOS/include/dfp/elmundo/espana/p.html",
+	"dfp_mobile": "/mnt/filer/html/produccion/DATOS/include/dfp/elmundo_movil/espana/p.html",
+	"static_path": "editorial/v6/",
+	"static_registro_path": "registro/v2/",
+	"idusr": "editorial/v6/idusr.php",
+	"prefs": "editorial/v6/elmundoPrefs.php",
+	"footer": "footer_nuevos.html.inc",
+	"cdn": "https://e00-elmundo.uecdn.es/",
+	"assets": {
+		"version": "assets/v11/",
+		"css_desktop": "css/ue-c-core-elmundo-desktop.css",
+		"css_mobile": "css/ue-c-core-elmundo-mobile.css",
+		"css_main_path": "/mnt/filer/html/produccion/DATOS/portales/es/elmundo/www/includes/style/static/elmundo/release"
+	},
+
+	"election_js_component": "https://elecciones.unidadeditorial.es/assets/ueelections/v5/",
+	"json_basehost": "https://elecciones.unidadeditorial.es",
+	"html_basehost": "https://www.elmundo.unidadeditorial.es/elecciones/",
+	"filer_root_path": "/mnt/filer/html/produccion/httpd/portales/es/unidadeditorial/elecciones/",
+	"header": {
+		"desktop": "new-header/cabecera-cts.php.inc",
+		"mobile": "new-header/mobile/cabecera-mobile.php.inc"
+	},
+	"ue_jquery": {
+		"desktop": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js",
+		"mobile": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js"
+	},
+	"ue_utils": {
+		"desktop": "https://e00-elmundo.uecdn.es/assets/desktop/master/js/ue-utils.js",
+		"mobile": "https://e00-elmundo.uecdn.es/assets/mobile/master/js/ue-utils.js"
+	},
+	"ue_login": "uelogin/include_script_uelogin.html",
+	"desktopJS": "https://e00-elmundo.uecdn.es/assets/v11/js/desktop.min.js",
+	"mobileJS": "https://e00-elmundo.uecdn.es/assets/v11/js/mobile.min.js",
+	"url_assets": "https://e00-elmundo.uecdn.es/assets/cover/elmundo/v0/",
+  "publishedAt": "2019-05-27T08:00:00Z",
+  "updatedAt": "2019-05-27T08:00:00Z",
+	"analytics": "",
+	"gpt_slots": {
+		"mobile": [
+			"f",
+			"html5",
+			"m"
+		],
+		"desktop": [
+			"f",
+			"si",
+			"sd",
+			"m"
+		]
+	},
+	"base_election_output": "/mnt/filer/html/produccion/httpd/portales/es/elmundo/www/elecciones",
+	"js_component": "https://elecciones.unidadeditorial.es/assets/ueelections/v5/",
+  "styles": {
+    "path": "/mnt/filer/html/produccion/DATOS/portales/es/elmundo/www/includes/style/static/elmundo",
+    "version": "v1",
+    "widget_include_name": "main-elections-link-style.html",
+    "widget_include_name_mobile": "main-elections-mobile-link-style.html",
+    "static_include_name": "main-static-link-style.html",
+    "static_include_name_mobile": "main-static-mobile-link-style.html"
+  },	
+	"c_code": "99",
+	"code": "99",
+	"assets_desktop": "assets/desktop/master/",
+	"assets_mobile": "assets/mobile/master/",
+	"publisher": "https://plus.google.com/u/0/+elmundo",
+	"rrss": {
+		"image": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg",
+		"name": "ELMUNDO",
+		"app": "279395918757488"
+	},
+	"twitter": {
+		"site": "@elmundoes",
+		"icon": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg"
+	},
+	"showMore": true,
+	"id_contenido": "526feae561fd3d3c3f8b4578",
+	"footer_ads": "/mnt/filer/html/produccion/DATOS/include/dfp/elmundo/footer_ads.html",
+	"dtm": "https://assets.adobedtm.com/73515ad8d49a3d35d5aa6bc81b535d3a8761d99c/satelliteLib-e48bb3b61613dd24961235e0a80c02ab5b0cf8b8.js",
+	"json_output_basepath": "/mnt/filer/html/produccion/httpd/portales/es/unidadeditorial/elecciones"
+}

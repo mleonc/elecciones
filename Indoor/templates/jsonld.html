@@ -1,0 +1,45 @@
+<script type="application/ld+json">
+    [
+        {
+            "@context": "http://schema.org",
+            "@type":"NewsArticle",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "<?php echo $this->metadata['canUrl']; ?>"
+            },
+            "headline": "<?php echo $this->title; ?>",
+            "articleSection": "<?php echo $this->seo['data']['name']; ?>",
+            "image":[
+                {
+                    "@type": "ImageObject",
+                    "url": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg",
+                    "height": 500,
+                    "width": 700
+                }
+            ],
+            "datePublished": "<?php echo $this->metadata['publishedAt']; ?>",
+            "dateModified": "<?php echo $this->metadata['updatedAt']; ?>",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "elmundo.es"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "El Mundo",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg",
+                    "width": 204,
+                    "height": 27
+                }
+            },
+            "publishingPrinciples": {
+                "@type": "CreativeWork",
+                "url": "https://www.elmundo.es/em/codigo-etico.html"
+            },
+            "description": "<?php echo html_entity_decode($this->description); ?>"
+        }
+    ]
+</script>

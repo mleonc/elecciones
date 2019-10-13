@@ -1,0 +1,265 @@
+{
+  "cabecera_name": "EL MUNDO",
+  "01": {
+    "name": "Andalucía",
+    "seo_name": "Elecciones Andalucía ",
+    "theme": "elecciones-andalucia",
+    "section": "Andalucia",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-municipales/resultados/2019/01/p99.json"
+  },
+  "02": {
+    "name": "Aragón",
+    "seo_name": "Elecciones Aragón ",
+    "theme": "elecciones-aragon",
+    "section": "Aragon",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-aragon/resultados/2019/02/99.json"
+  },
+  "03": {
+    "name": "Principado de Asturias",
+    "seo_name": "Elecciones Asturias ",
+    "theme": "elecciones-municipales",
+    "section": "Asturias",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-asturias/resultados/2019/03/99.json"
+  },
+  "04": {
+    "name": "Islas Baleares",
+    "seo_name": "Elecciones Islas Baleares ",
+    "theme": "elecciones-municipales",
+    "section": "Islas Baleares",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-baleares/resultados/2019/04/99.json"
+  },
+  "05": {
+    "name": "Canarias",
+    "seo_name": "Elecciones Canarias ",
+    "theme": "elecciones-municipales",
+    "section": "Canarias",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-canarias/resultados/2019/05/99.json"
+  },
+  "06": {
+    "name": "Cantabria",
+    "seo_name": "Elecciones Cantabria ",
+    "theme": "elecciones-municipales",
+    "section": "Cantabria",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-cantabria/resultados/2019/06/99.json"
+  },
+  "07": {
+    "name": "Castilla - La Mancha",
+    "seo_name": "Elecciones Castilla La Mancha ",
+    "theme": "elecciones-municipales",
+    "section": "Castilla La Mancha",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-castilla-la-mancha/resultados/2019/07/99.json"
+  },
+  "08": {
+    "name": "Castilla y León",
+    "seo_name": "Elecciones Castilla y León ",
+    "theme": "elecciones-municipales",
+    "section": "Castilla y León",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-castilla-leon/resultados/2019/08/99.json"
+  },
+  "09": {
+    "name": "Cataluña",
+    "seo_name": "Elecciones Cataluña ",
+    "theme": "elecciones-municipales",
+    "section": "Cataluña",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-cataluna/resultados/2019/09/99.json"
+  },
+  "10": {
+    "name": "Extremadura",
+    "seo_name": "Elecciones Extremadura ",
+    "theme": "elecciones-municipales",
+    "section": "Extremadura",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-extremadura/resultados/2019/10/99.json"
+  },
+  "11": {
+    "name": "Galicia",
+    "seo_name": "Elecciones Galicia ",
+    "theme": "elecciones-municipales",
+    "section": "Galicia",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-galicia/resultados/2019/11/99.json"
+  },
+  "12": {
+    "name": "Comunidad de Madrid",
+    "seo_name": "Elecciones Comunidad de Madrid ",
+    "theme": "elecciones-municipales",
+    "section": "Comunidad de Madrid",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-madrid/resultados/2019/12/99.json"
+  },
+  "13": {
+    "name": "Comunidad Foral de Navarra",
+    "seo_name": "Elecciones Navarra ",
+    "theme": "elecciones-municipales",
+    "section": "Navarra",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-navarra/resultados/2019/13/99.json"
+  },
+  "14": {
+    "name": "País Vasco",
+    "seo_name": "Elecciones País Vasco ",
+    "theme": "elecciones-municipales",
+    "section": "Pais Vasco",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-pais-vasco/resultados/2019/14/99.json"
+  },
+  "15": {
+    "name": "Murcia",
+    "seo_name": "Elecciones Murcia ",
+    "theme": "elecciones-municipales",
+    "section": "Murcia",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-murcia/resultados/2019/15/99.json"
+  },
+  "16": {
+    "name": "La Rioja",
+    "seo_name": "Elecciones La Rioja ",
+    "theme": "elecciones-municipales",
+    "section": "La Rioja",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-la-rioja/resultados/2019/16/99.json"
+  },
+  "17": {
+    "name": "Valencia",
+    "seo_name": "Elecciones Comunidad Valenciana",
+    "theme": "elecciones-municipales",
+    "section": "Comunidad-valenciana",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.sta.internet.int/elecciones-comunidad-valenciana/resultados/2019/17/99.json"
+  },
+  "18": {
+    "name": "Ceuta",
+    "seo_name": "Elecciones municipales Ceuta",
+    "theme": "elecciones-municipales",
+    "section": "Ceuta",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.unidadeditorial.es/elecciones-comunidad-ceuta/resultados/2019/17/99.json"
+  },
+  "19": {
+    "name": "Melilla",
+    "seo_name": "Elecciones municipales Melilla",
+    "theme": "elecciones-municipales",
+    "section": "Melilla",
+    "last_election_year": "2015",
+    "bodyClass": "espana elecciones-municipales",
+    "json_file": "https://elecciones.unidadeditorial.es/elecciones-comunidad-melilla/resultados/2019/17/99.json"
+  },
+"filer_path": "/mnt/filer/html/produccion/datos/portales/es/elmundo/www/includes/",
+  "election_url": "https://www.elmundo.es/elecciones",
+  "miga": {
+    "type": "import",
+    "main": "migas/elecciones/elecciones_municipales/miga_b.html",
+    "hijos": "migas/elecciones/elecciones_municipales/miga_c.html",
+    "mobile": "migas/elecciones/elecciones_municipales/miga_mb.html"
+  },
+  "dfp_section": "espana",
+  "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",
+  "dfp_mobile": "/mnt/filer/html/produccion/datos/include/dfp/elmundo_movil/espana/p.html",
+  "static_path": "editorial/v6/",
+  "static_registro_path": "registro/v2/",
+  "idusr": "editorial/v6/idusr.php",
+  "prefs": "editorial/v6/elmundoPrefs.php",
+  "footer": "footer_nuevos.html.inc",
+  "cdn": "https://e00-elmundo.uecdn.es/",
+  "assets": {
+    "version": "assets/v11/",
+		"css_desktop": "css/ue-c-core-elmundo-desktop.css",
+		"css_mobile": "css/ue-c-core-elmundo-mobile.css",
+    "css_main_path": "/mnt/filer/html/produccion/DATOS/portales/es/elmundo/www/includes/style/static/elmundo/v0"
+  },
+
+  "election_js_component": "https://elecciones.sta.internet.int/assets/ueelections/release/",
+  "json_basehost": "http://elecciones.sta.internet.int/",
+  "html_basehost": "https://www.elmundo.sta.internet.int/elecciones/",
+  "filer_root_path": "/mnt/filer/html/staging/httpd/portales/es/unidadeditorial/elecciones/",
+  "header": {
+    "desktop": "new-header/cabecera-cts.php.inc",
+    "mobile": "new-header/mobile/cabecera-mobile.php.inc"
+  },
+  "ue_jquery": {
+    "desktop": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js",
+    "mobile": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js"
+  },
+  "ue_utils": {
+    "desktop": "https://e00-elmundo.uecdn.es/assets/desktop/master/js/ue-utils.js",
+    "mobile": "https://e00-elmundo.uecdn.es/assets/mobile/master/js/ue-utils.js"
+  },
+  "seo_name": "Elecciones Municipales",
+  "ue_login": "uelogin/include_script_uelogin.html",
+  "desktopJS": "https://e00-elmundo.uecdn.es/assets/v11/js/desktop.min.js",
+  "mobileJS": "https://e00-elmundo.uecdn.es/assets/v11/js/mobile.min.js",
+  "url_assets": "https://e00-elmundo.uecdn.es/assets/cover/elmundo/v0/",
+
+  "publishedAt": "2019-05-27T08:00:00Z",
+  "updatedAt": "2019-05-27T08:00:00Z",
+  "analytics": "",
+  "gpt_slots": {
+    "mobile": [
+      "f",
+      "html5",
+      "m"
+    ],
+    "desktop": [
+      "f",
+      "si",
+      "sd",
+      "m"
+    ]
+  },
+  "base_election_output": "/mnt/filer/html/produccion/httpd/portales/es/elmundo/www/elecciones",
+  "js_component": "https://elecciones.sta.internet.int/assets/ueelections/release/",
+  "styles": {
+    "path": "/mnt/filer/html/staging/datos/portales/es/elmundo/www/includes/style/static/elmundo",
+    "version": "release",
+    "widget_include_name": "main-elections-link-style.html",
+    "widget_include_name_mobile": "main-elections-mobile-link-style.html",
+    "static_include_name": "main-static-link-style.html",
+    "static_include_name_mobile": "main-static-mobile-link-style.html"
+  },
+  "c_code": "99",
+  "code": "99",
+  "assets_desktop": "assets/desktop/master/",
+  "assets_mobile": "assets/mobile/master/",
+  "publisher": "https://plus.google.com/u/0/+elmundo",
+  "rrss": {
+    "image": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg",
+    "name": "ELMUNDO",
+    "app": "279395918757488"
+  },
+  "twitter": {
+    "site": "@elmundoes",
+    "icon": "https://e00-elmundo.uecdn.es/assets/v11/img/destacadas/elmundo__logo-generica.jpg"
+  },
+  "showMore": true,
+  "id_contenido": "526feae561fd3d3c3f8b4578",
+  "footer_ads": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/footer_ads.html",
+  "dtm": "https://assets.adobedtm.com/73515ad8d49a3d35d5aa6bc81b535d3a8761d99c/satelliteLib-e48bb3b61613dd24961235e0a80c02ab5b0cf8b8.js",
+  "json_output_basepath": "/mnt/filer/html/produccion/httpd/portales/es/unidadeditorial/elecciones"
+}

@@ -1,0 +1,141 @@
+{
+ "votos_nulos": 592, 
+ "code": "050", 
+ "porcentaje_censo_escrutado": 100.0, 
+ "porcentaje_votos_blanco": 0.76, 
+ "abstencion": 26184, 
+ "porcentaje_total_votantes": 71.22, 
+ "mesas_totales": 150, 
+ "total_votantes": 64810, 
+ "circunscripcion_code": "23", 
+ "year": 2016, 
+ "porcentaje_abstencion": 28.78, 
+ "result_prov": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2016/23/p99.html", 
+ "censo": 90994, 
+ "ccaa_code": "01", 
+ "votos_blanco": 485, 
+ "type": "generales_congreso_localidades", 
+ "censo_escrutado": 90994, 
+ "ccaaName": "Andalucía", 
+ "porcentaje_votos_nulos": 0.91, 
+ "partidos": [
+  {
+   "color": "#2A91D5", 
+   "porcentaje_votos": 43.45, 
+   "siglas": "PP", 
+   "votos": 27903, 
+   "id": "0068"
+  }, 
+  {
+   "color": "#E32D42", 
+   "porcentaje_votos": 25.39, 
+   "siglas": "PSOE", 
+   "votos": 16306, 
+   "id": "0074"
+  }, 
+  {
+   "color": "#641766", 
+   "porcentaje_votos": 14.74, 
+   "siglas": "UNIDOS PODEMOS", 
+   "votos": 9465, 
+   "id": "0022"
+  }, 
+  {
+   "color": "#EB6615", 
+   "porcentaje_votos": 13.17, 
+   "siglas": "C's", 
+   "votos": 8458, 
+   "id": "0013"
+  }, 
+  {
+   "color": "#657566", 
+   "porcentaje_votos": 1.42, 
+   "siglas": "PACMA", 
+   "votos": 912, 
+   "id": "0041"
+  }, 
+  {
+   "color": "#333434", 
+   "porcentaje_votos": 0.31, 
+   "siglas": "VOX", 
+   "votos": 197, 
+   "id": "0094"
+  }, 
+  {
+   "color": "#C83A8F", 
+   "porcentaje_votos": 0.28, 
+   "siglas": "UPyD", 
+   "votos": 183, 
+   "id": "0093"
+  }, 
+  {
+   "porcentaje_votos": 0.21, 
+   "siglas": "CILUS", 
+   "votos": 136
+  }, 
+  {
+   "porcentaje_votos": 0.17, 
+   "siglas": "RECORTES CERO-GRUPO VERDE", 
+   "votos": 108
+  }, 
+  {
+   "color": "#333434", 
+   "porcentaje_votos": 0.1, 
+   "siglas": "PCPC", 
+   "votos": 65, 
+   "id": "0045"
+  }
+ ], 
+ "ccaa": {
+  "circunscripciones": [
+   "04", 
+   "11", 
+   "14", 
+   "18", 
+   "21", 
+   "23", 
+   "29", 
+   "41"
+  ], 
+  "code": "01", 
+  "name": "Andalucía", 
+  "lista_circunscripciones": {
+   "11": {
+    "slug": "cadiz", 
+    "name": "Cádiz"
+   }, 
+   "14": {
+    "slug": "cordoba", 
+    "name": "Córdoba"
+   }, 
+   "04": {
+    "slug": "almeria", 
+    "name": "Almería"
+   }, 
+   "23": {
+    "slug": "jaen", 
+    "name": "Jaén"
+   }, 
+   "18": {
+    "slug": "granada", 
+    "name": "Granada"
+   }, 
+   "29": {
+    "slug": "malaga", 
+    "name": "Málaga"
+   }, 
+   "41": {
+    "slug": "sevilla", 
+    "name": "Sevilla"
+   }, 
+   "21": {
+    "slug": "huelva", 
+    "name": "Huelva"
+   }
+  }, 
+  "slug": "andalucia"
+ }, 
+ "result_ccaa": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2016/99/p99.html", 
+ "slug": "jaen", 
+ "name": "Jaén"
+}

@@ -1,0 +1,168 @@
+{
+ "votos_nulos": 61118, 
+ "code": "99", 
+ "porcentaje_censo_escrutado": 99.97, 
+ "porcentaje_votos_blanco": 0.94, 
+ "abstencion": 1685647, 
+ "porcentaje_total_votantes": 73.31, 
+ "mesas_totales": 10126, 
+ "total_votantes": 4630006, 
+ "year": 2019, 
+ "id_registro": "CM", 
+ "porcentaje_abstencion": 26.69, 
+ "censo": 6317474, 
+ "ccaa_code": "01", 
+ "votos_blanco": 43156, 
+ "type": "generales_congreso", 
+ "censo_escrutado": 6315653, 
+ "diputados": 61, 
+ "porcentaje_votos_nulos": 1.32, 
+ "partidos": [
+  {
+   "color": "#ea433e", 
+   "diputados": 24, 
+   "votos": 1563828, 
+   "porcentaje_votos": 34.23, 
+   "siglas": "PSOE", 
+   "id": "0096"
+  }, 
+  {
+   "color": "#ee8444", 
+   "diputados": 11, 
+   "votos": 808865, 
+   "porcentaje_votos": 17.7, 
+   "siglas": "Cs", 
+   "id": "0022"
+  }, 
+  {
+   "color": "#33b0df", 
+   "diputados": 11, 
+   "votos": 785199, 
+   "porcentaje_votos": 17.19, 
+   "siglas": "PP", 
+   "id": "0083"
+  }, 
+  {
+   "color": "#854383", 
+   "diputados": 9, 
+   "votos": 651160, 
+   "porcentaje_votos": 14.25, 
+   "siglas": "UNIDAS PODEMOS", 
+   "id": "0077"
+  }, 
+  {
+   "color": "#95c955", 
+   "diputados": 6, 
+   "votos": 611220, 
+   "porcentaje_votos": 13.38, 
+   "siglas": "VOX", 
+   "id": "0117"
+  }, 
+  {
+   "color": "#909090", 
+   "diputados": 0, 
+   "votos": 2448, 
+   "porcentaje_votos": 0.05, 
+   "siglas": "PCTE", 
+   "id": "0066"
+  }, 
+  {
+   "color": "#b50c17", 
+   "diputados": 0, 
+   "votos": 4737, 
+   "porcentaje_votos": 0.1, 
+   "siglas": "PCPA", 
+   "id": "0058"
+  }, 
+  {
+   "color": "#505050", 
+   "diputados": 0, 
+   "votos": 11485, 
+   "porcentaje_votos": 0.25, 
+   "siglas": "AxSI", 
+   "id": "0011"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "diputados": 0, 
+   "votos": 7770, 
+   "porcentaje_votos": 0.17, 
+   "siglas": "RECORTES CERO-GV", 
+   "id": "0104"
+  }, 
+  {
+   "color": "#333333", 
+   "diputados": 0, 
+   "votos": 1427, 
+   "porcentaje_votos": 0.03, 
+   "siglas": "EB", 
+   "id": "0028"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 188, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "RISA", 
+   "id": "0106"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 5628, 
+   "porcentaje_votos": 0.12, 
+   "siglas": "PCOE", 
+   "id": "0057"
+  }, 
+  {
+   "color": "#101977", 
+   "diputados": 0, 
+   "votos": 4341, 
+   "porcentaje_votos": 0.1, 
+   "siglas": "PUM+J", 
+   "id": "0100"
+  }, 
+  {
+   "color": "#93a607", 
+   "diputados": 0, 
+   "votos": 61672, 
+   "porcentaje_votos": 1.35, 
+   "siglas": "PACMA", 
+   "id": "0054"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 3560, 
+   "porcentaje_votos": 0.08, 
+   "siglas": "PACT", 
+   "id": "0056"
+  }, 
+  {
+   "color": "#909090", 
+   "diputados": 0, 
+   "votos": 872, 
+   "porcentaje_votos": 0.02, 
+   "siglas": "JF", 
+   "id": "0047"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "diputados": 0, 
+   "votos": 1079, 
+   "porcentaje_votos": 0.02, 
+   "siglas": "CILU-LINARES", 
+   "id": "0018"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 253, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "IZAR", 
+   "id": "0044"
+  }
+ ], 
+ "slug": "Andalucía", 
+ "name": "Andalucía"
+}

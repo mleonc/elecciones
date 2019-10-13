@@ -1,0 +1,31 @@
+<header class="super-menu-header js-cnav-header inside" data-menu-nivel="home" >
+    <?php 
+        @include($header);
+    ?>
+    <div class="breadcrumbs">
+        <div class="container-header">
+            <?php
+                @include($breadcrumb);
+            ?>
+            <div class="tab-news">
+                <span class="tab-news-title js-newsTitle"></span>
+                <aside class="aside-tools">
+                    <ul class="socialMedia js_socialMedia">
+                        <li>
+                            <i class="icon-facebook icon-facebook_36_d js-icon-facebook"></i><span class="hidden-content">Facebook</span>
+                        </li>
+                        <li>
+                            <i class="icon-twitter icon-twitter_36_d js-icon-twitter"></i><span class="hidden-content">Twitter</span>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="percentage-bar-container">
+                    <div class="percentage-bar" id="js_progressBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+        @include($superMenu);
+    ?>
+</header>

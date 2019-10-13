@@ -1,0 +1,29 @@
+{
+    "name": "elecciones-indoor",
+    "description": "Elecciones",
+    "keywords": ["elecciones"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "Indoor/Controllers",
+            "Indoor/Models",
+            "Indoor/Http",
+            "Indoor/Traits"
+        ],
+        "psr-4": {
+            "Indoor\\": "/Indoor"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

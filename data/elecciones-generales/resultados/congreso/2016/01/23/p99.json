@@ -1,0 +1,91 @@
+{
+ "votos_nulos": 4320, 
+ "code": "23", 
+ "porcentaje_censo_escrutado": 100.0, 
+ "porcentaje_votos_blanco": 0.69, 
+ "abstencion": 157129, 
+ "porcentaje_total_votantes": 70.48, 
+ "mesas_totales": 899, 
+ "total_votantes": 375082, 
+ "year": 2016, 
+ "id_registro": "CI", 
+ "porcentaje_abstencion": 29.52, 
+ "prov_code": "23", 
+ "censo": 532211, 
+ "ccaa_code": "01", 
+ "votos_blanco": 2545, 
+ "type": "generales_congreso", 
+ "censo_escrutado": 532211, 
+ "ccaaName": "Andalucía", 
+ "diputados": 5, 
+ "porcentaje_votos_nulos": 1.15, 
+ "partidos": [
+  {
+   "color": "#E32D42", 
+   "diputados": 2, 
+   "votos": 138612, 
+   "porcentaje_votos": 37.39, 
+   "siglas": "PSOE", 
+   "id": "0074"
+  }, 
+  {
+   "color": "#2A91D5", 
+   "diputados": 2, 
+   "votos": 131234, 
+   "porcentaje_votos": 35.4, 
+   "siglas": "PP", 
+   "id": "0068"
+  }, 
+  {
+   "color": "#641766", 
+   "diputados": 1, 
+   "votos": 53239, 
+   "porcentaje_votos": 14.36, 
+   "siglas": "UNIDOS PODEMOS", 
+   "id": "0022"
+  }, 
+  {
+   "color": "#EB6615", 
+   "diputados": 0, 
+   "votos": 38884, 
+   "porcentaje_votos": 10.49, 
+   "siglas": "C's", 
+   "id": "0013"
+  }, 
+  {
+   "color": "#657566", 
+   "diputados": 0, 
+   "votos": 3238, 
+   "porcentaje_votos": 0.87, 
+   "siglas": "PACMA", 
+   "id": "0041"
+  }, 
+  {
+   "color": "#333434", 
+   "diputados": 0, 
+   "votos": 498, 
+   "porcentaje_votos": 0.13, 
+   "siglas": "PCPC", 
+   "id": "0045"
+  }, 
+  {
+   "color": "#333434", 
+   "diputados": 0, 
+   "votos": 638, 
+   "porcentaje_votos": 0.17, 
+   "siglas": "VOX", 
+   "id": "0094"
+  }, 
+  {
+   "color": "#C83A8F", 
+   "diputados": 0, 
+   "votos": 589, 
+   "porcentaje_votos": 0.16, 
+   "siglas": "UPyD", 
+   "id": "0093"
+  }
+ ], 
+ "result_ccaa": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2016/99/p99.html", 
+ "slug": "jaen", 
+ "name": "Jaén"
+}

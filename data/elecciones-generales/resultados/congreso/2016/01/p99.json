@@ -1,0 +1,88 @@
+{
+ "votos_nulos": 45400, 
+ "code": "99", 
+ "porcentaje_censo_escrutado": 100.0, 
+ "porcentaje_votos_blanco": 0.89, 
+ "abstencion": 2210001, 
+ "porcentaje_total_votantes": 66.05, 
+ "mesas_totales": 9924, 
+ "total_votantes": 4298738, 
+ "year": 2016, 
+ "id_registro": "CM", 
+ "porcentaje_abstencion": 33.95, 
+ "censo": 6508739, 
+ "ccaa_code": "01", 
+ "votos_blanco": 37895, 
+ "type": "generales_congreso", 
+ "censo_escrutado": 6508739, 
+ "diputados": 61, 
+ "porcentaje_votos_nulos": 1.06, 
+ "partidos": [
+  {
+   "color": "#2A91D5", 
+   "diputados": 23, 
+   "votos": 1426258, 
+   "porcentaje_votos": 33.53, 
+   "siglas": "PP", 
+   "id": "0068"
+  }, 
+  {
+   "color": "#E32D42", 
+   "diputados": 20, 
+   "votos": 1326838, 
+   "porcentaje_votos": 31.2, 
+   "siglas": "PSOE", 
+   "id": "0074"
+  }, 
+  {
+   "color": "#641766", 
+   "diputados": 11, 
+   "votos": 792008, 
+   "porcentaje_votos": 18.62, 
+   "siglas": "UNIDOS PODEMOS", 
+   "id": "0022"
+  }, 
+  {
+   "color": "#EB6615", 
+   "diputados": 7, 
+   "votos": 578123, 
+   "porcentaje_votos": 13.59, 
+   "siglas": "C's", 
+   "id": "0013"
+  }, 
+  {
+   "color": "#657566", 
+   "diputados": 0, 
+   "votos": 52870, 
+   "porcentaje_votos": 1.24, 
+   "siglas": "PACMA", 
+   "id": "0041"
+  }, 
+  {
+   "color": "#333434", 
+   "diputados": 0, 
+   "votos": 5482, 
+   "porcentaje_votos": 0.13, 
+   "siglas": "PCPC", 
+   "id": "0045"
+  }, 
+  {
+   "color": "#333434", 
+   "diputados": 0, 
+   "votos": 8341, 
+   "porcentaje_votos": 0.2, 
+   "siglas": "VOX", 
+   "id": "0094"
+  }, 
+  {
+   "color": "#C83A8F", 
+   "diputados": 0, 
+   "votos": 9932, 
+   "porcentaje_votos": 0.23, 
+   "siglas": "UPyD", 
+   "id": "0093"
+  }
+ ], 
+ "slug": "Andalucía", 
+ "name": "Andalucía"
+}

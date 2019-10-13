@@ -1,0 +1,110 @@
+{
+ "votos_nulos": 688, 
+ "code": "050", 
+ "porcentaje_censo_escrutado": 100.0, 
+ "porcentaje_votos_blanco": 0.67, 
+ "abstencion": 21008, 
+ "porcentaje_total_votantes": 76.81, 
+ "mesas_totales": 151, 
+ "total_votantes": 69591, 
+ "circunscripcion_code": "23", 
+ "year": 2019, 
+ "porcentaje_abstencion": 23.19, 
+ "result_prov": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2019/23/p99.html", 
+ "censo": 90599, 
+ "ccaa_code": "01", 
+ "votos_blanco": 460, 
+ "type": "generales_congreso_localidades", 
+ "censo_escrutado": 90599, 
+ "ccaaName": "Andalucía", 
+ "porcentaje_votos_nulos": 0.99, 
+ "partidos": [
+  {
+   "color": "#ea433e", 
+   "porcentaje_votos": 30.1, 
+   "siglas": "PSOE", 
+   "votos": 20743, 
+   "id": "0096"
+  }, 
+  {
+   "color": "#33b0df", 
+   "porcentaje_votos": 22.3, 
+   "siglas": "PP", 
+   "votos": 15364, 
+   "id": "0083"
+  }, 
+  {
+   "color": "#ee8444", 
+   "porcentaje_votos": 18.68, 
+   "siglas": "Cs", 
+   "votos": 12871, 
+   "id": "0022"
+  }, 
+  {
+   "color": "#95c955", 
+   "porcentaje_votos": 15.05, 
+   "siglas": "VOX", 
+   "votos": 10372, 
+   "id": "0117"
+  }, 
+  {
+   "color": "#854383", 
+   "porcentaje_votos": 11.19, 
+   "siglas": "UNIDAS PODEMOS", 
+   "votos": 7711, 
+   "id": "0077"
+  }, 
+  {
+   "color": "#93a607", 
+   "porcentaje_votos": 1.32, 
+   "siglas": "PACMA", 
+   "votos": 909, 
+   "id": "0054"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "porcentaje_votos": 0.19, 
+   "siglas": "CILU-LINARES", 
+   "votos": 133, 
+   "id": "0018"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "porcentaje_votos": 0.13, 
+   "siglas": "RECORTES CERO-GV", 
+   "votos": 92, 
+   "id": "0104"
+  }, 
+  {
+   "color": "#101977", 
+   "porcentaje_votos": 0.12, 
+   "siglas": "PUM+J", 
+   "votos": 85, 
+   "id": "0100"
+  }, 
+  {
+   "color": "#505050", 
+   "porcentaje_votos": 0.1, 
+   "siglas": "AxSI", 
+   "votos": 72, 
+   "id": "0011"
+  }, 
+  {
+   "color": "#b50c17", 
+   "porcentaje_votos": 0.08, 
+   "siglas": "PCPA", 
+   "votos": 52, 
+   "id": "0058"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "porcentaje_votos": 0.06, 
+   "siglas": "RISA", 
+   "votos": 39, 
+   "id": "0106"
+  }
+ ], 
+ "result_ccaa": "https://elecciones.unidadeditorial.es/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+ "slug": "jaen", 
+ "name": "Jaén"
+}

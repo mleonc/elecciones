@@ -1,0 +1,576 @@
+{
+  "estado": {
+    "name": "Espa&ntilde;a",
+    "circunscripciones": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52"
+    ],
+    "ccaa": {
+      "01": {
+        "name": "Andalucia"
+      },
+      "02": {
+        "name": "Arag&oacute;n"
+      },
+      "03": {
+        "name": "Principado de Asturias"
+      },
+      "04": {
+        "name": "Islas Baleares"
+      },
+      "05": {
+        "name": "Canarias"
+      },
+      "06": {
+        "name": "Cantabria (Comunidad)"
+      },
+      "07": {
+        "name": "Castilla - La Mancha"
+      },
+      "08": {
+        "name": "Castilla y Le&oacute;n"
+      },
+      "09": {
+        "name": "Catalu&ntilde;a"
+      },
+      "10": {
+        "name": "Extremadura"
+      },
+      "11": {
+        "name": "Galicia"
+      },
+      "12": {
+        "name": "Madrid, Comunidad de"
+      },
+      "13": {
+        "name": "Navarra, Comunidad Foral de"
+      },
+      "14": {
+        "name": "Pa&iacute;s Vasco"
+      },
+      "15": {
+        "name": "Murcia, Regi&oacute;n de"
+      },
+      "16": {
+        "name": "Rioja, La"
+      },
+      "17": {
+        "name": "Comunitat Valenciana"
+      },
+      "18": {
+        "name": "Ceuta"
+      },
+      "19": {
+        "name": "Melilla"
+      }
+    }
+  },
+  "ccaa": {
+    "01": {
+      "code": "01",
+      "name": "Andaluc&iacute;a",
+      "slug": "andalucia",
+      "circunscripciones": [
+        "04",
+        "11",
+        "14",
+        "18",
+        "21",
+        "23",
+        "29",
+        "41"
+      ],
+      "lista_circunscripciones": {
+        "04": {
+          "slug": "almeria",
+          "name": "Almer&iacute;a"
+        },
+        "11": {
+          "slug": "cadiz",
+          "name": "C&aacute;diz"
+        },
+        "14": {
+          "slug": "cordoba",
+          "name": "C&oacute;rdoba"
+        },
+        "18": {
+          "slug": "granada",
+          "name": "Granada"
+        },
+        "21": {
+          "slug": "huelva",
+          "name": "Huelva"
+        },
+        "23": {
+          "slug": "jaen",
+          "name": "Ja&eacute;n"
+        },
+        "29": {
+          "slug": "malaga",
+          "name": "M&aacute;laga"
+        },
+        "41": {
+          "slug": "sevilla",
+          "name": "Sevilla"
+        }
+      }
+    },
+    "02": {
+      "code": "02",
+      "name": "Arag&oacute;n",
+      "slug": "aragon",
+      "circunscripciones": [
+        "22",
+        "44",
+        "50"
+      ],
+      "lista_circunscripciones": {
+        "22": {
+          "slug": "huesca",
+          "name": "Huesca"
+        },
+        "44": {
+          "slug": "teruel",
+          "name": "Teruel"
+        },
+        "50": {
+          "slug": "zaragoza",
+          "name": "Zaragoza"
+        }
+      }
+    },
+    "03": {
+      "code": "03",
+      "name": "Principado de Asturias",
+      "slug": "asturias",
+      "circunscripciones": [
+        "33"
+      ],
+      "lista_circunscripciones": {
+        "33": {
+          "slug": "asturias",
+          "name": "Asturias"
+        }
+      }
+    },
+    "04": {
+      "code": "04",
+      "name": "Islas Baleares",
+      "slug": "baleares",
+      "circunscripciones": [
+        "07"
+      ],
+      "lista_circunscripciones": {
+        "07": {
+          "slug": "baleares",
+          "name": "Baleares"
+        }
+      }
+    },
+    "05": {
+      "code": "05",
+      "name": "Canarias",
+      "slug": "canarias",
+      "circunscripciones": [
+        "35",
+        "38"
+      ],
+      "lista_circunscripciones": {
+        "35": {
+          "slug": "las-palmas",
+          "name": "Las Palmas"
+        },
+        "38": {
+          "slug": "tenerife",
+          "name": "Tenerife"
+        }
+      }
+    },
+    "06": {
+      "code": "06",
+      "name": "Cantabria (Comunidad)",
+      "slug": "cantabria",
+      "circunscripciones": [
+        "39"
+      ],
+      "lista_circunscripciones": {
+        "39": {
+          "slug": "cantabria",
+          "name": "Cantabria"
+        }
+      }
+    },
+    "07": {
+      "code": "07",
+      "name": "Castilla - La Mancha",
+      "slug": "castilla-la-mancha",
+      "circunscripciones": [
+        "02",
+        "13",
+        "16",
+        "19",
+        "45"
+      ],
+      "lista_circunscripciones": {
+        "02": {
+          "slug": "albacete",
+          "name": "Albacete"
+        },
+        "13": {
+          "slug": "ciudad_real",
+          "name": "Ciudad Real"
+        },
+        "16": {
+          "slug": "cuenca",
+          "name": "Cuenca"
+        },
+        "19": {
+          "slug": "guadalajara",
+          "name": "Guadalajara"
+        },
+        "45": {
+          "slug": "toledo",
+          "name": "Toledo"
+        }
+      }
+    },
+    "08": {
+      "code": "08",
+      "name": "Castilla y Le&oacute;n",
+      "slug": "castilla-y-leon",
+      "circunscripciones": [
+        "05",
+        "09",
+        "24",
+        "34",
+        "37",
+        "40",
+        "42",
+        "47",
+        "49"
+      ],
+      "lista_circunscripciones": {
+        "05": {
+          "slug": "avila",
+          "name": "&aacute;vila"
+        },
+        "09": {
+          "slug": "burgos",
+          "name": "Burgos"
+        },
+        "24": {
+          "slug": "leon",
+          "name": "Le&oacute;n"
+        },
+        "34": {
+          "slug": "palencia",
+          "name": "Palencia"
+        },
+        "37": {
+          "slug": "salamanca",
+          "name": "Salamanca"
+        },
+        "40": {
+          "slug": "segovia",
+          "name": "Segovia"
+        },
+        "42": {
+          "slug": "soria",
+          "name": "Soria"
+        },
+        "47": {
+          "slug": "valladolid",
+          "name": "Valladolid"
+        },
+        "49": {
+          "slug": "zamora",
+          "name": "Zamora"
+        }
+      }
+    },
+    "09": {
+      "code": "09",
+      "name": "Catalu&ntilde;a",
+      "slug": "cataluna",
+      "circunscripciones": [
+        "08",
+        "43",
+        "25",
+        "17"
+      ],
+      "lista_circunscripciones": {
+        "43": {
+          "slug": "tarragona",
+          "name": "Tarragona"
+        },
+        "25": {
+          "slug": "lleida",
+          "name": "Lleida"
+        },
+        "17": {
+          "slug": "girona",
+          "name": "Girona"
+        },
+        "08": {
+          "slug": "barcelona",
+          "name": "Barcelona"
+        }
+      }
+    },
+    "10": {
+      "code": "10",
+      "name": "Extremadura",
+      "slug": "extremadura",
+      "circunscripciones": [
+        "06",
+        "10"
+      ],
+      "lista_circunscripciones": {
+        "06": {
+          "slug": "badajoz",
+          "name": "Badajoz"
+        },
+        "10": {
+          "slug": "caceres",
+          "name": "C&aacute;ceres"
+        }
+      }
+    },
+    "11": {
+      "code": "11",
+      "name": "Galicia",
+      "slug": "galicia",
+      "circunscripciones": [
+        "32",
+        "36",
+        "15",
+        "27"
+      ],
+      "lista_circunscripciones": {
+        "32": {
+          "slug": "ourense",
+          "name": "Ourense"
+        },
+        "36": {
+          "slug": "portevedra",
+          "name": "Pontevedra"
+        },
+        "15": {
+          "slug": "a-coruna",
+          "name": "A Coru&ntilde;a"
+        },
+        "27": {
+          "slug": "lugo",
+          "name": "Lugo"
+        }
+      }
+    },
+    "12": {
+      "code": "12",
+      "name": "Comunidad de Madrid",
+      "slug": "madrid",
+      "circunscripciones": [
+        "28"
+      ],
+      "lista_circunscripciones": {
+        "28": {
+          "slug": "madrid",
+          "name": "Madrid"
+        }
+      }
+    },
+    "13": {
+      "code": "13",
+      "name": "Comunidad Foral de Navarra",
+      "slug": "Navarra",
+      "circunscripciones": [
+        "31"
+      ],
+      "lista_circunscripciones": {
+        "31": {
+          "slug": "navarra",
+          "name": "Navarra"
+        }
+      }
+    },
+    "14": {
+      "code": "14",
+      "name": "Pa&iacute;s Vasco",
+      "slug": "pais-vasco",
+      "circunscripciones": [
+        "20",
+        "48",
+        "01"
+      ],
+      "lista_circunscripciones": {
+        "48": {
+          "slug": "vizcaya",
+          "name": "Vizcaya/Bizkaia"
+        },
+        "20": {
+          "slug": "guipuzcoa",
+          "name": "Guip&uacute;zcoa/Gipuzkoa"
+        },
+        "01": {
+          "slug": "alava",
+          "name": "&aacute;lava/Araba"
+        }
+      }
+    },
+    "15": {
+      "code": "15",
+      "name": "Regi&oacute;n de Murcia",
+      "slug": "murcia",
+      "circunscripciones": [
+        "30",
+        "30_1",
+        "30_2",
+        "30_3",
+        "30_4",
+        "30_5"
+      ],
+      "lista_circunscripciones": {
+        "30": {
+          "slug": "murcia",
+          "name": "Murcia"
+        },
+        "30_1": {
+          "slug": "primera",
+          "name": "Murcia Primera"
+        },
+        "30_2": {
+          "slug": "segunda",
+          "name": "Murcia Segunda"
+        },
+        "30_3": {
+          "slug": "tercera",
+          "name": "Murcia Tercera"
+        },
+        "30_4": {
+          "slug": "cuarta",
+          "name": "Murcia Cuarta"
+        },
+        "30_5": {
+          "slug": "quinta",
+          "name": "Murcia Quinta"
+        }
+      }
+    },
+    "16": {
+      "code": "16",
+      "name": "La Rioja (Comunidad)",
+      "slug": "la-rioja",
+      "circunscripciones": [
+        "26"
+      ],
+      "lista_circunscripciones": {
+        "26": {
+          "slug": "la-rioja",
+          "name": "La Rioja"
+        }
+      }
+    },
+    "17": {
+      "code": "17",
+      "name": "Comunidad Valenciana",
+      "slug": "comunidad-valenciana",
+      "circunscripciones": [
+        "12",
+        "46",
+        "03"
+      ],
+      "lista_circunscripciones": {
+        "12": {
+          "slug": "castellon",
+          "name": "Castell&oacute;n"
+        },
+        "46": {
+          "slug": "valencia",
+          "name": "Valencia"
+        },
+        "03": {
+          "slug": "alicante",
+          "name": "Alicante"
+        }
+      }
+    },
+    "18": {
+      "code": "18",
+      "name": "Ceuta",
+      "slug": "ceuta",
+      "circunscripciones": [
+        "51"
+      ],
+      "lista_circunscripciones": {
+        "51": {
+          "slug": "ceuta",
+          "name": "Ceuta"
+        }
+      }
+    },
+    "19": {
+      "code": "19",
+      "name": "Melilla",
+      "slug": "melilla",
+      "circunscripciones": [
+        "52"
+      ],
+      "lista_circunscripciones": {
+        "52": {
+          "slug": "melilla",
+          "name": "Melilla"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<header class="site-header js-cnav-header main-section-header section-header inside" data-ue-model="">
+    <?php
+        @include_once($assets);
+    ?>
+    <div class="container-header">
+        <div class="site-logo">
+            <div class="logo<?php if (date('dm') == '0112') echo ' dia-sida'; elseif (date('dm')== '1910') echo ' dia-cancer'; ?>">
+                <a href="http://www.elmundo.es"><span class="hidden-content"><?php echo $portal; ?></span></a>
+            </div>
+            <aside class="tools-header">
+                <ul class="tools-header-corporative">
+                    <li class="tools-corporative-subscription">
+                        <a href="https://clk.tradedoubler.com/click?p=271574&a=2404199&g=23242684" title="Suscripciones El Mundo" class="tools-corporative-link">Suscr&iacute;bete</a>
+                    </li>
+                    <li class="tools-corporative-login toolbar-login nav-login js-ueUserPanel"></li>
+                </ul>
+            </aside>
+            <div id="pixelcontabilizacionNLalerta" class="pixelcontabilizacion" style="position:absolute;top:0px;left:0px;width:1px;height:1px;z-index:1">
+                <img src="https://impes.tradedoubler.com/imp?type(inv)g(23242684)a(2404199)" width="1" height="1" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="nav-container js-desdefixed js-hastafixed">
+        <div class="container-header">
+            <?php @include($navigation); ?>
+            <div class="header-search" aria-label="Buscador">
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumbs">
+        <div class="container-header">
+            <div class="clearfix ">
+                <?php
+                    @include($breadcrumb);
+                    @include($breadcrumbChildren);
+                ?>
+            </div>
+            <div class="tab-news js-breadcrumbChildren" style="width: 623px;">
+                <span class="tab-news-title js-newsTitle"><?php echo $title; ?></span>
+                <aside class="aside-tools">
+                    <ul class="socialMedia js_socialMedia">
+                        <li>
+                            <i class="icon-facebook icon-facebook_36_d js-icon-facebook"></i><span class="hidden-content">Compartir en Facebook</span>
+                        </li>
+                        <li>
+                            <i class="icon-twitter icon-twitter_36_d js-icon-twitter"></i><span class="hidden-content">Compartir en Twitter</span>
+                        </li>
+                        <li onclick="envioSC('Enviar');">
+                            <i class="icon-mail icon-mail_36_d js-icon-mail"></i><span class="hidden-content">Enviar por email</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <div class="percentage-bar-container">
+        <div class="percentage-bar" id="js_progressBar"></div>
+    </div>
+</header>

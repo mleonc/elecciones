@@ -1,0 +1,467 @@
+{
+  "01": {
+    "c_code": "01",
+    "code": "99",
+    "name": "Andaluc&iacute;a",
+    "slug": "andalucia",
+    "cir_num": 8,
+    "circunscripciones": {
+      "4": {
+        "c_code": "01",
+        "code": "4",
+        "name": "Almer&iacute;a"
+      },
+      "11": {
+        "c_code": "01",
+        "code": "11",
+        "name": "C&aacute;diz"
+      },
+      "14": {
+        "c_code": "01",
+        "code": "14",
+        "name": "C&oacute;rdoba"
+      },
+      "18": {
+        "c_code": "01",
+        "code": "18",
+        "name": "Granada"
+      },
+      "21": {
+        "c_code": "01",
+        "code": "21",
+        "name": "Huelva"
+      },
+      "23": {
+        "c_code": "01",
+        "code": "23",
+        "name": "Jaén"
+      },
+      "29": {
+        "c_code": "01",
+        "code": "29",
+        "name": "M&aacute;laga"
+      },
+      "41": {
+        "c_code": "01",
+        "code": "41",
+        "name": "Sevilla"
+      }
+    }
+  },
+  "02": {
+    "c_code": "02",
+    "code": "99",
+    "name": "Arag&oacute;n",
+    "slug": "aragon",
+    "cir_num": 3,
+    "circunscripciones": {
+      "22": {
+        "c_code": "02",
+        "code": "22",
+        "name": "Huesca"
+      },
+      "44": {
+        "c_code": "02",
+        "code": "44",
+        "name": "Teruel"
+      },
+      "50": {
+        "c_code": "02",
+        "code": "50",
+        "name": "Zaragoza"
+      }
+    }
+  },
+  "03": {
+    "c_code": "XX",
+    "code": "99",
+    "name": "Principado de Asturias",
+    "slug": "principado-asturias",
+    "cir_num": 1,
+    "circunscripciones": {
+      "33": {
+        "c_code": "03",
+        "code": "33",
+        "name": "Asturias"
+      }
+    }
+  },
+  "04": {
+    "c_code": "04",
+    "code": "99",
+    "name": "Islas Baleares",
+    "slug": "islas-baleares",
+    "cir_num": 1,
+    "circunscripciones": {
+      "07": {
+        "c_code": "04",
+        "code": "07",
+        "name": "Baleares"
+      }
+    }
+  },
+  "05": {
+    "c_code": "05",
+    "code": "99",
+    "name": "Canarias",
+    "slug": "canarias",
+    "cir_num": 2,
+    "circunscripciones": {
+      "35": {
+        "c_code": "05",
+        "code": "35",
+        "name": "Las Palmas"
+      },
+      "38": {
+        "c_code": "05",
+        "code": "38",
+        "name": "Tenerife"
+      }
+    }
+  },
+  "06": {
+    "c_code": "06",
+    "code": "99",
+    "name": "Cantabria",
+    "slug": "cantabria",
+    "cir_num": 1,
+    "circunscripciones": {
+      "XXX": {
+        "c_code": "06",
+        "code": "4",
+        "name": "Cantabria"
+      }
+    }
+  },
+  "07": {
+    "c_code": "07",
+    "code": "99",
+    "name": "Castilla - La Mancha",
+    "slug": "castilla-la-mancha",
+    "cir_num": 5,
+    "circunscripciones": {
+      "02": {
+        "c_code": "07",
+        "code": "4",
+        "name": "Albacete"
+      },
+      "13": {
+        "c_code": "07",
+        "code": "11",
+        "name": "Ciudad Real"
+      },
+      "16": {
+        "c_code": "07",
+        "code": "14",
+        "name": "Cuenca"
+      },
+      "19": {
+        "c_code": "07",
+        "code": "18",
+        "name": "Guadalajara"
+      },
+      "45": {
+        "c_code": "07",
+        "code": "21",
+        "name": "Toledo"
+      }
+    }
+  },
+  "08": {
+    "c_code": "08",
+    "code": "99",
+    "name": "Castilla y Le&oacute;n",
+    "slug": "castilla-y-leon",
+    "cir_num": 9,
+    "circunscripciones": {
+      "05": {
+        "c_code": "08",
+        "code": "05",
+        "name": "&aacute;vila"
+      },
+      "09": {
+        "c_code": "08",
+        "code": "09",
+        "name": "Burgos"
+      },
+      "24": {
+        "c_code": "08",
+        "code": "24",
+        "name": "Le&oacute;n"
+      },
+      "XX": {
+        "c_code": "08",
+        "code": "18",
+        "name": "Palencia"
+      },
+      "34": {
+        "c_code": "08",
+        "code": "34",
+        "name": "Salamanca"
+      },
+      "40": {
+        "c_code": "08",
+        "code": "40",
+        "name": "Segovia"
+      },
+      "42": {
+        "c_code": "08",
+        "code": "42",
+        "name": "Soria"
+      },
+      "47": {
+        "c_code": "08",
+        "code": "47",
+        "name": "Valladolid"
+      },
+      "49": {
+        "c_code": "08",
+        "code": "49",
+        "name": "Zamora"
+      }
+    }
+  },
+
+  "09": {
+    "c_code": "09",
+    "code": "99",
+    "name": "Catalu&ntilde;a",
+    "slug": "cataluna",
+    "cir_num": 4,
+    "circunscripciones": {
+      "43": {
+        "c_code": "09",
+        "code": "43",
+        "name": "Tarragona"
+      },
+      "25": {
+        "c_code": "09",
+        "code": "25",
+        "name": "Lleida"
+      },
+      "17": {
+        "c_code": "09",
+        "code": "17",
+        "name": "Girona"
+      },
+      "08": {
+        "c_code": "09",
+        "code": "08",
+        "name": "Barcelona"
+      }
+    }
+  },
+
+  "10": {
+    "c_code": "10",
+    "code": "99",
+    "name": "Extremadura",
+    "slug": "extremadura",
+    "cir_num": 2,
+    "circunscripciones": {
+      "06": {
+        "c_code": "10",
+        "code": "06",
+        "name": "Badajoz"
+      },
+      "10": {
+        "c_code": "10",
+        "code": "10",
+        "name": "C&aacute;ceres"
+      }
+    }
+  },
+
+  "11": {
+    "c_code": "11",
+    "code": "99",
+    "name": "Galicia",
+    "slug": "galicia",
+    "cir_num": 4,
+    "circunscripciones": {
+      "32": {
+        "c_code": "11",
+        "code": "32",
+        "name": "Ourense"
+      },
+      "36": {
+        "c_code": "11",
+        "code": "36",
+        "name": "Pontevedra"
+      },
+      "15": {
+        "c_code": "11",
+        "code": "15",
+        "name": "A Coru&ntilde;a"
+      },
+      "27": {
+        "c_code": "11",
+        "code": "27",
+        "name": "Lugo"
+      }
+    }
+  },
+
+
+  "12": {
+    "c_code": "12",
+    "code": "99",
+    "name": "Comunidad de Madrid",
+    "slug": "comunidad-de-madrid",
+    "cir_num": 1,
+    "circunscripciones": {
+      "28": {
+        "c_code": "12",
+        "code": "28",
+        "name": "Madrid"
+      }
+    }
+  },
+
+  "13": {
+    "c_code": "13",
+    "code": "99",
+    "name": "Comunidad Foral de Navarra",
+    "slug": "comunidad-foral-de-navarra",
+    "cir_num": 1,
+    "circunscripciones": {
+      "31": {
+        "c_code": "13",
+        "code": "31",
+        "name": "Navarra"
+      }
+    }
+  },
+  "14": {
+    "c_code": "14",
+    "code": "99",
+    "name": "Pa&iacute;s Vasco",
+    "slug": "pais-vasco",
+    "cir_num": 3,
+    "circunscripciones": {
+      "48": {
+        "c_code": "14",
+        "code": "48",
+        "name": "Vizcaya/Bizkaia"
+      },
+      "20": {
+        "c_code": "14",
+        "code": "20",
+        "name": "Guip&uacute;zcoa/Gipuzkoa"
+      },
+      "01": {
+        "c_code": "14",
+        "code": "01",
+        "name": "&aacute;lava/Araba"
+      }
+    }
+  },
+
+  "15": {
+    "c_code": "15",
+    "code": "99",
+    "name": "Regi&oacute;n de Murcia",
+    "slug": "region-de-murcia",
+    "cir_num": 6,
+    "circunscripciones": {
+      "30": {
+        "c_code": "15",
+        "code": "30",
+        "name": "Murcia"
+      },
+      "30_1": {
+        "c_code": "15",
+        "code": "30_1",
+        "name": "Murcia Primera"
+      },
+      "30_2": {
+        "c_code": "15",
+        "code": "30_2",
+        "name": "Murcia Segunda"
+      },
+      "30_3": {
+        "c_code": "15",
+        "code": "30_3",
+        "name": "Murcia Tercera"
+      },
+      "30_4": {
+        "c_code": "15",
+        "code": "30_4",
+        "name": "Murcia Cuarta"
+      },
+      "30_5": {
+        "c_code": "15",
+        "code": "30_5",
+        "name": "Murcia Quinta"
+      }
+    }
+  },
+
+  "16": {
+    "c_code": "16",
+    "code": "99",
+    "name": "La Rioja (Comunidad)",
+    "slug": "la-rioja",
+    "cir_num": 1,
+    "circunscripciones": {
+      "26": {
+        "c_code": "16",
+        "code": "26",
+        "name": "La Rioja"
+      }
+    }
+  },
+
+  "17": {
+    "c_code": "17",
+    "code": "99",
+    "name": "Comunidad Valenciana",
+    "slug": "comunidad-valenciana",
+    "cir_num": 3,
+    "circunscripciones": {
+      "12": {
+        "c_code": "17",
+        "code": "12",
+        "name": "Castell&oacute;n"
+      },
+      "46": {
+        "c_code": "17",
+        "code": "46",
+        "name": "Valencia"
+      },
+      "03": {
+        "c_code": "17",
+        "code": "03",
+        "name": "Alicante"
+      }
+    }
+  },
+  "18": {
+    "c_code": "18",
+    "code": "99",
+    "name": "Ceuta",
+    "slug": "ceuta",
+    "cir_num": 1,
+    "circunscripciones": {
+      "51": {
+        "c_code": "18",
+        "code": "51",
+        "name": "Ceuta"
+      }
+    }
+  },
+  "19": {
+    "c_code": "19",
+    "code": "99",
+    "name": "Melilla",
+    "slug": "melilla",
+    "cir_num": 1,
+    "circunscripciones": {
+      "52": {
+        "c_code": "19",
+        "code": "52",
+        "name": "Melilla"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<body class="<?php echo $this->metadata['bodyClass']; ?>">
+	<?php 
+		$_dfpTheme= $this->metadata['theme'];
+		$_dfpSegmentationTags= $this->metadata['theme'];
+		@include($this->dfp_include);
+	?>
+	<div class="ue-l-common-page">
+		<div class="ue-l-common-page__inner">
+			<?php echo Indoor\Models\Elements\Dfp::render($this->float, $this->metadata['dfp_section']); ?>
+		</div>
+	</div>
+
+	<?php echo Indoor\Models\Elements\Header::render($this->metadata, $this->format); ?>
+
+	<div class="skin-ad"></div>
+
+	<div class="ue-l-common-page">
+	    <div class="ue-l-common-page__inner">
+	        <?php echo Indoor\Models\Elements\Dfp::render($this->adsItems, $this->metadata['dfp_section']); ?>
+	    </div>
+	</div>
+
+</body>
