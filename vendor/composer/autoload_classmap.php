@@ -24,6 +24,7 @@ return array(
     'Indoor\\Models\\Descriptor' => $baseDir . '/Indoor/Models/Descriptor.php',
     'Indoor\\Models\\Elements\\Data' => $baseDir . '/Indoor/Models/Elements/Data.php',
     'Indoor\\Models\\Elements\\Dfp' => $baseDir . '/Indoor/Models/Elements/Dfp.php',
+    'Indoor\\Models\\Elements\\GeneralesData' => $baseDir . '/Indoor/Models/Elements/CongresoData.php',
     'Indoor\\Models\\Elements\\Header' => $baseDir . '/Indoor/Models/Elements/Header.php',
     'Indoor\\Models\\Elements\\Jsonld' => $baseDir . '/Indoor/Models/Elements/Jsonld.php',
     'Indoor\\Models\\Head' => $baseDir . '/Indoor/Models/Head.php',

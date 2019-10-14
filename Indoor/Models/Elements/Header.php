@@ -22,8 +22,8 @@ class Header
 	{
 		$assets = '';
 		if (isset($params[Descriptor::_ASSETS]['general'])) {
-			if (file_exists($params[Descriptor::_STATIC_PATH].$params[Descriptor::_ASSETS]['general'])) {
-				$assets = $params[Descriptor::_STATIC_PATH].$params[Descriptor::_ASSETS]['general'];
+			if (file_exists($params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].$params[Descriptor::_ASSETS]['general'])) {
+				$assets = $params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].$params[Descriptor::_ASSETS]['general'];
 			}
 		}
 		return $assets;
@@ -42,8 +42,8 @@ class Header
 	{
 		$header = '';
 		if (isset($params[Descriptor::_HEADER][$format])) {
-			if (file_exists($params[Descriptor::_STATIC_PATH].$params[Descriptor::_HEADER][$format])) {
-				$header = $params[Descriptor::_STATIC_PATH].$params[Descriptor::_HEADER][$format];
+			if (file_exists($params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].$params[Descriptor::_HEADER][$format])) {
+				$header = $params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].$params[Descriptor::_HEADER][$format];
 			}
 		}
 		return $header;
@@ -78,8 +78,8 @@ class Header
 	public function getSupermenu($params = [], $format = 'mobile')
 	{
 		$superMenu = '';
-		if ($format == 'mobile' && file_exists($params[Descriptor::_STATIC_PATH].'/new-header/mobile/supermenu.php.inc')) {
-			$superMenu = $params[Descriptor::_STATIC_PATH].'/new-header/mobile/supermenu.php.inc';
+		if ($format == 'mobile' && file_exists($params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].'/new-header/mobile/supermenu.php.inc')) {
+			$superMenu = $params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].'/new-header/mobile/supermenu.php.inc';
 		}
 		return $superMenu;
 	}
@@ -101,7 +101,11 @@ class Header
 
 	public function getNavigation($params = [])
 	{
-		return 'navegacion-principal-portada.php.inc';
+		$navigation = '';
+		if (file_exists($params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].'/new-header/navegacion-principal-portada.php.inc')){
+			$navigation = $params[Descriptor::_FILER_PATH].$params[Descriptor::_STATIC_PATH].'/new-header/navegacion-principal-portada.php.inc';
+		}
+		return $navigation;
 	}
 
 	static public function render($params = [], $format = 'mobile')

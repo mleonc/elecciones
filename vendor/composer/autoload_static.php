@@ -99,6 +99,7 @@ class ComposerStaticInit290dc0fb029f2e8e17ff30f247a26c14
         'Indoor\\Models\\Descriptor' => __DIR__ . '/../..' . '/Indoor/Models/Descriptor.php',
         'Indoor\\Models\\Elements\\Data' => __DIR__ . '/../..' . '/Indoor/Models/Elements/Data.php',
         'Indoor\\Models\\Elements\\Dfp' => __DIR__ . '/../..' . '/Indoor/Models/Elements/Dfp.php',
+        'Indoor\\Models\\Elements\\GeneralesData' => __DIR__ . '/../..' . '/Indoor/Models/Elements/CongresoData.php',
         'Indoor\\Models\\Elements\\Header' => __DIR__ . '/../..' . '/Indoor/Models/Elements/Header.php',
         'Indoor\\Models\\Elements\\Jsonld' => __DIR__ . '/../..' . '/Indoor/Models/Elements/Jsonld.php',
         'Indoor\\Models\\Head' => __DIR__ . '/../..' . '/Indoor/Models/Head.php',

@@ -1,0 +1,24 @@
+<ul class="ue-c-elections-result-detail__breadcrumb">
+	<?php 
+		if (isset($this->place['comunidad']['name'])) {
+			$path = $this->metadata['common']['election_url']. $this->type . '/resultados/'.$this->subType. '/'.$this->year. '/' .$this->place['comunidad']['code'].'/99/p99.html';
+
+			echo '<li class="ue-c-elections-result-detail__breadcrumb-item" id="c'.$this->place['comunidad']['code'].'">
+					<a href="'.$path.'">'. $this->place['comunidad']['name'] .'</a>
+				</li>';
+		}
+		if (isset($this->place['provincia']['name'])) {
+			echo '<li class="ue-c-elections-result-detail__breadcrumb-item" id="p'.$this->place['provincia']['code'].'">';
+			$inner = $this->place['provincia']['name'];
+			if ($this->isLocalidad()) {
+				$path = $this->metadata['common']['election_url']. $this->type . '/resultados/'.$this->subType. '/'.$this->year. '/' .$this->place['comunidad']['code'].'/'.$this->place['provincia']['code'].'/p99.html';
+				$inner = '<a href="'.$path.'">'. $this->place['provincia']['name'] .'</a>';
+			}
+			echo $inner.'</li>';
+					
+		}
+		if (isset($this->place['municipio']['name']) && $this->isLocalidad()) {
+			echo '<li class="ue-c-elections-result-detail__breadcrumb-item">' . $this->place['municipio']['name'] .'</li>';
+		}
+	?>
+</ul>

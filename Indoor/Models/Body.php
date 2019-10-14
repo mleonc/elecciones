@@ -15,13 +15,12 @@ class Body
 		$this->place 		= isset($params[Descriptor::_PLACE]) ? $params[Descriptor::_PLACE] : '';
 		$this->format 		= isset($params[Descriptor::_FORMAT]) ? $params[Descriptor::_FORMAT] : '';
 		$this->metadata 	= isset($params[Descriptor::_METADATA]) ? $params[Descriptor::_METADATA] : '';
+		$this->data 		= isset($params[Descriptor::_DATA]) ? $params[Descriptor::_DATA] : '';
 
 		$this->dfp_include  = $this->metadata['dfp_mobile'];
 		if ($this->format != 'mobile'){
 			$this->dfp_include  = $this->metadata['dfp'];
 		}
-
-		$this->format = 'desktop';
 
 		$this->float = [['name'=> 'f']];
 		$this->adsItems = [['name' => 'mega']];

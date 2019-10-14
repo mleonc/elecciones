@@ -5,22 +5,29 @@ namespace Indoor\Models\Elements;
 use Indoor\Models\Descriptor;
 use Indoor\Http\Exceptions\HttpRequestDataNotFound;
 
+use Indoor\Traits\Renderizable;
+
 class Data
 {
-	private $ccaa;
-	private $provincia;
-	private $municipio;
+	use Renderizable;
 
-	private $ccaaData;
-	private $provinciaData;
-	private $municipioData;
+	protected $ccaa;
+	protected $provincia;
+	protected $municipio;
 
-	private $json_basehost;
-	private $type;
-	private $subType;
+	protected $ccaaData;
+	protected $provinciaData;
+	protected $municipioData;
 
-	private $year;
-	private $previous;
+	protected $json_basehost;
+	protected $type;
+	protected $subType;
+
+	protected $year;
+	protected $previous;
+
+	protected $format;
+	protected $data_path;
 
 	public function __construct($params = [])
 	{
@@ -39,6 +46,16 @@ class Data
 		if (isset($params[Descriptor::_PREVIOUSYEAR])) {
 			$this->previous = $params[Descriptor::_PREVIOUSYEAR];
 		}
+		if (isset($params[Descriptor::_FORMAT])) {
+			$this->format = $params[Descriptor::_FORMAT];
+		}
+		if (isset($params[Descriptor::_METADATA])) {
+			$this->metadata = $params[Descriptor::_METADATA];
+		}
+		if (isset($params[Descriptor::_DATAPATH])) {
+			$this->data_path = $params[Descriptor::_DATAPATH];
+		}
+		$this->setTemplate(dirname(dirname(__DIR__)).'/templates/data.html');
 	}
 
 	public function setComunidad($value)
@@ -59,9 +76,23 @@ class Data
 		return $this;
 	}
 
+	public function isComunidad()
+	{
+		return !$this->isLocalidad() && !$this->isProvincia();
+	}
+
 	public function isLocalidad()
 	{
-		if (!empty($this->municipio) && $this->municipio != 'p99') {
+		if (!empty($this->municipio) && $this->municipio != '99') {
+			return true;
+		}
+
+		return false;
+	}
+
+	public function isProvincia()
+	{
+		if (!empty($this->municipio) && $this->municipio == '99') {
 			return true;
 		}
 
@@ -92,7 +123,7 @@ class Data
 		if (!empty($this->ccaaData[$path])) {
 			return $this->ccaaData[$path];
 		}
-		$this->ccaaData[$path] = json_decode(file_get_contents($path), true);
+		$this->ccaaData[$path] = json_decode(iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($path)), true);
 		if (json_last_error() !== JSON_ERROR_NONE) {
 			throw new HttpRequestDataNotFound();
 		}
@@ -113,7 +144,7 @@ class Data
 		if (!empty($this->provinciaData[$path])) {
 			return $this->provinciaData[$path];
 		}
-		$this->provinciaData[$path] = json_decode(file_get_contents($path), true);
+		$this->provinciaData[$path] = json_decode(iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($path)), true);
 		if (json_last_error() !== JSON_ERROR_NONE) {
 			throw new HttpRequestDataNotFound();
 		}
@@ -140,7 +171,7 @@ class Data
 		if (!empty($this->municipioData[$path])) {
 			return $this->municipioData[$path];
 		}
-		$this->municipioData[$path] = json_decode(file_get_contents($path), true);
+		$this->municipioData[$path] = json_decode(iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($path)), true);
 		if (json_last_error() !== JSON_ERROR_NONE) {
 			throw new HttpRequestDataNotFound();
 		}
@@ -243,5 +274,109 @@ class Data
 			$this->place['code'] = $this->place['municipio']['code'];
 		}
 		return $this->place;
+	}
+
+	public function getData($year = '')
+	{
+		$path = $this->getComunidadPath($year);
+		if ($this->isLocalidad()) {
+			$path = $this->getMunicipioPath($year);
+		}
+		if ($this->isProvincia()) {
+			$path = $this->getProvinciaPath($year);
+		}
+		return $path;
+	}
+
+	public function getParentData()
+	{
+		$path = $this->getComunidadPath();
+		if ($this->isLocalidad()) {
+			$path = $this->getProvinciaPath();
+		}
+		return $path;
+	}
+
+	public function getActualData()
+	{
+		return $this->getData();
+	}
+
+	public function getPastData()
+	{
+		return $this->getData($this->previous);
+	}
+
+	public function getDataAttributes()
+	{
+		$attributes = [
+			'actual' 	=> 'data-json-actual="'.$this->getActualData().'"',
+			'past' 		=> 'data-json-past="'.$this->getPastData().'"',
+			'total'		=> 'data-json-total="'.$this->getComunidadPath().'"',
+		];
+		if ($this->isLocalidad() || $this->isProvincia()) {
+			$attributes['parent'] = 'data-json-parent="'.$this->getParentData().'"';
+		}
+		return implode(' ', $attributes);
+	}
+
+	public function getKicker()
+	{
+		$kicker = $this->year;
+		if (isset($this->metadata['seo_name'])) {
+			$kicker = $this->metadata['seo_name'].' '.$kicker;
+		}
+		return $kicker;
+	}
+
+	public function getHeadLine()
+	{
+		$headline = '';
+		if (isset($this->place['name'])) {
+			$headline = 'Resultados de las elecciones en ';
+			if ($this->isProvincia()) {
+				$headline = 'Resultados de las elecciones en la provincia de ';
+			}
+			$headline .= $this->place['name'];
+		}
+		return $headline;
+	}
+
+	public function getComunidadesBreadcrumb()
+	{
+		$provincias = $this->data_path.'index/'.$this->place['comunidad']['code']. '/provincias.html';
+		$classItem = 'ue-c-elections-result-detail__tags-item';
+        $classList = 'ue-c-elections-result-detail__tags';
+		$search = ['$path', '$class_list', '$class_item'];
+		if (file_exists($provincias)) {
+			$path  = $this->metadata['common']['election_url']. $this->type . '/resultados/'.$this->subType. '/'.$this->year;
+			$replace = [$path, $classList, $classItem];
+			$content = str_replace($search, $replace, iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($provincias)));
+			return $content;
+		}
+		return '';
+	}
+
+	public function getBreadcrumb()
+	{
+		if ($this->isComunidad()) {
+			return $this->getComunidadesBreadcrumb();
+		}
+
+		include (dirname(dirname(__DIR__)).'/templates/breadcrumb.html');
+	}
+
+	public function getFinder()
+	{
+		$path = dirname(dirname(__DIR__)).'/templates/finder.html';
+		if (file_exists(dirname(dirname(__DIR__)).'/templates/'.$this->type.'/finder.html')) {
+			$path = dirname(dirname(__DIR__)).'/templates/'.$this->type.'/finder.html';
+		}
+		include($path);
+	}
+
+	public function getTabs()
+	{
+		return '';
 	}
 }

@@ -1,7 +1,7 @@
 {
   "common": {
     "base_election_output": "/mnt/elmundo/uedit/web/elecciones/elmundo",
-    "election_url": "http://miguelangel.leon.elmundo.dev.internet.int/elecciones/elmundo"
+    "election_url": "http://miguelangel.leon.elmundo.dev.internet.int/elecciones-indoor/indoor.php?q="
   },
   "portal": "EL MUNDO",
   "seo_name": "Elecciones Generales",
@@ -22,7 +22,7 @@
   "cdn": "https://e00-elmundo.uecdn.es/",
   "assets": {
     "version": "assets/v11/",
-    "general": "assets.inc.php",
+    "general": "assets.php.inc",
     "css_desktop": "css/ue-c-core-noticia-elmundo-desktop.css",
     "css_mobile": "css/ue-c-core-noticia-elmundo-mobile.css",
     "css_main_path": "/mnt/filer/html/staging/datos/portales/es/elmundo/www/includes/style/static/elmundo/release",
@@ -77,7 +77,7 @@
   "dtm": "https://assets.adobedtm.com/73515ad8d49a3d35d5aa6bc81b535d3a8761d99c/satelliteLib-e48bb3b61613dd24961235e0a80c02ab5b0cf8b8.js",
   "bodyClass": "espana elecciones-generales",
   "past_data": "2019/abril",
-  "static_path" : "editorial/release/",
+  "static_path" : "editorial/v6/",
   "idusr": "idusr.php",
   "prefs": "elmundoPrefs.php"
 }

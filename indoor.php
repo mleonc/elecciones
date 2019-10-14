@@ -1,6 +1,6 @@
 <?php
 
-require '/var/www/elecciones-indoor/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 $response = Indoor\Http\Response::response($request = Indoor\Http\Request::capture());
 

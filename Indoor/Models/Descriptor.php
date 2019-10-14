@@ -25,4 +25,6 @@ interface Descriptor
 	const _BREADCRUMB	= 'miga';
 	const _JSONBASEHOST = 'json_basehost';
 	const _ISLOCALIDAD  = 'isLocalidad';
+	const _DATA 		= 'data';
+	const _DATAPATH		= 'data_path';
 }

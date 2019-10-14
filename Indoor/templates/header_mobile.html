@@ -1,11 +1,13 @@
 <header class="super-menu-header js-cnav-header inside" data-menu-nivel="home" >
-    <?php 
-        @include($header);
+    <?php
+        $sectionSeccion = $params['section'];
+        $static_registro_path = $params['filer_path'].$params['static_registro_path'];
+        include($header);
     ?>
     <div class="breadcrumbs">
         <div class="container-header">
             <?php
-                @include($breadcrumb);
+                include($breadcrumb);
             ?>
             <div class="tab-news">
                 <span class="tab-news-title js-newsTitle"></span>
@@ -26,6 +28,6 @@
         </div>
     </div>
     <?php
-        @include($superMenu);
+        include($superMenu);
     ?>
 </header>

@@ -7,7 +7,7 @@ use Indoor\Http\Request;
 use Indoor\Models\Body;
 use Indoor\Models\CongresoHead;
 use Indoor\Models\Descriptor;
-use Indoor\Models\Elements\Data;
+use Indoor\Models\Elements\GeneralesData;
 use Indoor\Models\Metadata;
 
 class CongresoController extends Controller
@@ -31,12 +31,15 @@ class CongresoController extends Controller
 		$metadata = $metadata->render();
 
 		$format = isset($metadata[Descriptor::_FORMAT])?$metadata[Descriptor::_FORMAT]:'mobile';
-		$data = new Data([
+		$data = new GeneralesData([
+			Descriptor::_DATAPATH => $request->get('path_datos'),
 			Descriptor::_JSONBASEHOST => $this->request->get(Descriptor::_JSONBASEHOST),
 			Descriptor::_TYPE => $electionType,
 			Descriptor::_SUBTYPE => $electionSubType,
 			Descriptor::_YEAR => $year,
+			Descriptor::_FORMAT => $format,
 			Descriptor::_PREVIOUSYEAR => isset($metadata[Descriptor::_PREVIOUSYEAR]) ? $metadata[Descriptor::_PREVIOUSYEAR]: '',
+			Descriptor::_METADATA => $metadata,
 		]);
 		$data->setComunidad($ccaaCode)->setProvincia($provCode)->setMunicipio($munCode);
 
@@ -56,7 +59,8 @@ class CongresoController extends Controller
 		    'format'    => $format,
 		    'year'      => $year,
 		    'metadata'  => $metadata,
-		    'place'     => $place
+		    'place'     => $place,
+		    'data'		=> $data,
 		]);
 		$body->render();
 

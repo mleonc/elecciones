@@ -83,13 +83,14 @@ class Metadata
 			$metadata['canUrl'] = 'https://'.$this->host . $this->uri;
 		}
 		$metadata[Descriptor::_FORMAT] = 'mobile';
-        if (file_exists($metadata['static_path'].$metadata['idusr']) && file_exists($metadata['static_path'].$metadata['prefs'])) {
-	        include_once ($metadata['static_path'].$metadata['idusr']);
-			include_once ($metadata['static_path'].$metadata['prefs']);
+        if (file_exists($this->filer.$metadata[Descriptor::_STATIC_PATH].$metadata['idusr']) && file_exists($this->filer.$metadata[Descriptor::_STATIC_PATH].$metadata['prefs'])) {
+	        include_once ($this->filer.$metadata[Descriptor::_STATIC_PATH].$metadata['idusr']);
+			include_once ($this->filer.$metadata[Descriptor::_STATIC_PATH].$metadata['prefs']);
 			if (isset($deviceUE) && $deviceUE != 'm') {
 			    $metadata[Descriptor::_FORMAT] = 'desktop';
 			}
         }
+        $metadata[Descriptor::_FILER_PATH] = $this->filer;
         $metadata[Descriptor::_YEAR] = $this->year;
 		return $metadata;
 	}

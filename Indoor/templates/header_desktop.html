@@ -22,7 +22,10 @@
     </div>
     <div class="nav-container js-desdefixed js-hastafixed">
         <div class="container-header">
-            <?php @include($navigation); ?>
+            <?php 
+                $sectionSeccion = $params['section'];
+                @include($navigation); 
+            ?>
             <div class="header-search" aria-label="Buscador">
             </div>
         </div>

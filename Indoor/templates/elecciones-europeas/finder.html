@@ -1,0 +1,20 @@
+<?php 
+	$options = ['pe' => ['name' => 'Europa', ], 'es' => ['name' => 'Espa&ntilde;a', ], 'de' => ['name' => 'Alemania', ], 'at' => ['name' => 'Austria', ], 'be' => ['name' => 'B&eacute;lgica', ], 'bg' => ['name' => 'Bulgaria', ], 'cy' => ['name' => 'Chipre', ], 'hr' => ['name' => 'Croacia', ], 'dk' => ['name' => 'Dinamarca', ], 'sk' => ['name' => 'Eslovaquia', ], 'si' => ['name' => 'Eslovenia', ], 'ee' => ['name' => 'Estonia', ], 'el' => ['name' => 'Grecia', ], 'fi' => ['name' => 'Finlandia', ], 'fr' => ['name' => 'Francia', ], 'hu' => ['name' => 'Hungr&iacute;a', ], 'ie' => ['name' => 'Irlanda', ], 'it' => ['name' => 'Italia', ], 'lv' => ['name' => 'Letonia', ], 'lt' => ['name' => 'Lituania', ], 'lu' => ['name' => 'Luxemburgo', ], 'mt' => ['name' => 'Malta', ], 'nl' => ['name' => 'Pa&iacute;ses Bajos', ], 'pl' => ['name' => 'Polonia', ], 'pt' => ['name' => 'Portugal', ], 'uk' => ['name' => 'Reino Unido', ], 'cz' => ['name' => 'Rep&uacute;blica Checa', ], 'ro' => ['name' => 'Ruman&iacute;a', ], 'se' => ['name' => 'Suecia', ] ];
+	if (preg_match('/[a-z]+/', $this->place['comunidad']['code']) && isset($options[$this->place['comunidad']['code']])) {
+		$options[$this->place['comunidad']['code']]['selected'] = true;
+	}
+	if (preg_match('/[0-9]+/', $this->place['comunidad']['code'])) {
+		$options['es']['selected'] = true;
+	}
+?>
+<select <select class="ue-c-elections-select-form__select" id="selectCountry">
+<?php 
+	foreach ($options as $key => $option) {
+		$selected = '';
+                if ($option['selected'] === true) {
+			$selected = 'selected';
+		}
+		echo "<option value='$key' $selected>{$option['name']}</option>";
+	}
+?>
+</select>
