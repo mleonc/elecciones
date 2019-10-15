@@ -23,4 +23,9 @@ class Route
 
 		throw new HttpRequestNoRoute();
 	}
+
+	static function list()
+	{
+		return self::_ROUTES;
+	}
 }
