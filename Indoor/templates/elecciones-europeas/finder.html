@@ -11,7 +11,7 @@
 <?php 
 	foreach ($options as $key => $option) {
 		$selected = '';
-                if ($option['selected'] === true) {
+		if (isset($option['selected']) && $option['selected'] === true) {
 			$selected = 'selected';
 		}
 		echo "<option value='$key' $selected>{$option['name']}</option>";

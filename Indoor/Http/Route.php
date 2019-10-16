@@ -8,7 +8,8 @@ class Route
 {
 	const _CONTROLLERNAMESPACE = 'Indoor\\Controllers\\';
 	const _ROUTES = [
-		'elecciones-generales/resultados/congreso' => 'CongresoController',
+		'elecciones-generales/resultados' => 'GeneralesController',
+		'elecciones-europeas/resultados' => 'EuropeasController',
 	];
 
 	static function route(Request $request)

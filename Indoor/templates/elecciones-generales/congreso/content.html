@@ -1,8 +1,8 @@
 <section class="ue-l-tab__content-container" id="section1" role="tabpanel" tabindex="-1" aria-labelledby="tab1">
     <div class="ue-l-common-page__box js-ueTopBars">
-		<?php if ($this->isLocalidad()) : ?>
+    	<?php if ($this->isLocalidad()) : ?>
             <div class="ue-l-common-page__row ue-l-common-page__row--no-gutter">
-				<div class="ue-c-elections-simple-widget">
+    			<div class="ue-c-elections-simple-widget">
                 	<h3 class="ue-c-elections-simple-widget__title">Total <?php echo $this->place['municipio']['name']; ?></h3>
                 	<div class="ue-c-elections-result-bars ">
                         <div class="ue-c-elections-result-bars__bar">
@@ -13,8 +13,8 @@
                             <div class="ue-c-elections-result-bars__bar-percent">0%</div>
                         </div>
                     </div>
-				</div>
-			</div>
+    			</div>
+    		</div>
         <?php endif; ?>
         <?php if ($this->isProvincia() || $this->isLocalidad()): ?>
             <div class="ue-l-common-page__row">
@@ -64,8 +64,8 @@
                 </div>
             </div>
         <?php endif; ?>
-	</div>
-    {% if info['election-type'] == 'generales_congreso' %}
+    </div>
+    <?php if (!$this->isLocalidad()): ?>
         <div class="ue-l-common-page__box js-ueSeatsBars">
             <div class="ue-c-elections-simple-widget">
                 <h2 class="ue-c-elections-simple-widget__title">Escaños</h2>
@@ -73,7 +73,7 @@
                     <div class="ue-l-common-page__row">
                         <div class="ue-l-common-page__column ue-l-common-page--size6of12">
                             <div class="ue-c-elections-result-bars ">
-                                <h3 class="ue-c-elections-result-detail__subtitle">{{info.year}}</h3>
+                                <h3 class="ue-c-elections-result-detail__subtitle">$this->getActualLabel()</h3>
                                 <div class="ue-c-elections-result-bars__bar">
                                     <div class="ue-c-elections-result-bars__bar-party">ND</div>
                                     <div class="ue-c-elections-result-bars__bar-base">
@@ -85,7 +85,7 @@
                         </div>
                         <div class="ue-l-common-page__column ue-l-common-page--size6of12">
                             <div class="ue-c-elections-result-bars ">
-                                <h3 class="ue-c-elections-result-detail__subtitle">{{metadata.last_election_year}}</h3>
+                                <h3 class="ue-c-elections-result-detail__subtitle"><?php echo $this->getPastLabel(); ?></h3>
                                 <div class="ue-c-elections-result-bars__bar">
                                     <div class="ue-c-elections-result-bars__bar-party">ND</div>
                                     <div class="ue-c-elections-result-bars__bar-base">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </div>
-    {% endif %}
+    <?php endif; ?>
     <div class="ue-l-common-page__box js-ueVowsBars">
         <div class="ue-c-elections-simple-widget">
             <h2 class="ue-c-elections-simple-widget__title">Votos</h2>
@@ -107,7 +107,7 @@
                 <div class="ue-l-common-page__row">
                     <div class="ue-l-common-page__column ue-l-common-page--size6of12">
                         <div class="ue-c-elections-result-bars ">
-                            <h3 class="ue-c-elections-result-detail__subtitle">{{info.year}}</h3>
+                            <h3 class="ue-c-elections-result-detail__subtitle"><?php echo $this->getActualLabel(); ?></h3>
                             <div class="ue-c-elections-result-bars__bar">
                                 <div class="ue-c-elections-result-bars__bar-party">ND</div>
                                 <div class="ue-c-elections-result-bars__bar-base">
@@ -119,7 +119,7 @@
                     </div>
                     <div class="ue-l-common-page__column ue-l-common-page--size6of12">
                         <div class="ue-c-elections-result-bars ">
-                            <h3 class="ue-c-elections-result-detail__subtitle">{{metadata.last_election_year}}</h3>
+                            <h3 class="ue-c-elections-result-detail__subtitle"><?php echo $this->getPastLabel(); ?></h3>
                             <div class="ue-c-elections-result-bars__bar">
                                 <div class="ue-c-elections-result-bars__bar-party">ND</div>
                                 <div class="ue-c-elections-result-bars__bar-base">
@@ -138,10 +138,8 @@
             <h3 class="ue-c-elections-simple-widget__title">Resultados por partido</h3>
             <div class="ue-l-common-page__box">
                 <div class="ue-l-common-page__row">
-                    <div class="ue-l-common-page__column ue-l-common-page--size6of12">
-                    </div>
-                    <div class="ue-l-common-page__column ue-l-common-page--size6of12">
-                    </div>
+                    <div class="ue-l-common-page__column ue-l-common-page--size6of12"></div>
+                    <div class="ue-l-common-page__column ue-l-common-page--size6of12"></div>
                 </div>
             </div>
         </div>
@@ -153,12 +151,12 @@
                 <div class="ue-l-common-page__row">
                     <div class="ue-l-common-page__column ue-l-common-page--size6of12-from-mobile">
                         <div class="ue-l-common-page__box">
-                            <h3 class="ue-c-elections-result-detail__subtitle">{{info.year}}</h3>
+                            <h3 class="ue-c-elections-result-detail__subtitle"><?php echo $this->getActualLabel(); ?></h3>
                         </div>
                     </div>
                     <div class="ue-l-common-page__column ue-l-common-page--size6of12-from-mobile">
                         <div class="ue-l-common-page__box">
-                            <h3 class="ue-c-elections-result-detail__subtitle">{{metadata.last_election_year}}</h3>
+                            <h3 class="ue-c-elections-result-detail__subtitle"><?php echo $this->getPastLabel(); ?></h3>
                         </div>
                     </div>
                 </div>
@@ -166,4 +164,3 @@
         </div>
     </div>
 </section>
-        

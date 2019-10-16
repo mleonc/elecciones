@@ -22,7 +22,7 @@ class Metadata
 
 	public function __construct($host, $uri, $filepath, $filer, $environment, $year, $electionType, $subtype = '')
 	{
-		$this->type = $this->getType($electionType, $subtype);
+		$this->type = self::getType($electionType, $subtype);
 		$this->dataPath = $filepath.'/metadata/'.$this->type.'/'.$year.'/'.self::_FILENAME.(in_array($environment, ['sta', 'dev'])? '.'.$environment: '');
 		$this->host = $host;
 		$this->uri = $uri;
@@ -30,7 +30,7 @@ class Metadata
 		$this->year = $year;
 	}
 
-	public function getType($electionType = '', $subtype = '')
+	static public function getType($electionType = '', $subtype = '')
 	{
 		if (empty($electionType)) {
 			return $this->type;

@@ -26,7 +26,7 @@ class GeneralesData extends Data
 			$url .= $this->place['provincia']['code'].'/p99.html';
 		}
 		if ($this->isLocalidad()) {
-			$url .= $this->place['provincia']['code'].'/p'.$this->place['municipio']['code'].'.html';
+			$url .= $this->place['provincia']['code'].'/p'.(string)$this->place['municipio']['code'].'.html';
 		}
 
 		$path = dirname(dirname(__DIR__)).'/templates/tabs.html';
@@ -34,5 +34,10 @@ class GeneralesData extends Data
 			$path = dirname(dirname(__DIR__)).'/templates/'.$this->type.'/'.$this->subType.'/tabs.html';
 		}
 		include($path);
+	}
+
+	public function getContent()
+	{
+		return '';
 	}
 }

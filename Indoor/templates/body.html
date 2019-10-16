@@ -25,4 +25,19 @@
     		<?php $this->data->render(); ?>
     	</div>
     </div>
+
+    <?php if ($this->data->showIndex()): ?>
+	    <div class="ue-l-common-page">
+	    	<div class="ue-l-common-page__inner">
+	    		<?php echo $this->data->getIndex(); ?>
+	    	</div>
+	    </div>
+    <?php endif; ?>
+
+    <?php include($this->getFooter()); ?>
+    <?php $this->getOmniture(); ?>
+
+    <?php if (in_array($this->environment, ['sta'])): ?>
+    	<script type="text/javascript">_satellite.pageBottom();</script>
+	<?php endif; ?>
 </body>

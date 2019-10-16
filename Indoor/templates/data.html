@@ -11,7 +11,17 @@
         		<?php echo $this->getBreadcrumb(); ?>
         		<?php echo $this->getFinder(); ?>
         		<?php echo $this->getTabs(); ?>
+                <?php echo $this->getContent(); ?>
+        		<div class="ue-c-elections-loader ue-c-elections-loader--align-top ue-c-elections-loader--show js-loader">
+	                <div class="ue-c-elections-loader__inner">
+	                    <p class="ue-c-elections-loader__text">Esperando resultados</p>
+	                	<div class="ue-c-elections-loader__icon"></div>
+	                </div>
+	            </div>
         	</div>
         </div>
+        <div class="ue-l-common-page__column ue-l-common-page__column--min-300 ue-l-common-page--size4of12">
+        	<?php echo Indoor\Models\Elements\Dfp::render($this->getPublicidad(), $this->metadata['dfp_section']); ?>
+    	</div>
     </div>
 </div>

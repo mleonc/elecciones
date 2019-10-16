@@ -6,6 +6,7 @@ interface Descriptor
 {
 	const _TITLE 		= 'title';
 	const _PORTAL 		= 'portal';
+	const _URLPORTAL	= 'url_portal';
 	const _FORMAT 		= 'format';
 	const _THEME 		= 'theme';
 	const _YEAR 		= 'year';
@@ -27,4 +28,7 @@ interface Descriptor
 	const _ISLOCALIDAD  = 'isLocalidad';
 	const _DATA 		= 'data';
 	const _DATAPATH		= 'data_path';
+	const _STATEDATA	= 'datos_estado';
+	const _URI			= 'uri';
+	const _URL			= 'url';
 }

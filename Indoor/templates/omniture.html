@@ -1,0 +1,53 @@
+<script language='JavaScript' type='text/javascript'><!--
+    var s = {};
+    var pageName = '<?php echo $this->url; ?>'; //URL
+
+    s.pageType='';
+
+    s.pageName='<?php echo $this->url; ?>';
+
+    s.channel='Elecciones'
+    s.prop1='<?php echo $this->type; ?>';
+    s.prop2='resultados';
+    s.prop3='<?php echo $this->place["comunidad"]["slug"]; ?>';
+    s.prop4='<?php echo $this->place["provincia"]["slug"]; ?>';
+    s.prop5='<?php echo $this->place["municipio"]["slug"]; ?>';
+    s.prop6='';
+    s.prop7='<?php echo $this->url_portal; ?>';
+    s.prop9=s.pageName;
+    s.prop11='<?php echo $this->title; ?>';
+
+    s.hier1=s.prop7 + '|' + s.channel + '|' + s.prop1 + '|' + s.prop2 + '|' + s.prop3 + '|' + s.prop4 + '|' + s.prop5;
+
+    s.prop27='<?php echo $this->format; ?>';
+    s.prop28='';
+    s.prop29='elecciones|<?php echo $this->type; ?>|elecciones-<?php echo $this->place["comunidad"]["name"]; ?>';
+    s.prop30='';
+    s.prop32='otros';
+    s.prop33='<?php echo $this->type; ?>';
+    s.prop35='origen';
+    s.prop43='';
+    s.prop75='';
+    /* Conversion Variables */
+    s.eVar1=s.channel;
+    s.eVar2=s.prop1;
+    s.eVar3=s.prop2;
+    s.eVar4=s.prop3;
+    s.eVar5=s.prop4;
+    s.eVar6=s.prop6;
+    s.eVar7=s.prop7;
+    s.eVar9=s.prop9;
+    s.eVar11=s.prop11;
+    s.eVar27=s.prop27;
+    s.eVar28=s.prop28;
+    s.eVar29=s.prop29;
+    s.eVar30=s.prop30;
+    s.eVar32=s.prop32;
+    s.eVar33=s.prop33;
+    s.eVar35=s.prop35;
+    s.eVar43=s.prop43;
+    s.eVar75=s.prop75;
+    var s_omniture = s;
+    /* DO NOT ALTER ANYTHING BELOW THIS LINE ! **/
+    //-->
+</script>

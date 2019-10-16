@@ -2,7 +2,7 @@
 
 namespace Indoor\Models;
 
-class CongresoHead extends Head
+class GeneralesHead extends Head
 {
 	public function setTitle($year, $place, $portal)
 	{
@@ -16,7 +16,7 @@ class CongresoHead extends Head
 	public function setDescription($year, $place)
 	{
 		$this->description = 'Consulte qui&eacute;n ha ganado y los resultados completos de las elecciones generales de '. $year .' en ' .$place['name']. ' al detalle.';
-		if ($this->type == Metadata::_CONGRESO && $place['code'] != '99') {
+		if (in_array($this->type, [Metadata::_CONGRESO, Metadata::_SENADO]) && $place['code'] != '99') {
 			$this->description = 'Consulte al detalle los resultados de las elecciones generales de '. $year .' en ' . $place['name'] . ', ' . $place['comunidad']['name'] . '.';
 		}
 		if ($this->isLocalidad == true) {
@@ -25,7 +25,7 @@ class CongresoHead extends Head
 		return $this;
 	}
 
-	public function setKeywords($place)
+	public function setKeywords($year, $place)
 	{
 		$this->keywords = 'elecciones ' . $place['name'] . ', elecciones generales';
 
@@ -35,7 +35,7 @@ class CongresoHead extends Head
 		return $this;
 	}
 
-	public function setRRSSData($year, $place)
+	public function setRRSSData($year, $place, $portal = '')
 	{
 		$this->rrss['image'] = '';
 		$this->rrss['name'] = '';

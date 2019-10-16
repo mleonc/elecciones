@@ -40,8 +40,8 @@ abstract class Head
 
 		$this->setTitle($this->year, $this->place, $this->portal);
 		$this->setDescription($this->year, $this->place);
-		$this->setKeywords($this->place);
-		$this->setRRSSData($this->year, $this->place);
+		$this->setKeywords($this->year, $this->place);
+		$this->setRRSSData($this->year, $this->place, $this->portal);
 		$this->jsonLD = new Jsonld([
 			Descriptor::_METADATA => $this->metadata, 
 			Descriptor::_TITLE => $this->title, 
@@ -52,19 +52,11 @@ abstract class Head
 
 	abstract public function setTitle($year, $place, $portal);
 	abstract public function setDescription($year, $place);
-	abstract public function setKeywords($place);
+	abstract public function setKeywords($year, $place);
+	abstract public function setRRSSData($year, $place, $portal);
 
 	public function getTitle()
 	{
 		return $this->title;
-	}
-
-	public function render()
-	{
-		$head = '';
-		if (file_exists($this->getTemplate())) {
-			$head = include($this->getTemplate());
-		}
-		return $head;
 	}
 }

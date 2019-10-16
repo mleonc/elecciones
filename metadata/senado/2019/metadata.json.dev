@@ -8,9 +8,9 @@
   "seo_name": "Elecciones Generales",
   "miga": {
     "type": "import",
-    "desktop": "migas/elecciones_generales/miga_b.html",
-    "hijos": "migas/elecciones_generales/miga_c.html",
-    "mobile": "migas/elecciones_generales/miga_mb.html"
+    "desktop": "migas/elecciones/elecciones_generales/miga_b.html",
+    "hijos": "migas/elecciones/elecciones_generales/miga_c.html",
+    "mobile": "migas/elecciones/elecciones_generales/miga_mb.html"
   },
   "theme": "elecciones-generales",
   "section": "elecciones",

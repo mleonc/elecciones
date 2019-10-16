@@ -1,0 +1,43 @@
+<section class="ue-l-tab__content-container" id="section2" role="tabpanel" tabindex="-1" aria-labelledby="tab2">
+    <div class="ue-l-common-page__box">
+        <div class="ue-l-common-page__row ue-l-common-page__row--no-gutter">
+            <div class="ue-c-elections-simple-widget">
+                <h3 class="ue-c-elections-simple-widget__title">Senadores por partido</h3>
+                <div class="ue-c-elections-table  ">
+                    <table class="ue-c-elections-table__table js-ueList">
+                        <caption class="hidden-content">Tabla de resultados</caption>
+                        <thead>
+                            <tr>
+                                <th class="left">
+                                    Nombre
+                                </th>
+                                <?php if (!$this->isLocalidad()): ?>
+                                    <th class="center">
+                                        Senadores
+                                    </th>
+                                <?php endif; ?>
+                                <th class="center">
+                                    Votos
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="ue-c-elections-table__party-name">
+                                        <span class="ue-c-elections-table__party-color" name="Cerral" style="background-color: #333333;"></span>
+                                        <span>ND</span>
+                                    </div>
+                                </th>
+                                <?php if (!$this->isLocalidad()): ?>
+                                    <td class="center"></td>
+                                <?php endif; ?>
+                                <td class="center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

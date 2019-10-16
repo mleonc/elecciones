@@ -22,6 +22,12 @@ abstract class Controller
         	}
         }
         $this->request = $request;
+        $path_datos = $this->request->get('path_datos');
+        $this->datosEstado = json_decode(file_get_contents($path_datos.self::_ESTADO), true);
+
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            throw new HttpRequestInvalid(self::_ESTADO . ' invalid json file', 1);
+        }
         //$this->inicializate();
     }
 
@@ -57,6 +63,7 @@ abstract class Controller
 			throw new HttpRequestInvalid('Place not found', 1);
 		}
 		$this->datosEstado = json_decode(file_get_contents($path_datos.self::_ESTADO), true);
+
 		if (json_last_error() !== JSON_ERROR_NONE) {
         	throw new HttpRequestInvalid(self::_ESTADO . ' invalid json file', 1);
         }
