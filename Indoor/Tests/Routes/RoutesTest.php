@@ -14,12 +14,12 @@ class RoutesTest extends TestCase
 			'elecciones-generales/resultados/congreso' => 'CongresoController',
 		];
 
-		$this->assertEquals($expected_list, \Indoor\Http\Route::list());
+		$this->assertEquals($expected_list, \Indoor\Http\Route::_list());
     }
 
     public function testControllers()
     {
-		$controllers = \Indoor\Http\Route::list();
+		$controllers = \Indoor\Http\Route::_list();
 		foreach ($controllers as $key => $controller) {
 			$this->assertTrue(class_exists(self::_CONTROLLERNAMESPACE.$controller), 'Controlller '. $controller .' not found');
 		}

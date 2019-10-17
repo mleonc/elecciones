@@ -1,10 +1,4 @@
 {
-  "common": {
-    "base_election_output": "/mnt/elmundo/uedit/web/elecciones/elmundo",
-    "election_url": "http://miguelangel.leon.elmundo.dev.internet.int/elecciones-indoor/indoor.php?q="
-  },
-  "portal": "EL MUNDO",
-  "url_portal": "elmundo.es",
   "seo_name": "Elecciones Generales",
   "miga": {
     "type": "import",
@@ -13,74 +7,12 @@
     "mobile": "migas/elecciones_generales/miga_mb.html"
   },
   "theme": "elecciones-generales",
-  "section": "elecciones",
   "dfp_section": "elecciones-generales",
   "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",
   "dfp_mobile": "/mnt/filer/html/produccion/datos/include/dfp/elmundo_movil/espana/p.html",
   "last_election_year": "2019",
-  "static_registro_path": "registro/v2/",
-  "footer": "footer_nuevos.html.inc",
-  "cdn": "https://e00-elmundo.uecdn.es/",
-  "assets": {
-    "version": "assets/v11/",
-    "general": "assets.php.inc",
-    "css_desktop": "css/ue-c-core-noticia-elmundo-desktop.css",
-    "css_mobile": "css/ue-c-core-noticia-elmundo-mobile.css",
-    "css_main_path": "/mnt/filer/html/staging/datos/portales/es/elmundo/www/includes/style/static/elmundo/release",
-    "url": "https://e00-elmundo.uecdn.es/assets/cover/elmundo/v0/"
-  },
-  "styles": {
-    "path": "/home/miguelangel.leon/projects/elmundo/uedit/web/includes_uedit/style/static/elmundo",
-    "version": "dev",
-    "widget_include_name": "main-elections-link-style.html",
-    "widget_include_name_mobile": "main-elections-mobile-link-style.html",
-    "static_include_name": "main-static-link-style.html",
-    "static_include_name_mobile": "main-static-mobile-link-style.html"
-  },
-  "js_component": "http://miguelangel.leon.elmundo.dev.internet.int/ueElectionsRedesign/dist",
-  "assets_desktop": "assets/desktop/master/",
-  "assets_mobile": "assets/mobile/master/",
-  "publisher": "https://plus.google.com/u/0/+elmundo",
-  "rrss": {
-    "image": "https://e00-elmundo.uecdn.es/assets/desktop/master/img/iconos/elmundo.png",
-    "name": "ELMUNDO",
-    "app": "279395918757488"
-  },
-  "twitter": {
-    "site": "@elmundoes",
-    "icon": "https://e00-elmundo.uecdn.es/assets/desktop/master/img/iconos/elmundo.png"
-  },
-  "showMore": true,
-  "id_contenido": "526feae561fd3d3c3f8b4578",
-  "footer_ads": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/footer_ads.html",
-  "header": {
-    "desktop": "new-header/cabecera-cts.php.inc",
-    "mobile": "new-header/mobile/cabecera-mobile.php.inc"
-  },
-  "ue_jquery": {
-    "desktop": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js",
-    "mobile": "https://e00-elmundo.uecdn.es/assets/v11/js/jquery.2.1.4.js"
-  },
-  "ue_utils": {
-    "desktop": "https://e00-elmundo.uecdn.es/assets/desktop/master/js/ue-utils.js",
-    "mobile": "https://e00-elmundo.uecdn.es/assets/mobile/master/js/ue-utils.js"
-  },
-  "ue_login": "uelogin/include_script_uelogin.html",
-  "desktopJS": "https://estaticos.elmundo.sta.internet.int/assets/release/js/desktop.min.js",
-  "mobileJS": "https://estaticos.elmundo.sta.internet.int/assets/release/js/mobile.min.js",
-  "analytics": "",
-  "gpt_slots": {
-    "mobile": ["f", "html5", "m"],
-    "desktop": ["f", "si", "sd", "m"]
-  },
-  "publishedAt": "2019-04-28T17:00:00Z",
-  "updatedAt": "2019-04-28T17:00:00Z",
-  "dtm": "https://assets.adobedtm.com/73515ad8d49a3d35d5aa6bc81b535d3a8761d99c/satelliteLib-e48bb3b61613dd24961235e0a80c02ab5b0cf8b8.js",
   "bodyClass": "espana elecciones-generales",
   "past_data": "2019/abril",
   "past_data_slug": "Abril",
-  "actual_data_slug": "Noviembre",
-  "static_path" : "editorial/release/",
-  "idusr": "idusr.php",
-  "prefs": "elmundoPrefs.php"
+  "actual_data_slug": "Noviembre"
 }

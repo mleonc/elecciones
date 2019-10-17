@@ -14,11 +14,8 @@ class EuropeasController extends Controller
 {
 	use ValidateRequest;
 
-	public function index(Request $request, $year, $ccaaCode, $provCode, $munCode = '') 
+	public function index(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
-		$electionType = 'elecciones-europeas';
-		$electionSubType = '';
-
 		$metadata = new Metadata(
 			$request->getHost(),
 			$request->getUri(), 
@@ -26,8 +23,7 @@ class EuropeasController extends Controller
 			$request->get('filer_path'),
 			$request->get('environment'),
 			$year, 
-			$electionType,
-			$electionSubType);
+			$electionType);
 		$metadata = $metadata->render();
 
 		$format = isset($metadata[Descriptor::_FORMAT])?$metadata[Descriptor::_FORMAT]:'mobile';
@@ -35,7 +31,6 @@ class EuropeasController extends Controller
 			Descriptor::_DATAPATH 		=> $request->get('path_datos'),
 			Descriptor::_JSONBASEHOST 	=> $this->request->get(Descriptor::_JSONBASEHOST),
 			Descriptor::_TYPE 			=> $electionType,
-			Descriptor::_SUBTYPE 		=> $electionSubType,
 			Descriptor::_YEAR 			=> $year,
 			Descriptor::_FORMAT 		=> $format,
 			Descriptor::_PREVIOUSYEAR 	=> isset($metadata[Descriptor::_PREVIOUSYEAR]) ? $metadata[Descriptor::_PREVIOUSYEAR]: '',
@@ -58,7 +53,6 @@ class EuropeasController extends Controller
 		$body = new Body([
 			Descriptor::_FILER_PATH => $request->get('filer_path'),
 			Descriptor::_TYPE 		=> $electionType,
-			Descriptor::_SUBTYPE 	=> $electionSubType,
 			Descriptor::_TITLE 		=> $head->getTitle(),
 			Descriptor::_PORTAL		=> $request->get('portal'),
 			Descriptor::_URL		=> $request->getHost().$request->getUri(),

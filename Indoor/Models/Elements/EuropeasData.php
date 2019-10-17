@@ -9,11 +9,11 @@ use Indoor\Traits\Renderizable;
 
 class EuropeasData extends Data
 {
-	public function getHeadLine($year = '')
+	public function getHeadLine()
 	{
 		$headline = '';
 		if (isset($this->place['name'])) {
-			$headline = 'Resultados de ' . $this->place['name'] . ' en las elecciones europeas '. $year;
+			$headline = 'Resultados de ' . $this->place['name'] . ' en las elecciones europeas '. $this->year;
 		}
 		return $headline;
 	}
@@ -70,10 +70,7 @@ class EuropeasData extends Data
 		return Data::getMunicipioPath($year);
 	}
 
-	public function getBreadcrumb()
-	{
-		return '';
-	}
+	
 
 	public function isTotal()
 	{
@@ -88,5 +85,10 @@ class EuropeasData extends Data
 	{
 		$result = !$this->isTotal() && ((isset($this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones']) && sizeof($this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones']) == 1 && $this->isComunidad()) || (!$this->isComunidad()));
 		return $result;
+	}
+
+	public function isComunidad()
+	{
+		return $this->isTotal() || !$this->isLocalidad() && !$this->isProvincia();
 	}
 }

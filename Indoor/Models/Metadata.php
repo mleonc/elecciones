@@ -23,19 +23,20 @@ class Metadata
 	public function __construct($host, $uri, $filepath, $filer, $environment, $year, $electionType, $subtype = '')
 	{
 		$this->type = self::getType($electionType, $subtype);
-		$this->dataPath = $filepath.'/metadata/'.$this->type.'/'.$year.'/'.self::_FILENAME.(in_array($environment, ['sta', 'dev'])? '.'.$environment: '');
+		$this->dataPath = $filepath.'/metadata/';
 		$this->host = $host;
 		$this->uri = $uri;
 		$this->filer = $filer;
 		$this->year = $year;
+		$this->environment = $environment;
 	}
 
 	static public function getType($electionType = '', $subtype = '')
 	{
 		if (empty($electionType)) {
-			return $this->type;
+			return '';
 		}
-		$type = self::_AUTONOMICAS;
+		$type = $electionType;
 		if ($electionType == 'elecciones-municipales') {
 		    $type = self::_MUNICIPALES;   
 		}
@@ -50,7 +51,7 @@ class Metadata
 				$type = self::_SENADO;
 			}
 		}
-		return $type;
+		return str_replace('elecciones-', '', $type);
 	}
 
 	public function setDataPath($value = '')
@@ -72,13 +73,21 @@ class Metadata
 	public function render()
 	{
 		$metadata = [];
-		if (isset($this->dataPath) && !empty($this->dataPath) && is_file($this->dataPath)) {
-			$content = file_get_contents($this->dataPath);
+		if (isset($this->dataPath) && !empty($this->dataPath) && is_file($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''))) {
+			$content = file_get_contents($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''));
 			$metadata = json_decode($content, true);
 			if (json_last_error() != JSON_ERROR_NONE) {
 				return [];
 			}
 		}
+		$path = $this->dataPath.$this->type.'/'.$this->year.'/'.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: '');
+		$content = file_get_contents($path);
+		$aMetadata = json_decode($content, true);
+		if (json_last_error() != JSON_ERROR_NONE) {
+			return [];
+		}
+		$metadata = array_merge($metadata, $aMetadata);
+
 		if (!empty($this->host) && !empty($this->uri)) {
 			$metadata['canUrl'] = 'https://'.$this->host . $this->uri;
 		}

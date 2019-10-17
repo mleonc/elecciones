@@ -5,16 +5,16 @@ namespace Indoor\Controllers;
 use Indoor\Controllers\Middleware\ValidateRequest;
 use Indoor\Http\Request;
 use Indoor\Models\Body;
-use Indoor\Models\GeneralesHead;
+use Indoor\Models\AutonomicasHead;
 use Indoor\Models\Descriptor;
-use Indoor\Models\Elements\GeneralesData;
+use Indoor\Models\Elements\AutonomicasData;
 use Indoor\Models\Metadata;
 
-class GeneralesController extends Controller
+class AutonomicasController extends Controller
 {
 	use ValidateRequest;
 
-	public function index(Request $request, $electionType, $electionSubType, $year, $ccaaCode, $provCode, $munCode = '') 
+	public function index(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
 		$metadata = new Metadata(
 			$request->getHost(),
@@ -23,16 +23,14 @@ class GeneralesController extends Controller
 			$request->get('filer_path'),
 			$request->get('environment'),
 			$year, 
-			$electionType,
-			$electionSubType);
+			$electionType);
 		$metadata = $metadata->render();
 
 		$format = isset($metadata[Descriptor::_FORMAT])?$metadata[Descriptor::_FORMAT]:'mobile';
-		$data = new GeneralesData([
+		$data = new AutonomicasData([
 			Descriptor::_DATAPATH 		=> $request->get('path_datos'),
 			Descriptor::_JSONBASEHOST 	=> $this->request->get(Descriptor::_JSONBASEHOST),
 			Descriptor::_TYPE 			=> $electionType,
-			Descriptor::_SUBTYPE 		=> $electionSubType,
 			Descriptor::_YEAR 			=> $year,
 			Descriptor::_FORMAT 		=> $format,
 			Descriptor::_PREVIOUSYEAR 	=> isset($metadata[Descriptor::_PREVIOUSYEAR]) ? $metadata[Descriptor::_PREVIOUSYEAR]: '',
@@ -42,8 +40,8 @@ class GeneralesController extends Controller
 		$data->setComunidad($ccaaCode)->setProvincia($provCode)->setMunicipio($munCode);
 
 		$place = $data->getPlace();
-	
-		$head = new GeneralesHead([
+
+		$head = new AutonomicasHead([
 		    Descriptor::_PORTAL    	=> $request->get('portal'),
 		    Descriptor::_YEAR      	=> $year,
 		    Descriptor::_METADATA  	=> $metadata,
@@ -55,7 +53,6 @@ class GeneralesController extends Controller
 		$body = new Body([
 			Descriptor::_FILER_PATH => $request->get('filer_path'),
 			Descriptor::_TYPE 		=> $electionType,
-			Descriptor::_SUBTYPE 	=> $electionSubType,
 			Descriptor::_TITLE 		=> $head->getTitle(),
 			Descriptor::_PORTAL		=> $request->get('portal'),
 			Descriptor::_URL		=> $request->getHost().$request->getUri(),

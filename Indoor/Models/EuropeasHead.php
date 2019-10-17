@@ -6,11 +6,11 @@ class EuropeasHead extends Head
 {
 	public function setTitle($year, $place, $portal)
 	{
-		$this->title = 'Resultados Europa elecciones europeas 2019';
+		$this->title = 'Resultados Europa elecciones europeas '. $year;
 		if ($place['code'] != '99') {
 	        $this->title = 'Resultados Espa&ntilde;a elecciones europeas ' .$year;
 			if ($place['code'] != 'es') {
-		        $this->title = 'Resultados ' . $place['name'] . ' elecciones europeas 2019';
+		        $this->title = 'Resultados ' . $place['name'] . ' elecciones europeas '. $year;
 			}
 		}
 		$this->title .= ' | '. $portal;

@@ -99,7 +99,7 @@ class Data
 
 	public function isProvincia()
 	{
-		if (!empty($this->municipio) && $this->municipio == '99') {
+		if (!empty($this->municipio) && $this->municipio == '99' && $this->provincia != '99') {
 			return true;
 		}
 
@@ -121,7 +121,7 @@ class Data
 		if (empty($year)) {
 			$year = $this->year;
 		}
-		return $this->json_basehost . $this->type . '/resultados/' . $this->subType . '/' . $year . '/' . $this->ccaa . '/p99.json';
+		return $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/p99.json';
 	}
 
 	public function getComunidadData($year = '')
@@ -137,10 +137,13 @@ class Data
 
 	public function getProvinciaPath($year = '')
 	{
+		if (!isset($this->provincia) || empty($this->provincia) || $this->provincia == '99') {
+			return '';
+		}
 		if (empty($year)) {
 			$year = $this->year;
 		}
-		return $this->json_basehost . $this->type . '/resultados/' . $this->subType . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p99.json';
+		return $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p99.json';
 	}
 
 	public function getProvinciaData($year = '')
@@ -155,13 +158,13 @@ class Data
 
 	public function getMunicipioPath($year = '')
 	{
-		if (!isset($this->municipio) || empty($this->municipio)) {
+		if (!isset($this->municipio) || empty($this->municipio) || $this->municipio == '99') {
 			return '';
 		}
 		if (empty($year)) {
 			$year = $this->year;
 		}
-		return $this->json_basehost . $this->type . '/resultados/' . $this->subType . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p'. $this->municipio .'.json';
+		return $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p'. $this->municipio .'.json';
 	}
 
 	public function getMunicipioData($year = '')
@@ -325,7 +328,7 @@ class Data
 		return $kicker;
 	}
 
-	public function getHeadLine($year = '')
+	public function getHeadLine()
 	{
 		$headline = '';
 		if (isset($this->place['name'])) {
@@ -345,7 +348,7 @@ class Data
         $classList = 'ue-c-elections-result-detail__tags';
 		$search = ['$path', '$class_list', '$class_item'];
 		if (file_exists($provincias)) {
-			$path  = $this->metadata['common']['election_url']. $this->type . '/resultados/'.$this->subType. '/'.$this->year;
+			$path  = $this->metadata['common']['election_url']. $this->type . '/resultados/'.(isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : ''). $this->year;
 			$replace = [$path, $classList, $classItem];
 			$content = str_replace($search, $replace, iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($provincias)));
 			return $content;
@@ -421,17 +424,21 @@ class Data
 		$content = '';
 		$classItem = '';
         $classList = 'ue-c-elections-result-detail-places';
-		$index = $this->data_path.'index/'.$this->place['comunidad']['code']. '/indice_'.$this->place['provincia']['code'].'.html';
 		$search = ['$path', '$class_list', '$class_item'];
 		$title = '';
-		if (file_exists($index)) {
+		if (isset($this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones'])) {
+			$circunscripciones = $this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones'];
+			$index = $this->data_path.'index/'.$this->place['comunidad']['code']. '/indice_'.$circunscripciones[0].'.html';
 			$title = 'Municipios de la comunidad aut&oacute;noma de ' .$this->place['comunidad']['name'];
-			if (isset($this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones']) && sizeof($this->datos_estado['ccaa'][$this->place['comunidad']['code']]['circunscripciones']) > 1 && $this->isComunidad()) {
+			if (sizeof($circunscripciones) > 1 && !$this->isComunidad()) {
+				$index = $this->data_path.'index/'.$this->place['comunidad']['code']. '/indice_'.$this->place['provincia']['code'].'.html';
 				$title = 'Municipios de la provincia de ' .$this->place['provincia']['name'];
 			}
-			$path  = $this->metadata['common']['election_url']. $this->type . '/resultados/'.$this->subType. '/'.$this->year;
+			$path  = $this->metadata['common']['election_url']. $this->type . '/resultados/'.(isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '').$this->year;
 			$replace = [$path, $classList, $classItem];
-			$content = str_replace($search, $replace, iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($index)));
+			if (file_exists($index)) {
+				$content = str_replace($search, $replace, iconv("UTF-8", "ISO-8859-1//IGNORE", file_get_contents($index)));
+			}
 		}
 		include($template);
 	}
