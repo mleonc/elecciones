@@ -2,8 +2,17 @@
 
 require __DIR__.'/vendor/autoload.php';
 
+use Indoor\Http\Exceptions\HttpRequestNoRoute;
+use Indoor\Http\Exceptions\HttpRequestDataNotFound;
+
 $response = Indoor\Http\Response::response($request = Indoor\Http\Request::capture());
 
+try {
+} catch (HttpRequestNoRoute $e) {
+    http_response_code($e->getCode());
+} catch (HttpRequestDataNotFound $e) {
+    http_response_code($e->getCode());
+}
 die;
 
 function getJsonBaseUrl($basePath, $ccaa, $year, $electionType, $code,  $cirCode) {

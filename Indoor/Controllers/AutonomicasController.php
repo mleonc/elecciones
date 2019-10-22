@@ -14,6 +14,20 @@ class AutonomicasController extends Controller
 {
 	use ValidateRequest;
 
+	public function getAvailableTypes()
+	{
+		return ['elecciones-aragon', 'elecciones-extremadura', 'elecciones-navarra', 'elecciones-madrid', 'elecciones-murcia', 'elecciones-castilla-la-mancha', 'elecciones-baleares', 'elecciones-asturias', 'elecciones-castilla-y-leon', 'elecciones-canarias', 'elecciones-la-rioja', 'elecciones-cantabria'];
+	}
+
+	public function validate(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '')
+	{
+		$availableTypes = $this->getAvailableTypes();
+		if (in_array($electionType, $availableTypes)) {
+			return true;
+		}
+		return false;
+	}
+
 	public function index(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
 		$metadata = new Metadata(

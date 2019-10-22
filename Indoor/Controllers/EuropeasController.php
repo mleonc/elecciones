@@ -12,8 +12,6 @@ use Indoor\Models\Metadata;
 
 class EuropeasController extends Controller
 {
-	use ValidateRequest;
-
 	public function index(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
 		$metadata = new Metadata(

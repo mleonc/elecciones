@@ -73,7 +73,7 @@ class Metadata
 	public function render()
 	{
 		$metadata = [];
-		if (isset($this->dataPath) && !empty($this->dataPath) && is_file($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''))) {
+		if (isset($this->dataPath) && !empty($this->dataPath) && file_exists($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''))) {
 			$content = file_get_contents($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''));
 			$metadata = json_decode($content, true);
 			if (json_last_error() != JSON_ERROR_NONE) {
@@ -81,12 +81,14 @@ class Metadata
 			}
 		}
 		$path = $this->dataPath.$this->type.'/'.$this->year.'/'.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: '');
-		$content = file_get_contents($path);
-		$aMetadata = json_decode($content, true);
-		if (json_last_error() != JSON_ERROR_NONE) {
-			return [];
+		if (file_exists($path)) {
+			$content = file_get_contents($path);
+			$aMetadata = json_decode($content, true);
+			if (json_last_error() != JSON_ERROR_NONE) {
+				return [];
+			}
+			$metadata = array_merge($metadata, $aMetadata);
 		}
-		$metadata = array_merge($metadata, $aMetadata);
 
 		if (!empty($this->host) && !empty($this->uri)) {
 			$metadata['canUrl'] = 'https://'.$this->host . $this->uri;

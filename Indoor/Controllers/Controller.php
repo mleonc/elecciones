@@ -15,12 +15,6 @@ abstract class Controller
 
 	public function __construct(Request $request)
     {
-    	$validation = true;
-        if (method_exists($this, 'validate')) {
-        	if (!$this->validate($request)) {
-        		throw new HttpRequestInvalid("Error Processing Request", 1);
-        	}
-        }
         $this->request = $request;
         $path_datos = $this->request->get('path_datos');
         $this->datosEstado = json_decode(file_get_contents($path_datos.self::_ESTADO), true);

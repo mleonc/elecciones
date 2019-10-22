@@ -6,8 +6,5 @@ use Indoor\Http\Request;
 
 trait ValidateRequest
 {
-	public function validate(Request $request, $keys = [])
-	{
-		return true;
-	}
+	abstract public function validate();
 }

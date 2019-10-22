@@ -14,6 +14,11 @@ class GeneralesController extends Controller
 {
 	use ValidateRequest;
 
+	public function validate(Request $request, $electionType, $electionSubType, $year, $ccaaCode, $provCode, $munCode = '') 
+	{
+		return $electionType == 'elecciones-generales' && in_array($electionSubType, ['congreso', 'senado']);
+	}
+
 	public function index(Request $request, $electionType, $electionSubType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
 		$metadata = new Metadata(

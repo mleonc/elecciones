@@ -14,8 +14,6 @@ use Indoor\Http\Exceptions\HttpRequestNoRoute;
 
 class MunicipalesController extends Controller
 {
-	use ValidateRequest;
-
 	public function index(Request $request, $electionType, $year, $ccaaCode, $provCode, $munCode = '') 
 	{
 		if (!isset($munCode) || empty($munCode) || strstr($munCode, '99') != false) {

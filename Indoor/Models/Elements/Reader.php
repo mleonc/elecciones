@@ -13,9 +13,9 @@ class Reader
 			return [];
 		}
 		$conv = true;
-		
-		$data = file_get_contents($path);
+		$data = @file_get_contents($path);
 		if (!$data || empty($data)) {
+			var_dump($path);
 			throw new HttpRequestDataNotFound();
 		}
 		$cData = iconv("UTF-8", "ISO-8859-1//IGNORE", $data);

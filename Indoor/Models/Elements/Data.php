@@ -73,13 +73,13 @@ class Data
 
 	public function setProvincia($value)
 	{
-		$this->provincia = preg_replace('/p(.*)\.html/', '', $value);
+		$this->provincia = preg_replace('/p(.*)\.html|p(.*)/', '', $value);
 		return $this;
 	}
 
 	public function setMunicipio($value)
 	{
-		$this->municipio = preg_replace('/p(.*)\.html/', '$1', $value);
+		$this->municipio = preg_replace('/p(.*)\.html|p(.*)/', '$1', $value);
 		return $this;
 	}
 
