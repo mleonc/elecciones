@@ -1,0 +1,6603 @@
+{
+ "votos_nulos": 121238, 
+ "code": "99", 
+ "porcentaje_censo_escrutado": 60, 
+ "porcentaje_votos_blanco": 0.8, 
+ "abstencion": 3736201, 
+ "porcentaje_total_votantes": 75.03, 
+ "mesas_totales": 60038, 
+ "total_votantes": 11228312, 
+ "year": 2019, 
+ "id_registro": "TO", 
+ "porcentaje_abstencion": 24.97, 
+ "censo": 34840570, 
+ "ccaa_code": "99", 
+ "votos_blanco": 88797, 
+ "type": "generales_congreso", 
+ "censo_escrutado": 14964513, 
+ "diputados": 350, 
+ "porcentaje_votos_nulos": 1.08,
+ "month": "NOV",
+ "partidos": [
+  {
+   "color": "#ea433e", 
+   "diputados": 100, 
+   "votos": 3298695, 
+   "porcentaje_votos": 29.7, 
+   "siglas": "PSOE", 
+   "id": "0096"
+  }, 
+  {
+   "color": "#33b0df", 
+   "diputados": 67, 
+   "votos": 1853537, 
+   "porcentaje_votos": 16.69, 
+   "siglas": "PP", 
+   "id": "0083"
+  }, 
+  {
+   "color": "#ee8444", 
+   "diputados": 54, 
+   "votos": 1621703, 
+   "porcentaje_votos": 14.6, 
+   "siglas": "Cs", 
+   "id": "0022"
+  }, 
+  {
+   "color": "#854383", 
+   "diputados": 3, 
+   "votos": 1564843, 
+   "porcentaje_votos": 14.09, 
+   "siglas": "UNIDAS PODEMOS", 
+   "id": "0077"
+  }, 
+  {
+   "color": "#95c955", 
+   "diputados": 160, 
+   "votos": 1078211, 
+   "porcentaje_votos": 9.71, 
+   "siglas": "VOX", 
+   "id": "0117"
+  }, 
+  {
+   "color": "#fec42d", 
+   "diputados": 15, 
+   "votos": 398419, 
+   "porcentaje_votos": 3.59, 
+   "siglas": "ERC", 
+   "id": "0037"
+  }, 
+  {
+   "color": "#f77991", 
+   "diputados": 7, 
+   "votos": 199576, 
+   "porcentaje_votos": 1.8, 
+   "siglas": "JxCAT", 
+   "id": "0049"
+  }, 
+  {
+   "color": "#008000", 
+   "diputados": 6, 
+   "votos": 307492, 
+   "porcentaje_votos": 2.77, 
+   "siglas": "PNV", 
+   "id": "0027"
+  }, 
+  {
+   "color": "#b1ce02", 
+   "diputados": 4, 
+   "votos": 189347, 
+   "porcentaje_votos": 1.7, 
+   "siglas": "EH Bildu", 
+   "id": "0033"
+  }, 
+  {
+   "color": "#b50c17", 
+   "diputados": 2, 
+   "votos": 66331, 
+   "porcentaje_votos": 0.6, 
+   "siglas": "NA+", 
+   "id": "0052"
+  }, 
+  {
+   "color": "#00ade9", 
+   "diputados": 1, 
+   "votos": 1233, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "CCa-PNC", 
+   "id": "0015"
+  }, 
+  {
+   "color": "#ea580c", 
+   "diputados": 1, 
+   "votos": 56709, 
+   "porcentaje_votos": 0.51, 
+   "siglas": "COMPROMÍS 2019", 
+   "id": "0020"
+  }, 
+  {
+   "color": "#ea580c", 
+   "diputados": 1, 
+   "votos": 441, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "CpM", 
+   "id": "0021"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "diputados": 1, 
+   "votos": 28272, 
+   "porcentaje_votos": 0.25, 
+   "siglas": "PRC", 
+   "id": "0090"
+  }, 
+  {
+   "color": "#909090", 
+   "diputados": 0, 
+   "votos": 905, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "C.Ex-C.R.Ex-P.R.Ex", 
+   "id": "0017"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "diputados": 0, 
+   "votos": 596, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "ANDECHA ASTUR", 
+   "id": "0004"
+  }, 
+  {
+   "color": "#b50c17", 
+   "diputados": 0, 
+   "votos": 2195, 
+   "porcentaje_votos": 0.02, 
+   "siglas": "PCPA", 
+   "id": "0058"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 169, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "VOU", 
+   "id": "0116"
+  }, 
+  {
+   "color": "#505050", 
+   "diputados": 0, 
+   "votos": 5376, 
+   "porcentaje_votos": 0.05, 
+   "siglas": "AxSI", 
+   "id": "0011"
+  }, 
+  {
+   "color": "#00ade9", 
+   "diputados": 0, 
+   "votos": 211, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "centrados", 
+   "id": "0016"
+  }, 
+  {
+   "color": "#202020", 
+   "diputados": 0, 
+   "votos": 6056, 
+   "porcentaje_votos": 0.05, 
+   "siglas": "EL PI", 
+   "id": "0035"
+  }, 
+  {
+   "color": "#0095eb", 
+   "diputados": 0, 
+   "votos": 8759, 
+   "porcentaje_votos": 0.08, 
+   "siglas": "EN MAREA", 
+   "id": "0036"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 4439, 
+   "porcentaje_votos": 0.04, 
+   "siglas": "PCOE", 
+   "id": "0057"
+  }, 
+  {
+   "color": "#93a607", 
+   "diputados": 0, 
+   "votos": 130750, 
+   "porcentaje_votos": 1.18, 
+   "siglas": "PACMA", 
+   "id": "0054"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 19, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "UDT", 
+   "id": "0109"
+  }, 
+  {
+   "color": "#303030", 
+   "diputados": 0, 
+   "votos": 40, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "C 21", 
+   "id": "0013"
+  }, 
+  {
+   "color": "#76B2E1", 
+   "diputados": 0, 
+   "votos": 48083, 
+   "porcentaje_votos": 0.43, 
+   "siglas": "BNG", 
+   "id": "0012"
+  }, 
+  {
+   "color": "#ea433e", 
+   "diputados": 0, 
+   "votos": 1245, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "UIG-SOM-CUIDES", 
+   "id": "0110"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "diputados": 0, 
+   "votos": 43, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "AHORA CANARIAS", 
+   "id": "0003"
+  }, 
+  {
+   "color": "#909090", 
+   "diputados": 0, 
+   "votos": 7308, 
+   "porcentaje_votos": 0.07, 
+   "siglas": "PCTE", 
+   "id": "0066"
+  }, 
+  {
+   "color": "#74A739", 
+   "diputados": 0, 
+   "votos": 610, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "NCa", 
+   "id": "0053"
+  }, 
+  {
+   "color": "#101010", 
+   "diputados": 0, 
+   "votos": 2446, 
+   "porcentaje_votos": 0.02, 
+   "siglas": "SOMOS REGIÓN", 
+   "id": "0108"
+  }, 
+  {
+   "color": "#202020", 
+   "diputados": 0, 
+   "votos": 942, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PPSO", 
+   "id": "0088"
+  }, 
+  {
+   "color": "#707070", 
+   "diputados": 0, 
+   "votos": 3281, 
+   "porcentaje_votos": 0.03, 
+   "siglas": "PCPE", 
+   "id": "0063"
+  }, 
+  {
+   "color": "#000000", 
+   "diputados": 0, 
+   "votos": 2526, 
+   "porcentaje_votos": 0.02, 
+   "siglas": "AVANT-LOS VERDES", 
+   "id": "0009"
+  }, 
+  {
+   "color": "#505050", 
+   "diputados": 0, 
+   "votos": 1357, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PCPC", 
+   "id": "0061"
+  }, 
+  {
+   "color": "#909090", 
+   "diputados": 0, 
+   "votos": 297, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "JF", 
+   "id": "0047"
+  }, 
+  {
+   "color": "#333333", 
+   "diputados": 0, 
+   "votos": 4158, 
+   "porcentaje_votos": 0.04, 
+   "siglas": "EB", 
+   "id": "0028"
+  }, 
+  {
+   "color": "#707070", 
+   "diputados": 0, 
+   "votos": 11903, 
+   "porcentaje_votos": 0.11, 
+   "siglas": "ARA-MES-ESQUERRA", 
+   "id": "0006"
+  }, 
+  {
+   "color": "#000000", 
+   "diputados": 0, 
+   "votos": 301, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "DPL", 
+   "id": "0026"
+  }, 
+  {
+   "color": "#101010", 
+   "diputados": 0, 
+   "votos": 1399, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "CxG", 
+   "id": "0024"
+  }, 
+  {
+   "color": "#303030", 
+   "diputados": 0, 
+   "votos": 148, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "DP", 
+   "id": "0025"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 560, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "SOLIDARIA", 
+   "id": "0107"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "diputados": 0, 
+   "votos": 19574, 
+   "porcentaje_votos": 0.18, 
+   "siglas": "RECORTES CERO-GV", 
+   "id": "0104"
+  }, 
+  {
+   "color": "#707070", 
+   "diputados": 0, 
+   "votos": 42997, 
+   "porcentaje_votos": 0.39, 
+   "siglas": "FRONT REPUBLICÀ", 
+   "id": "0042"
+  }, 
+  {
+   "color": "#D62B00", 
+   "diputados": 0, 
+   "votos": 13972, 
+   "porcentaje_votos": 0.13, 
+   "siglas": "GBAI", 
+   "id": "0043"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 223, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "IZAR", 
+   "id": "0044"
+  }, 
+  {
+   "color": "#101977", 
+   "diputados": 0, 
+   "votos": 9169, 
+   "porcentaje_votos": 0.08, 
+   "siglas": "PUM+J", 
+   "id": "0100"
+  }, 
+  {
+   "color": "#B0B0B0", 
+   "diputados": 0, 
+   "votos": 601, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PYLN", 
+   "id": "0103"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 10445, 
+   "porcentaje_votos": 0.09, 
+   "siglas": "PACT", 
+   "id": "0056"
+  }, 
+  {
+   "color": "#707070", 
+   "diputados": 0, 
+   "votos": 40, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "+MAS+", 
+   "id": "0050"
+  }, 
+  {
+   "diputados": 0, 
+   "porcentaje_votos": 0.01, 
+   "votos": 1006, 
+   "id": "0019", 
+   "color": "#202020"
+  }, 
+  {
+   "color": "#D0D0D0", 
+   "diputados": 0, 
+   "votos": 577, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "CILU-LINARES", 
+   "id": "0018"
+  }, 
+  {
+   "color": "#DDD000", 
+   "diputados": 0, 
+   "votos": 3, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "F8", 
+   "id": "0039"
+  }, 
+  {
+   "color": "#A0A0A0", 
+   "diputados": 0, 
+   "votos": 1307, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PR+", 
+   "id": "0089"
+  }, 
+  {
+   "color": "#202020", 
+   "diputados": 0, 
+   "votos": 524, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "FIA", 
+   "id": "0041"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 70, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "RISA", 
+   "id": "0106"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 392, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "FE de las JONS", 
+   "id": "0040"
+  }, 
+  {
+   "color": "#202020", 
+   "diputados": 0, 
+   "votos": 514, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "P-LIB", 
+   "id": "0073"
+  }, 
+  {
+   "color": "#606060", 
+   "diputados": 0, 
+   "votos": 1194, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PH", 
+   "id": "0072"
+  }, 
+  {
+   "color": "#101010", 
+   "diputados": 0, 
+   "votos": 1263, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "PREPAL", 
+   "id": "0091"
+  }, 
+  {
+   "color": "#808080", 
+   "diputados": 0, 
+   "votos": 389, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "UNIÓN REGIONALISTA", 
+   "id": "0112"
+  }, 
+  {
+   "color": "#C0C0C0", 
+   "diputados": 0, 
+   "votos": 158, 
+   "porcentaje_votos": 0.0, 
+   "siglas": "PDSJE-UDEC", 
+   "id": "0069"
+  }, 
+  {
+   "color": "#444444", 
+   "diputados": 0, 
+   "votos": 1545, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "ERPV", 
+   "id": "0038"
+  }, 
+  {
+   "color": "#606060", 
+   "diputados": 0, 
+   "votos": 1313, 
+   "porcentaje_votos": 0.01, 
+   "siglas": "IZQP", 
+   "id": "0045"
+  }
+ ], 
+ "slug": "total-nacional", 
+ "name": "Total nacional", 
+ "circunscripciones": {
+  "07": {
+   "votos_nulos": 2535, 
+   "code": "07", 
+   "porcentaje_censo_escrutado": 42.49, 
+   "porcentaje_votos_blanco": 0.91, 
+   "abstencion": 106603, 
+   "porcentaje_total_votantes": 67.74, 
+   "mesas_totales": 1215, 
+   "total_votantes": 223816, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 32.26, 
+   "prov_code": "07", 
+   "censo": 777691, 
+   "ccaa_code": "04", 
+   "votos_blanco": 2012, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 330419, 
+   "ccaaName": "Islas Baleares", 
+   "diputados": 8, 
+   "porcentaje_votos_nulos": 1.13, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 57335, 
+     "porcentaje_votos": 25.91, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 38309, 
+     "porcentaje_votos": 17.31, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 37736, 
+     "porcentaje_votos": 17.05, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 25683, 
+     "porcentaje_votos": 11.61, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 37533, 
+     "porcentaje_votos": 16.96, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 11903, 
+     "porcentaje_votos": 5.38, 
+     "siglas": "ARA-MES-ESQUERRA", 
+     "id": "0006"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 6056, 
+     "porcentaje_votos": 2.74, 
+     "siglas": "EL PI", 
+     "id": "0035"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 450, 
+     "porcentaje_votos": 0.2, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 367, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 3618, 
+     "porcentaje_votos": 1.64, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 279, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "illes-balears", 
+   "name": "Illes Balears"
+  }, 
+  "09": {
+   "votos_nulos": 1832, 
+   "code": "09", 
+   "porcentaje_censo_escrutado": 60.58, 
+   "porcentaje_votos_blanco": 1.05, 
+   "abstencion": 36425, 
+   "porcentaje_total_votantes": 78.65, 
+   "mesas_totales": 796, 
+   "total_votantes": 134188, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 21.35, 
+   "prov_code": "09", 
+   "censo": 281629, 
+   "ccaa_code": "08", 
+   "votos_blanco": 1385, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 170613, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.37, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 39140, 
+     "porcentaje_votos": 29.57, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 25969, 
+     "porcentaje_votos": 19.62, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 32816, 
+     "porcentaje_votos": 24.79, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 14464, 
+     "porcentaje_votos": 10.93, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 436, 
+     "porcentaje_votos": 0.33, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 370, 
+     "porcentaje_votos": 0.28, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1208, 
+     "porcentaje_votos": 0.91, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 254, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 16314, 
+     "porcentaje_votos": 12.33, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "burgos", 
+   "name": "Burgos"
+  }, 
+  "37": {
+   "votos_nulos": 1722, 
+   "code": "37", 
+   "porcentaje_censo_escrutado": 68.62, 
+   "porcentaje_votos_blanco": 0.88, 
+   "abstencion": 43300, 
+   "porcentaje_total_votantes": 77.11, 
+   "mesas_totales": 702, 
+   "total_votantes": 145830, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.89, 
+   "prov_code": "37", 
+   "censo": 275623, 
+   "ccaa_code": "08", 
+   "votos_blanco": 1275, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 189130, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.18, 
+   "partidos": [
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 42292, 
+     "porcentaje_votos": 29.35, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 29470, 
+     "porcentaje_votos": 20.45, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 40272, 
+     "porcentaje_votos": 27.95, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 18248, 
+     "porcentaje_votos": 12.66, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 159, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 189, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 874, 
+     "porcentaje_votos": 0.61, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 125, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 10996, 
+     "porcentaje_votos": 7.63, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 208, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PREPAL", 
+     "id": "0091"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "salamanca", 
+   "name": "Salamanca"
+  }, 
+  "22": {
+   "votos_nulos": 1061, 
+   "code": "22", 
+   "porcentaje_censo_escrutado": 77.57, 
+   "porcentaje_votos_blanco": 1.0, 
+   "abstencion": 30650, 
+   "porcentaje_total_votantes": 76.09, 
+   "mesas_totales": 412, 
+   "total_votantes": 97539, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 23.91, 
+   "prov_code": "22", 
+   "censo": 165246, 
+   "ccaa_code": "02", 
+   "votos_blanco": 962, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 128189, 
+   "ccaaName": "Aragón", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.09, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 18870, 
+     "porcentaje_votos": 19.56, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 31937, 
+     "porcentaje_votos": 33.1, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 19684, 
+     "porcentaje_votos": 20.4, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 10135, 
+     "porcentaje_votos": 10.5, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 194, 
+     "porcentaje_votos": 0.2, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 370, 
+     "porcentaje_votos": 0.38, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 127, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 125, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PYLN", 
+     "id": "0103"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 734, 
+     "porcentaje_votos": 0.76, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 158, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 13092, 
+     "porcentaje_votos": 13.57, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 90, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "FIA", 
+     "id": "0041"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "huesca", 
+   "name": "Huesca"
+  }, 
+  "50": {
+   "votos_nulos": 3683, 
+   "code": "50", 
+   "porcentaje_censo_escrutado": 65.65, 
+   "porcentaje_votos_blanco": 0.9, 
+   "abstencion": 105007, 
+   "porcentaje_total_votantes": 77.65, 
+   "mesas_totales": 1432, 
+   "total_votantes": 364877, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.35, 
+   "prov_code": "50", 
+   "censo": 715712, 
+   "ccaa_code": "02", 
+   "votos_blanco": 3251, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 469884, 
+   "ccaaName": "Aragón", 
+   "diputados": 7, 
+   "porcentaje_votos_nulos": 1.01, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 116216, 
+     "porcentaje_votos": 32.18, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 73389, 
+     "porcentaje_votos": 20.32, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 44525, 
+     "porcentaje_votos": 12.33, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 50372, 
+     "porcentaje_votos": 13.95, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 65335, 
+     "porcentaje_votos": 18.09, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 914, 
+     "porcentaje_votos": 0.25, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 1685, 
+     "porcentaje_votos": 0.47, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 462, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 436, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PYLN", 
+     "id": "0103"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 3501, 
+     "porcentaje_votos": 0.97, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 359, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 315, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 434, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "FIA", 
+     "id": "0041"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "zaragoza", 
+   "name": "Zaragoza"
+  }, 
+  "49": {
+   "votos_nulos": 892, 
+   "code": "49", 
+   "porcentaje_censo_escrutado": 53.69, 
+   "porcentaje_votos_blanco": 0.93, 
+   "abstencion": 20049, 
+   "porcentaje_total_votantes": 75.04, 
+   "mesas_totales": 383, 
+   "total_votantes": 60280, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.96, 
+   "prov_code": "49", 
+   "censo": 149625, 
+   "ccaa_code": "08", 
+   "votos_blanco": 553, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 80329, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.48, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 9861, 
+     "porcentaje_votos": 16.6, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 18190, 
+     "porcentaje_votos": 30.63, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 18780, 
+     "porcentaje_votos": 31.62, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6698, 
+     "porcentaje_votos": 11.28, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 80, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 71, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 275, 
+     "porcentaje_votos": 0.46, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 60, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 4615, 
+     "porcentaje_votos": 7.77, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 205, 
+     "porcentaje_votos": 0.35, 
+     "siglas": "PREPAL", 
+     "id": "0091"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "zamora", 
+   "name": "Zamora"
+  }, 
+  "34": {
+   "votos_nulos": 845, 
+   "code": "34", 
+   "porcentaje_censo_escrutado": 63.52, 
+   "porcentaje_votos_blanco": 0.95, 
+   "abstencion": 18071, 
+   "porcentaje_total_votantes": 78.83, 
+   "mesas_totales": 376, 
+   "total_votantes": 67299, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 21.17, 
+   "prov_code": "34", 
+   "censo": 134398, 
+   "ccaa_code": "08", 
+   "votos_blanco": 632, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 85370, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.26, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 10378, 
+     "porcentaje_votos": 15.62, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 20566, 
+     "porcentaje_votos": 30.95, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 20008, 
+     "porcentaje_votos": 30.11, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 7989, 
+     "porcentaje_votos": 12.02, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 56, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "FE de las JONS", 
+     "id": "0040"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 167, 
+     "porcentaje_votos": 0.25, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 95, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 489, 
+     "porcentaje_votos": 0.74, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 87, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 5987, 
+     "porcentaje_votos": 9.01, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "palencia", 
+   "name": "Palencia"
+  }, 
+  "42": {
+   "votos_nulos": 313, 
+   "code": "42", 
+   "porcentaje_censo_escrutado": 43.45, 
+   "porcentaje_votos_blanco": 1.38, 
+   "abstencion": 7490, 
+   "porcentaje_total_votantes": 75.37, 
+   "mesas_totales": 254, 
+   "total_votantes": 22923, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.63, 
+   "prov_code": "42", 
+   "censo": 70000, 
+   "ccaa_code": "08", 
+   "votos_blanco": 311, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 30413, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 2, 
+   "porcentaje_votos_nulos": 1.37, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 7084, 
+     "porcentaje_votos": 31.33, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 6534, 
+     "porcentaje_votos": 28.9, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 3507, 
+     "porcentaje_votos": 15.51, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 2196, 
+     "porcentaje_votos": 9.71, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 45, 
+     "porcentaje_votos": 0.2, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 33, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 97, 
+     "porcentaje_votos": 0.43, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 40, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 942, 
+     "porcentaje_votos": 4.17, 
+     "siglas": "PPSO", 
+     "id": "0088"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 1821, 
+     "porcentaje_votos": 8.05, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "soria", 
+   "name": "Soria"
+  }, 
+  "02": {
+   "votos_nulos": 1549, 
+   "code": "02", 
+   "porcentaje_censo_escrutado": 52.42, 
+   "porcentaje_votos_blanco": 0.75, 
+   "abstencion": 36297, 
+   "porcentaje_total_votantes": 77.13, 
+   "mesas_totales": 517, 
+   "total_votantes": 122398, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.87, 
+   "prov_code": "02", 
+   "censo": 302757, 
+   "ccaa_code": "07", 
+   "votos_blanco": 912, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 158695, 
+   "ccaaName": "Castilla - La Mancha", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.27, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 40034, 
+     "porcentaje_votos": 33.13, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 21671, 
+     "porcentaje_votos": 17.93, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 26480, 
+     "porcentaje_votos": 21.91, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 17305, 
+     "porcentaje_votos": 14.32, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 161, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 165, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1165, 
+     "porcentaje_votos": 0.96, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 319, 
+     "porcentaje_votos": 0.26, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 133, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 12500, 
+     "porcentaje_votos": 10.34, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "albacete", 
+   "name": "Albacete"
+  }, 
+  "03": {
+   "votos_nulos": 3759, 
+   "code": "03", 
+   "porcentaje_censo_escrutado": 38.19, 
+   "porcentaje_votos_blanco": 0.67, 
+   "abstencion": 120012, 
+   "porcentaje_total_votantes": 74.59, 
+   "mesas_totales": 2222, 
+   "total_votantes": 352205, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 25.41, 
+   "prov_code": "03", 
+   "censo": 1236607, 
+   "ccaa_code": "17", 
+   "votos_blanco": 2322, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 472217, 
+   "ccaaName": "Comunidad Valenciana", 
+   "diputados": 12, 
+   "porcentaje_votos_nulos": 1.07, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 4, 
+     "votos": 100249, 
+     "porcentaje_votos": 28.77, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 3, 
+     "votos": 67277, 
+     "porcentaje_votos": 19.31, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 65486, 
+     "porcentaje_votos": 18.79, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 2, 
+     "votos": 49297, 
+     "porcentaje_votos": 14.15, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 42114, 
+     "porcentaje_votos": 12.09, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#ea580c", 
+     "diputados": 0, 
+     "votos": 13602, 
+     "porcentaje_votos": 3.9, 
+     "siglas": "COMPROMÍS 2019", 
+     "id": "0020"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 562, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#000000", 
+     "diputados": 0, 
+     "votos": 1255, 
+     "porcentaje_votos": 0.36, 
+     "siglas": "AVANT-LOS VERDES", 
+     "id": "0009"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 4912, 
+     "porcentaje_votos": 1.41, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 378, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "P-LIB", 
+     "id": "0073"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 486, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#444444", 
+     "diputados": 0, 
+     "votos": 504, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "ERPV", 
+     "id": "0038"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "alicante-/-alacant", 
+   "name": "Alicante / Alacant"
+  }, 
+  "26": {
+   "votos_nulos": 1596, 
+   "code": "26", 
+   "porcentaje_censo_escrutado": 63.8, 
+   "porcentaje_votos_blanco": 0.83, 
+   "abstencion": 32984, 
+   "porcentaje_total_votantes": 77.87, 
+   "mesas_totales": 501, 
+   "total_votantes": 116066, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.13, 
+   "prov_code": "26", 
+   "censo": 233635, 
+   "ccaa_code": "16", 
+   "votos_blanco": 954, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 149050, 
+   "ccaaName": "La Rioja (Comunidad)", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.38, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 36533, 
+     "porcentaje_votos": 31.91, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 19801, 
+     "porcentaje_votos": 17.3, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 31032, 
+     "porcentaje_votos": 27.11, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 10044, 
+     "porcentaje_votos": 8.77, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 180, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 203, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 117, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 857, 
+     "porcentaje_votos": 0.75, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#A0A0A0", 
+     "diputados": 0, 
+     "votos": 1307, 
+     "porcentaje_votos": 1.14, 
+     "siglas": "PR+", 
+     "id": "0089"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 13442, 
+     "porcentaje_votos": 11.74, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "la-rioja", 
+   "name": "La Rioja"
+  }, 
+  "27": {
+   "votos_nulos": 2226, 
+   "code": "27", 
+   "porcentaje_censo_escrutado": 58.77, 
+   "porcentaje_votos_blanco": 1.15, 
+   "abstencion": 45573, 
+   "porcentaje_total_votantes": 72.14, 
+   "mesas_totales": 541, 
+   "total_votantes": 117999, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 27.86, 
+   "prov_code": "27", 
+   "censo": 278304, 
+   "ccaa_code": "11", 
+   "votos_blanco": 1328, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 163572, 
+   "ccaaName": "Galicia", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.89, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 38361, 
+     "porcentaje_votos": 33.13, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 40043, 
+     "porcentaje_votos": 34.59, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 9844, 
+     "porcentaje_votos": 8.5, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#303030", 
+     "diputados": 0, 
+     "votos": 40, 
+     "porcentaje_votos": 0.03, 
+     "siglas": "C 21", 
+     "id": "0013"
+    }, 
+    {
+     "color": "#76B2E1", 
+     "diputados": 0, 
+     "votos": 5618, 
+     "porcentaje_votos": 4.85, 
+     "siglas": "BNG", 
+     "id": "0012"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 204, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "CxG", 
+     "id": "0024"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 169, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#0095eb", 
+     "diputados": 0, 
+     "votos": 1231, 
+     "porcentaje_votos": 1.06, 
+     "siglas": "EN MAREA", 
+     "id": "0036"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 845, 
+     "porcentaje_votos": 0.73, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 216, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 11179, 
+     "porcentaje_votos": 9.66, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6695, 
+     "porcentaje_votos": 5.78, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "lugo", 
+   "name": "Lugo"
+  }, 
+  "06": {
+   "votos_nulos": 3371, 
+   "code": "06", 
+   "porcentaje_censo_escrutado": 51.18, 
+   "porcentaje_votos_blanco": 0.86, 
+   "abstencion": 68559, 
+   "porcentaje_total_votantes": 75.38, 
+   "mesas_totales": 898, 
+   "total_votantes": 209857, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.62, 
+   "prov_code": "06", 
+   "censo": 543981, 
+   "ccaa_code": "10", 
+   "votos_blanco": 1769, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 278416, 
+   "ccaaName": "Extremadura", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 1.61, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 82623, 
+     "porcentaje_votos": 40.01, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 37499, 
+     "porcentaje_votos": 18.16, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 22357, 
+     "porcentaje_votos": 10.83, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 40387, 
+     "porcentaje_votos": 19.56, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 453, 
+     "porcentaje_votos": 0.22, 
+     "siglas": "C.Ex-C.R.Ex-P.R.Ex", 
+     "id": "0017"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 207, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#303030", 
+     "diputados": 0, 
+     "votos": 148, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "DP", 
+     "id": "0025"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 195, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 404, 
+     "porcentaje_votos": 0.2, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1491, 
+     "porcentaje_votos": 0.72, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 18952, 
+     "porcentaje_votos": 9.18, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "badajoz", 
+   "name": "Badajoz"
+  }, 
+  "21": {
+   "votos_nulos": 1617, 
+   "code": "21", 
+   "porcentaje_censo_escrutado": 40.01, 
+   "porcentaje_votos_blanco": 1.09, 
+   "abstencion": 51163, 
+   "porcentaje_total_votantes": 67.28, 
+   "mesas_totales": 649, 
+   "total_votantes": 105190, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 32.72, 
+   "prov_code": "21", 
+   "censo": 390774, 
+   "ccaa_code": "01", 
+   "votos_blanco": 1128, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 156353, 
+   "ccaaName": "Andalucía", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.54, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 38890, 
+     "porcentaje_votos": 37.55, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 17501, 
+     "porcentaje_votos": 16.9, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 13736, 
+     "porcentaje_votos": 13.26, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 16750, 
+     "porcentaje_votos": 16.17, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 111, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 13184, 
+     "porcentaje_votos": 12.73, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 354, 
+     "porcentaje_votos": 0.34, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 241, 
+     "porcentaje_votos": 0.23, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 338, 
+     "porcentaje_votos": 0.33, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1336, 
+     "porcentaje_votos": 1.29, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "huelva", 
+   "name": "Huelva"
+  }, 
+  "48": {
+   "votos_nulos": 4097, 
+   "code": "48", 
+   "porcentaje_censo_escrutado": 86.14, 
+   "porcentaje_votos_blanco": 0.66, 
+   "abstencion": 191298, 
+   "porcentaje_total_votantes": 75.6, 
+   "mesas_totales": 1396, 
+   "total_votantes": 592589, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.4, 
+   "prov_code": "48", 
+   "censo": 909989, 
+   "ccaa_code": "14", 
+   "votos_blanco": 3892, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 783887, 
+   "ccaaName": "País Vasco", 
+   "diputados": 8, 
+   "porcentaje_votos_nulos": 0.69, 
+   "partidos": [
+    {
+     "color": "#008000", 
+     "diputados": 3, 
+     "votos": 200818, 
+     "porcentaje_votos": 34.12, 
+     "siglas": "PNV", 
+     "id": "0027"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 2, 
+     "votos": 104575, 
+     "porcentaje_votos": 17.77, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 119019, 
+     "porcentaje_votos": 20.22, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#b1ce02", 
+     "diputados": 1, 
+     "votos": 76952, 
+     "porcentaje_votos": 13.08, 
+     "siglas": "EH Bildu", 
+     "id": "0033"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 18281, 
+     "porcentaje_votos": 3.11, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 1004, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 560, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "SOLIDARIA", 
+     "id": "0107"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 710, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 5297, 
+     "porcentaje_votos": 0.9, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 532, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 13654, 
+     "porcentaje_votos": 2.32, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 43195, 
+     "porcentaje_votos": 7.34, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "bizkaia", 
+   "name": "Bizkaia"
+  }, 
+  "23": {
+   "votos_nulos": 2337, 
+   "code": "23", 
+   "porcentaje_censo_escrutado": 46.75, 
+   "porcentaje_votos_blanco": 0.66, 
+   "abstencion": 58829, 
+   "porcentaje_total_votantes": 75.53, 
+   "mesas_totales": 915, 
+   "total_votantes": 181614, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.47, 
+   "prov_code": "23", 
+   "censo": 514310, 
+   "ccaa_code": "01", 
+   "votos_blanco": 1176, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 240443, 
+   "ccaaName": "Andalucía", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.29, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 73013, 
+     "porcentaje_votos": 40.73, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 27870, 
+     "porcentaje_votos": 15.55, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 33603, 
+     "porcentaje_votos": 18.74, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 199, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 22027, 
+     "porcentaje_votos": 12.29, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 236, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 183, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 70, 
+     "porcentaje_votos": 0.04, 
+     "siglas": "RISA", 
+     "id": "0106"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 152, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1550, 
+     "porcentaje_votos": 0.86, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 18620, 
+     "porcentaje_votos": 10.39, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#D0D0D0", 
+     "diputados": 0, 
+     "votos": 577, 
+     "porcentaje_votos": 0.32, 
+     "siglas": "CILU-LINARES", 
+     "id": "0018"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "jaen", 
+   "name": "Jaén"
+  }, 
+  "46": {
+   "votos_nulos": 4351, 
+   "code": "46", 
+   "porcentaje_censo_escrutado": 28.32, 
+   "porcentaje_votos_blanco": 0.66, 
+   "abstencion": 130896, 
+   "porcentaje_total_votantes": 75.72, 
+   "mesas_totales": 3107, 
+   "total_votantes": 408166, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.28, 
+   "prov_code": "46", 
+   "censo": 1903522, 
+   "ccaa_code": "17", 
+   "votos_blanco": 2677, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 539062, 
+   "ccaaName": "Comunidad Valenciana", 
+   "diputados": 15, 
+   "porcentaje_votos_nulos": 1.07, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 5, 
+     "votos": 113955, 
+     "porcentaje_votos": 28.22, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 3, 
+     "votos": 71096, 
+     "porcentaje_votos": 17.61, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 67092, 
+     "porcentaje_votos": 16.61, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 2, 
+     "votos": 45425, 
+     "porcentaje_votos": 11.25, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 2, 
+     "votos": 58306, 
+     "porcentaje_votos": 14.44, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea580c", 
+     "diputados": 1, 
+     "votos": 35330, 
+     "porcentaje_votos": 8.75, 
+     "siglas": "COMPROMÍS 2019", 
+     "id": "0020"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 593, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#444444", 
+     "diputados": 0, 
+     "votos": 633, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "ERPV", 
+     "id": "0038"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 0, 
+     "votos": 1245, 
+     "porcentaje_votos": 0.31, 
+     "siglas": "UIG-SOM-CUIDES", 
+     "id": "0110"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 5988, 
+     "porcentaje_votos": 1.48, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 465, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#000000", 
+     "diputados": 0, 
+     "votos": 1010, 
+     "porcentaje_votos": 0.25, 
+     "siglas": "AVANT-LOS VERDES", 
+     "id": "0009"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "valencia-/-valencia", 
+   "name": "Valencia / València"
+  }, 
+  "47": {
+   "votos_nulos": 2832, 
+   "code": "47", 
+   "porcentaje_censo_escrutado": 76.07, 
+   "porcentaje_votos_blanco": 0.83, 
+   "abstencion": 62375, 
+   "porcentaje_total_votantes": 80.43, 
+   "mesas_totales": 829, 
+   "total_votantes": 256313, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 19.57, 
+   "prov_code": "47", 
+   "censo": 418922, 
+   "ccaa_code": "08", 
+   "votos_blanco": 2093, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 318688, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.11, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 73672, 
+     "porcentaje_votos": 29.06, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 50518, 
+     "porcentaje_votos": 19.93, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 33912, 
+     "porcentaje_votos": 13.38, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 59863, 
+     "porcentaje_votos": 23.62, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 389, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "UNIÓN REGIONALISTA", 
+     "id": "0112"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 181, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "FE de las JONS", 
+     "id": "0040"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 412, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 343, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2037, 
+     "porcentaje_votos": 0.8, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 220, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 244, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 29596, 
+     "porcentaje_votos": 11.68, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "valladolid", 
+   "name": "Valladolid"
+  }, 
+  "44": {
+   "votos_nulos": 980, 
+   "code": "44", 
+   "porcentaje_censo_escrutado": 72.37, 
+   "porcentaje_votos_blanco": 1.05, 
+   "abstencion": 17265, 
+   "porcentaje_total_votantes": 76.82, 
+   "mesas_totales": 331, 
+   "total_votantes": 57215, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 23.18, 
+   "prov_code": "44", 
+   "censo": 102910, 
+   "ccaa_code": "02", 
+   "votos_blanco": 593, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 74480, 
+   "ccaaName": "Aragón", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.71, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 10637, 
+     "porcentaje_votos": 18.92, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 18569, 
+     "porcentaje_votos": 33.02, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 13862, 
+     "porcentaje_votos": 24.65, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 19, 
+     "porcentaje_votos": 0.03, 
+     "siglas": "UDT", 
+     "id": "0109"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 5975, 
+     "porcentaje_votos": 10.63, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 69, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 187, 
+     "porcentaje_votos": 0.33, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 40, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "+MAS+", 
+     "id": "0050"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 49, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 40, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PYLN", 
+     "id": "0103"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 311, 
+     "porcentaje_votos": 0.55, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 65, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 5818, 
+     "porcentaje_votos": 10.35, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "teruel", 
+   "name": "Teruel"
+  }, 
+  "45": {
+   "votos_nulos": 2611, 
+   "code": "45", 
+   "porcentaje_censo_escrutado": 44.88, 
+   "porcentaje_votos_blanco": 0.61, 
+   "abstencion": 50013, 
+   "porcentaje_total_votantes": 78.27, 
+   "mesas_totales": 929, 
+   "total_votantes": 180172, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 21.73, 
+   "prov_code": "45", 
+   "censo": 512892, 
+   "ccaa_code": "07", 
+   "votos_blanco": 1089, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 230185, 
+   "ccaaName": "Castilla - La Mancha", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 1.45, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 56642, 
+     "porcentaje_votos": 31.9, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 40349, 
+     "porcentaje_votos": 22.72, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 30050, 
+     "porcentaje_votos": 16.92, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 29015, 
+     "porcentaje_votos": 16.34, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 327, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 250, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1684, 
+     "porcentaje_votos": 0.95, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 18153, 
+     "porcentaje_votos": 10.22, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "toledo", 
+   "name": "Toledo"
+  }, 
+  "28": {
+   "votos_nulos": 7881, 
+   "code": "28", 
+   "porcentaje_censo_escrutado": 23.99, 
+   "porcentaje_votos_blanco": 0.65, 
+   "abstencion": 258877, 
+   "porcentaje_total_votantes": 77.31, 
+   "mesas_totales": 7590, 
+   "total_votantes": 882110, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.69, 
+   "prov_code": "28", 
+   "censo": 4756218, 
+   "ccaa_code": "12", 
+   "votos_blanco": 5678, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 1140987, 
+   "ccaaName": "Comunidad de Madrid", 
+   "diputados": 37, 
+   "porcentaje_votos_nulos": 0.89, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 12, 
+     "votos": 264702, 
+     "porcentaje_votos": 30.28, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 7, 
+     "votos": 169749, 
+     "porcentaje_votos": 19.42, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 7, 
+     "votos": 151086, 
+     "porcentaje_votos": 17.28, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 6, 
+     "votos": 150332, 
+     "porcentaje_votos": 17.2, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 5, 
+     "votos": 110091, 
+     "porcentaje_votos": 12.59, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 1167, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 1907, 
+     "porcentaje_votos": 0.22, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 4731, 
+     "porcentaje_votos": 0.54, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 12712, 
+     "porcentaje_votos": 1.45, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 633, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 901, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PH", 
+     "id": "0072"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 539, 
+     "porcentaje_votos": 0.06, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "madrid", 
+   "name": "Madrid"
+  }, 
+  "29": {
+   "votos_nulos": 4339, 
+   "code": "29", 
+   "porcentaje_censo_escrutado": 46.98, 
+   "porcentaje_votos_blanco": 0.88, 
+   "abstencion": 154010, 
+   "porcentaje_total_votantes": 71.22, 
+   "mesas_totales": 1660, 
+   "total_votantes": 381043, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 28.78, 
+   "prov_code": "29", 
+   "censo": 1138982, 
+   "ccaa_code": "01", 
+   "votos_blanco": 3310, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 535053, 
+   "ccaaName": "Andalucía", 
+   "diputados": 11, 
+   "porcentaje_votos_nulos": 1.14, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 4, 
+     "votos": 123008, 
+     "porcentaje_votos": 32.65, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 69568, 
+     "porcentaje_votos": 18.47, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 2, 
+     "votos": 56164, 
+     "porcentaje_votos": 14.91, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 64186, 
+     "porcentaje_votos": 17.04, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 50382, 
+     "porcentaje_votos": 13.37, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 370, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 901, 
+     "porcentaje_votos": 0.24, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 799, 
+     "porcentaje_votos": 0.21, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 488, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 7198, 
+     "porcentaje_votos": 1.91, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 327, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "malaga", 
+   "name": "Málaga"
+  }, 
+  "40": {
+   "votos_nulos": 780, 
+   "code": "40", 
+   "porcentaje_censo_escrutado": 54.25, 
+   "porcentaje_votos_blanco": 0.84, 
+   "abstencion": 12217, 
+   "porcentaje_total_votantes": 80.64, 
+   "mesas_totales": 332, 
+   "total_votantes": 50890, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 19.36, 
+   "prov_code": "40", 
+   "censo": 116320, 
+   "ccaa_code": "08", 
+   "votos_blanco": 421, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 63107, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.53, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 9621, 
+     "porcentaje_votos": 19.2, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 13750, 
+     "porcentaje_votos": 27.44, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 14513, 
+     "porcentaje_votos": 28.96, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#00ade9", 
+     "diputados": 0, 
+     "votos": 211, 
+     "porcentaje_votos": 0.42, 
+     "siglas": "centrados", 
+     "id": "0016"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 75, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6305, 
+     "porcentaje_votos": 12.58, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 99, 
+     "porcentaje_votos": 0.2, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 96, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 142, 
+     "porcentaje_votos": 0.28, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 304, 
+     "porcentaje_votos": 0.61, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 51, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 4522, 
+     "porcentaje_votos": 9.02, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "segovia", 
+   "name": "Segovia"
+  }, 
+  "41": {
+   "votos_nulos": 8141, 
+   "code": "41", 
+   "porcentaje_censo_escrutado": 48.94, 
+   "porcentaje_votos_blanco": 1.04, 
+   "abstencion": 190695, 
+   "porcentaje_total_votantes": 74.21, 
+   "mesas_totales": 2564, 
+   "total_votantes": 548622, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 25.79, 
+   "prov_code": "41", 
+   "censo": 1510737, 
+   "ccaa_code": "01", 
+   "votos_blanco": 5616, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 739317, 
+   "ccaaName": "Andalucía", 
+   "diputados": 12, 
+   "porcentaje_votos_nulos": 1.48, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 5, 
+     "votos": 211089, 
+     "porcentaje_votos": 39.06, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 87751, 
+     "porcentaje_votos": 16.24, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 2, 
+     "votos": 87350, 
+     "porcentaje_votos": 16.16, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 72655, 
+     "porcentaje_votos": 13.44, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 62642, 
+     "porcentaje_votos": 11.59, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 612, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 396, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 1676, 
+     "porcentaje_votos": 0.31, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 792, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 675, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 1687, 
+     "porcentaje_votos": 0.31, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 7138, 
+     "porcentaje_votos": 1.32, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 401, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "sevilla", 
+   "name": "Sevilla"
+  }, 
+  "05": {
+   "votos_nulos": 729, 
+   "code": "05", 
+   "porcentaje_censo_escrutado": 48.37, 
+   "porcentaje_votos_blanco": 0.64, 
+   "abstencion": 12438, 
+   "porcentaje_total_votantes": 80.21, 
+   "mesas_totales": 359, 
+   "total_votantes": 50411, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 19.79, 
+   "prov_code": "05", 
+   "censo": 129926, 
+   "ccaa_code": "08", 
+   "votos_blanco": 317, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 62849, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.45, 
+   "partidos": [
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 17268, 
+     "porcentaje_votos": 34.76, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 12793, 
+     "porcentaje_votos": 25.75, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 8631, 
+     "porcentaje_votos": 17.37, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 43, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6650, 
+     "porcentaje_votos": 13.39, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 43, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "FE de las JONS", 
+     "id": "0040"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 76, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 158, 
+     "porcentaje_votos": 0.32, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 286, 
+     "porcentaje_votos": 0.58, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 3417, 
+     "porcentaje_votos": 6.88, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "avila", 
+   "name": "Ávila"
+  }, 
+  "24": {
+   "votos_nulos": 2435, 
+   "code": "24", 
+   "porcentaje_censo_escrutado": 59.85, 
+   "porcentaje_votos_blanco": 0.98, 
+   "abstencion": 56630, 
+   "porcentaje_total_votantes": 75.61, 
+   "mesas_totales": 801, 
+   "total_votantes": 175516, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.39, 
+   "prov_code": "24", 
+   "censo": 387911, 
+   "ccaa_code": "08", 
+   "votos_blanco": 1702, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 232146, 
+   "ccaaName": "Castilla y León", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.39, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 57881, 
+     "porcentaje_votos": 33.44, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 29524, 
+     "porcentaje_votos": 17.06, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 40874, 
+     "porcentaje_votos": 23.62, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 19387, 
+     "porcentaje_votos": 11.2, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 172, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 248, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1322, 
+     "porcentaje_votos": 0.76, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 236, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 20882, 
+     "porcentaje_votos": 12.07, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 850, 
+     "porcentaje_votos": 0.49, 
+     "siglas": "PREPAL", 
+     "id": "0091"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "leon", 
+   "name": "León"
+  }, 
+  "25": {
+   "votos_nulos": 635, 
+   "code": "25", 
+   "porcentaje_censo_escrutado": 45.29, 
+   "porcentaje_votos_blanco": 0.7, 
+   "abstencion": 33568, 
+   "porcentaje_total_votantes": 75.18, 
+   "mesas_totales": 563, 
+   "total_votantes": 101685, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.82, 
+   "prov_code": "25", 
+   "censo": 298663, 
+   "ccaa_code": "09", 
+   "votos_blanco": 705, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 135253, 
+   "ccaaName": "Cataluña", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 0.62, 
+   "partidos": [
+    {
+     "color": "#fec42d", 
+     "diputados": 2, 
+     "votos": 34455, 
+     "porcentaje_votos": 34.1, 
+     "siglas": "ERC", 
+     "id": "0037"
+    }, 
+    {
+     "color": "#f77991", 
+     "diputados": 1, 
+     "votos": 21772, 
+     "porcentaje_votos": 21.55, 
+     "siglas": "JxCAT", 
+     "id": "0049"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 16722, 
+     "porcentaje_votos": 16.55, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 7959, 
+     "porcentaje_votos": 7.88, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 53, 
+     "porcentaje_votos": 0.05, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 2402, 
+     "porcentaje_votos": 2.38, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 84, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 69, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "IZQP", 
+     "id": "0045"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 879, 
+     "porcentaje_votos": 0.87, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 8119, 
+     "porcentaje_votos": 8.03, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 103, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCPC", 
+     "id": "0061"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 2817, 
+     "porcentaje_votos": 2.79, 
+     "siglas": "FRONT REPUBLICÀ", 
+     "id": "0042"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 4911, 
+     "porcentaje_votos": 4.86, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "lleida", 
+   "name": "Lleida"
+  }, 
+  "43": {
+   "votos_nulos": 1174, 
+   "code": "43", 
+   "porcentaje_censo_escrutado": 47.79, 
+   "porcentaje_votos_blanco": 0.53, 
+   "abstencion": 64970, 
+   "porcentaje_total_votantes": 75.6, 
+   "mesas_totales": 1010, 
+   "total_votantes": 201352, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.4, 
+   "prov_code": "43", 
+   "censo": 557279, 
+   "ccaa_code": "09", 
+   "votos_blanco": 1064, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 266322, 
+   "ccaaName": "Cataluña", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 0.58, 
+   "partidos": [
+    {
+     "color": "#fec42d", 
+     "diputados": 2, 
+     "votos": 55228, 
+     "porcentaje_votos": 27.59, 
+     "siglas": "ERC", 
+     "id": "0037"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 24540, 
+     "porcentaje_votos": 12.26, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#f77991", 
+     "diputados": 1, 
+     "votos": 24467, 
+     "porcentaje_votos": 12.22, 
+     "siglas": "JxCAT", 
+     "id": "0049"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 23984, 
+     "porcentaje_votos": 11.98, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 43449, 
+     "porcentaje_votos": 21.71, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 9637, 
+     "porcentaje_votos": 4.81, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 216, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 123, 
+     "porcentaje_votos": 0.06, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "diputados": 0, 
+     "porcentaje_votos": 0.06, 
+     "votos": 125, 
+     "id": "0019", 
+     "color": "#202020"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2712, 
+     "porcentaje_votos": 1.35, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 278, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 151, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PCPC", 
+     "id": "0061"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 3799, 
+     "porcentaje_votos": 1.9, 
+     "siglas": "FRONT REPUBLICÀ", 
+     "id": "0042"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 98, 
+     "porcentaje_votos": 0.05, 
+     "siglas": "IZQP", 
+     "id": "0045"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 10307, 
+     "porcentaje_votos": 5.15, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "tarragona", 
+   "name": "Tarragona"
+  }, 
+  "13": {
+   "votos_nulos": 2358, 
+   "code": "13", 
+   "porcentaje_censo_escrutado": 58.38, 
+   "porcentaje_votos_blanco": 0.82, 
+   "abstencion": 55008, 
+   "porcentaje_total_votantes": 75.85, 
+   "mesas_totales": 705, 
+   "total_votantes": 172777, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.15, 
+   "prov_code": "13", 
+   "censo": 390152, 
+   "ccaa_code": "07", 
+   "votos_blanco": 1397, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 227785, 
+   "ccaaName": "Castilla - La Mancha", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.37, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 58409, 
+     "porcentaje_votos": 34.27, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 29452, 
+     "porcentaje_votos": 17.28, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 23398, 
+     "porcentaje_votos": 13.73, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 39914, 
+     "porcentaje_votos": 23.42, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 321, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1449, 
+     "porcentaje_votos": 0.85, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 15919, 
+     "porcentaje_votos": 9.34, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 158, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PDSJE-UDEC", 
+     "id": "0069"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "ciudad-real", 
+   "name": "Ciudad Real"
+  }, 
+  "01": {
+   "votos_nulos": 820, 
+   "code": "01", 
+   "porcentaje_censo_escrutado": 44.49, 
+   "porcentaje_votos_blanco": 0.63, 
+   "abstencion": 32776, 
+   "porcentaje_total_votantes": 70.64, 
+   "mesas_totales": 425, 
+   "total_votantes": 78863, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 29.36, 
+   "prov_code": "01", 
+   "censo": 250903, 
+   "ccaa_code": "14", 
+   "votos_blanco": 494, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 111639, 
+   "ccaaName": "País Vasco", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.04, 
+   "partidos": [
+    {
+     "color": "#008000", 
+     "diputados": 1, 
+     "votos": 17478, 
+     "porcentaje_votos": 22.4, 
+     "siglas": "PNV", 
+     "id": "0027"
+    }, 
+    {
+     "color": "#b1ce02", 
+     "diputados": 1, 
+     "votos": 10753, 
+     "porcentaje_votos": 13.78, 
+     "siglas": "EH Bildu", 
+     "id": "0033"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 13851, 
+     "porcentaje_votos": 17.75, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 18226, 
+     "porcentaje_votos": 23.35, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 3088, 
+     "porcentaje_votos": 3.96, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 246, 
+     "porcentaje_votos": 0.32, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 127, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 806, 
+     "porcentaje_votos": 1.03, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 104, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 2433, 
+     "porcentaje_votos": 3.12, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 10437, 
+     "porcentaje_votos": 13.37, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "araba-/-alava", 
+   "name": "Araba / Álava"
+  }, 
+  "20": {
+   "votos_nulos": 1864, 
+   "code": "20", 
+   "porcentaje_censo_escrutado": 74.64, 
+   "porcentaje_votos_blanco": 0.6, 
+   "abstencion": 109118, 
+   "porcentaje_total_votantes": 73.82, 
+   "mesas_totales": 846, 
+   "total_votantes": 307674, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 26.18, 
+   "prov_code": "20", 
+   "censo": 558437, 
+   "ccaa_code": "14", 
+   "votos_blanco": 1839, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 416792, 
+   "ccaaName": "País Vasco", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 0.61, 
+   "partidos": [
+    {
+     "color": "#008000", 
+     "diputados": 2, 
+     "votos": 89196, 
+     "porcentaje_votos": 29.17, 
+     "siglas": "PNV", 
+     "id": "0027"
+    }, 
+    {
+     "color": "#b1ce02", 
+     "diputados": 2, 
+     "votos": 72215, 
+     "porcentaje_votos": 23.61, 
+     "siglas": "EH Bildu", 
+     "id": "0033"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 52804, 
+     "porcentaje_votos": 17.27, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 57641, 
+     "porcentaje_votos": 18.85, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 8579, 
+     "porcentaje_votos": 2.81, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 433, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 500, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 313, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2339, 
+     "porcentaje_votos": 0.76, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 223, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 4853, 
+     "porcentaje_votos": 1.59, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 14873, 
+     "porcentaje_votos": 4.86, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "gipuzkoa", 
+   "name": "Gipuzkoa"
+  }, 
+  "38": {
+   "votos_nulos": 16, 
+   "code": "38", 
+   "porcentaje_censo_escrutado": 0.53, 
+   "porcentaje_votos_blanco": 0.35, 
+   "abstencion": 1401, 
+   "porcentaje_total_votantes": 64.88, 
+   "mesas_totales": 1315, 
+   "total_votantes": 2588, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 35.12, 
+   "prov_code": "38", 
+   "censo": 752343, 
+   "ccaa_code": "05", 
+   "votos_blanco": 9, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 3989, 
+   "ccaaName": "Canarias", 
+   "diputados": 7, 
+   "porcentaje_votos_nulos": 0.62, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 873, 
+     "porcentaje_votos": 33.94, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 298, 
+     "porcentaje_votos": 11.59, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#00ade9", 
+     "diputados": 1, 
+     "votos": 582, 
+     "porcentaje_votos": 22.63, 
+     "siglas": "CCa-PNC", 
+     "id": "0015"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 324, 
+     "porcentaje_votos": 12.6, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 320, 
+     "porcentaje_votos": 12.44, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#DDD000", 
+     "diputados": 0, 
+     "votos": 3, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "F8", 
+     "id": "0039"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 106, 
+     "porcentaje_votos": 4.12, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#D0D0D0", 
+     "diputados": 0, 
+     "votos": 12, 
+     "porcentaje_votos": 0.47, 
+     "siglas": "AHORA CANARIAS", 
+     "id": "0003"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 7, 
+     "porcentaje_votos": 0.27, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 1, 
+     "porcentaje_votos": 0.04, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 36, 
+     "porcentaje_votos": 1.4, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 1, 
+     "porcentaje_votos": 0.04, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "santa-cruz-de-tenerife", 
+   "name": "Santa Cruz de Tenerife"
+  }, 
+  "14": {
+   "votos_nulos": 3373, 
+   "code": "14", 
+   "porcentaje_censo_escrutado": 46.56, 
+   "porcentaje_votos_blanco": 1.0, 
+   "abstencion": 72551, 
+   "porcentaje_total_votantes": 75.4, 
+   "mesas_totales": 913, 
+   "total_votantes": 222345, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.6, 
+   "prov_code": "14", 
+   "censo": 633398, 
+   "ccaa_code": "01", 
+   "votos_blanco": 2192, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 294896, 
+   "ccaaName": "Andalucía", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 1.52, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 80924, 
+     "porcentaje_votos": 36.96, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 35886, 
+     "porcentaje_votos": 16.39, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 33260, 
+     "porcentaje_votos": 15.19, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 37848, 
+     "porcentaje_votos": 17.28, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 395, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 24303, 
+     "porcentaje_votos": 11.1, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 572, 
+     "porcentaje_votos": 0.26, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 356, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 599, 
+     "porcentaje_votos": 0.27, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 217, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2209, 
+     "porcentaje_votos": 1.01, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 210, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "cordoba", 
+   "name": "Córdoba"
+  }, 
+  "11": {
+   "votos_nulos": 3866, 
+   "code": "11", 
+   "porcentaje_censo_escrutado": 46.55, 
+   "porcentaje_votos_blanco": 1.24, 
+   "abstencion": 145989, 
+   "porcentaje_total_votantes": 67.76, 
+   "mesas_totales": 1521, 
+   "total_votantes": 306795, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 32.24, 
+   "prov_code": "11", 
+   "censo": 972705, 
+   "ccaa_code": "01", 
+   "votos_blanco": 3751, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 452784, 
+   "ccaaName": "Andalucía", 
+   "diputados": 9, 
+   "porcentaje_votos_nulos": 1.26, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 4, 
+     "votos": 101386, 
+     "porcentaje_votos": 33.47, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 57134, 
+     "porcentaje_votos": 18.86, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 39070, 
+     "porcentaje_votos": 12.9, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 50481, 
+     "porcentaje_votos": 16.66, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 41964, 
+     "porcentaje_votos": 13.85, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 389, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 1886, 
+     "porcentaje_votos": 0.62, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 728, 
+     "porcentaje_votos": 0.24, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 1094, 
+     "porcentaje_votos": 0.36, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 5043, 
+     "porcentaje_votos": 1.66, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "cadiz", 
+   "name": "Cádiz"
+  }, 
+  "10": {
+   "votos_nulos": 1660, 
+   "code": "10", 
+   "porcentaje_censo_escrutado": 39.27, 
+   "porcentaje_votos_blanco": 0.74, 
+   "abstencion": 31795, 
+   "porcentaje_total_votantes": 75.43, 
+   "mesas_totales": 513, 
+   "total_votantes": 97637, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.57, 
+   "prov_code": "10", 
+   "censo": 329560, 
+   "ccaa_code": "10", 
+   "votos_blanco": 710, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 129432, 
+   "ccaaName": "Extremadura", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.7, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 37636, 
+     "porcentaje_votos": 39.21, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 15608, 
+     "porcentaje_votos": 16.26, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 21735, 
+     "porcentaje_votos": 22.65, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 452, 
+     "porcentaje_votos": 0.47, 
+     "siglas": "C.Ex-C.R.Ex-P.R.Ex", 
+     "id": "0017"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 9798, 
+     "porcentaje_votos": 10.21, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 136, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 262, 
+     "porcentaje_votos": 0.27, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 648, 
+     "porcentaje_votos": 0.68, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 8990, 
+     "porcentaje_votos": 9.37, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "caceres", 
+   "name": "Cáceres"
+  }, 
+  "39": {
+   "votos_nulos": 1995, 
+   "code": "39", 
+   "porcentaje_censo_escrutado": 51.73, 
+   "porcentaje_votos_blanco": 0.68, 
+   "abstencion": 52926, 
+   "porcentaje_total_votantes": 78.02, 
+   "mesas_totales": 823, 
+   "total_votantes": 187863, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 21.98, 
+   "prov_code": "39", 
+   "censo": 465517, 
+   "ccaa_code": "06", 
+   "votos_blanco": 1257, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 240789, 
+   "ccaaName": "Cantabria (Comunidad)", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.06, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 47591, 
+     "porcentaje_votos": 25.6, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 27530, 
+     "porcentaje_votos": 14.81, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 38951, 
+     "porcentaje_votos": 20.96, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 1, 
+     "votos": 28272, 
+     "porcentaje_votos": 15.21, 
+     "siglas": "PRC", 
+     "id": "0090"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 20457, 
+     "porcentaje_votos": 11.01, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 171, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 191, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 145, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1603, 
+     "porcentaje_votos": 0.86, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 129, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 119, 
+     "porcentaje_votos": 0.06, 
+     "siglas": "P-LIB", 
+     "id": "0073"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 159, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 19292, 
+     "porcentaje_votos": 10.38, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "cantabria", 
+   "name": "Cantabria"
+  }, 
+  "12": {
+   "votos_nulos": 1941, 
+   "code": "12", 
+   "porcentaje_censo_escrutado": 48.5, 
+   "porcentaje_votos_blanco": 0.77, 
+   "abstencion": 47292, 
+   "porcentaje_total_votantes": 76.24, 
+   "mesas_totales": 715, 
+   "total_votantes": 151708, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 23.76, 
+   "prov_code": "12", 
+   "censo": 410329, 
+   "ccaa_code": "17", 
+   "votos_blanco": 1160, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 199000, 
+   "ccaaName": "Comunidad Valenciana", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.28, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 45361, 
+     "porcentaje_votos": 30.29, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 22992, 
+     "porcentaje_votos": 15.35, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 20477, 
+     "porcentaje_votos": 13.67, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 31456, 
+     "porcentaje_votos": 21.0, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ea580c", 
+     "diputados": 0, 
+     "votos": 7777, 
+     "porcentaje_votos": 5.19, 
+     "siglas": "COMPROMÍS 2019", 
+     "id": "0020"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 17772, 
+     "porcentaje_votos": 11.87, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 112, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "FE de las JONS", 
+     "id": "0040"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 144, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#000000", 
+     "diputados": 0, 
+     "votos": 261, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "AVANT-LOS VERDES", 
+     "id": "0009"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1550, 
+     "porcentaje_votos": 1.03, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 142, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 152, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }, 
+    {
+     "color": "#444444", 
+     "diputados": 0, 
+     "votos": 408, 
+     "porcentaje_votos": 0.27, 
+     "siglas": "ERPV", 
+     "id": "0038"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "castellon-/-castello", 
+   "name": "Castellón / Castelló"
+  }, 
+  "15": {
+   "votos_nulos": 4850, 
+   "code": "15", 
+   "porcentaje_censo_escrutado": 50.73, 
+   "porcentaje_votos_blanco": 1.17, 
+   "abstencion": 130370, 
+   "porcentaje_total_votantes": 72.41, 
+   "mesas_totales": 1538, 
+   "total_votantes": 342164, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 27.59, 
+   "prov_code": "15", 
+   "censo": 931382, 
+   "ccaa_code": "11", 
+   "votos_blanco": 3955, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 472534, 
+   "ccaaName": "Galicia", 
+   "diputados": 8, 
+   "porcentaje_votos_nulos": 1.42, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 106399, 
+     "porcentaje_votos": 31.54, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 3, 
+     "votos": 92116, 
+     "porcentaje_votos": 27.31, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 37193, 
+     "porcentaje_votos": 11.03, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 47705, 
+     "porcentaje_votos": 14.14, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 17886, 
+     "porcentaje_votos": 5.3, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 623, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "CxG", 
+     "id": "0024"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 644, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#0095eb", 
+     "diputados": 0, 
+     "votos": 3163, 
+     "porcentaje_votos": 0.94, 
+     "siglas": "EN MAREA", 
+     "id": "0036"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 946, 
+     "porcentaje_votos": 0.28, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 3433, 
+     "porcentaje_votos": 1.02, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 292, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#76B2E1", 
+     "diputados": 0, 
+     "votos": 22953, 
+     "porcentaje_votos": 6.8, 
+     "siglas": "BNG", 
+     "id": "0012"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "a-coruna", 
+   "name": "A Coruña"
+  }, 
+  "04": {
+   "votos_nulos": 1438, 
+   "code": "04", 
+   "porcentaje_censo_escrutado": 51.45, 
+   "porcentaje_votos_blanco": 0.69, 
+   "abstencion": 69550, 
+   "porcentaje_total_votantes": 70.55, 
+   "mesas_totales": 803, 
+   "total_votantes": 166614, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 29.45, 
+   "prov_code": "04", 
+   "censo": 459003, 
+   "ccaa_code": "01", 
+   "votos_blanco": 1143, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 236164, 
+   "ccaaName": "Andalucía", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 0.87, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 50444, 
+     "porcentaje_votos": 30.54, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 37457, 
+     "porcentaje_votos": 22.68, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 27446, 
+     "porcentaje_votos": 16.62, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 32375, 
+     "porcentaje_votos": 19.6, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 181, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 206, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 272, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 154, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 1695, 
+     "porcentaje_votos": 1.03, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 13799, 
+     "porcentaje_votos": 8.35, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "almeria", 
+   "name": "Almería"
+  }, 
+  "17": {
+   "votos_nulos": 1086, 
+   "code": "17", 
+   "porcentaje_censo_escrutado": 50.47, 
+   "porcentaje_votos_blanco": 0.52, 
+   "abstencion": 60959, 
+   "porcentaje_total_votantes": 76.02, 
+   "mesas_totales": 830, 
+   "total_votantes": 193293, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 23.98, 
+   "prov_code": "17", 
+   "censo": 503786, 
+   "ccaa_code": "09", 
+   "votos_blanco": 1000, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 254252, 
+   "ccaaName": "Cataluña", 
+   "diputados": 6, 
+   "porcentaje_votos_nulos": 0.56, 
+   "partidos": [
+    {
+     "color": "#fec42d", 
+     "diputados": 3, 
+     "votos": 58123, 
+     "porcentaje_votos": 30.24, 
+     "siglas": "ERC", 
+     "id": "0037"
+    }, 
+    {
+     "color": "#f77991", 
+     "diputados": 2, 
+     "votos": 43778, 
+     "porcentaje_votos": 22.78, 
+     "siglas": "JxCAT", 
+     "id": "0049"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 33274, 
+     "porcentaje_votos": 17.31, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 16388, 
+     "porcentaje_votos": 8.53, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 5103, 
+     "porcentaje_votos": 2.65, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 209, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 118, 
+     "porcentaje_votos": 0.06, 
+     "siglas": "IZQP", 
+     "id": "0045"
+    }, 
+    {
+     "diputados": 0, 
+     "porcentaje_votos": 0.18, 
+     "votos": 344, 
+     "id": "0019", 
+     "color": "#202020"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2510, 
+     "porcentaje_votos": 1.31, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 18144, 
+     "porcentaje_votos": 9.44, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 205, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PCPC", 
+     "id": "0061"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 7064, 
+     "porcentaje_votos": 3.68, 
+     "siglas": "FRONT REPUBLICÀ", 
+     "id": "0042"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 5947, 
+     "porcentaje_votos": 3.09, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "girona", 
+   "name": "Girona"
+  }, 
+  "16": {
+   "votos_nulos": 591, 
+   "code": "16", 
+   "porcentaje_censo_escrutado": 38.78, 
+   "porcentaje_votos_blanco": 0.75, 
+   "abstencion": 12168, 
+   "porcentaje_total_votantes": 79.35, 
+   "mesas_totales": 383, 
+   "total_votantes": 46760, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 20.65, 
+   "prov_code": "16", 
+   "censo": 151940, 
+   "ccaa_code": "07", 
+   "votos_blanco": 345, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 58928, 
+   "ccaaName": "Castilla - La Mancha", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.27, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 17362, 
+     "porcentaje_votos": 37.61, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 12396, 
+     "porcentaje_votos": 26.85, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 5967, 
+     "porcentaje_votos": 12.92, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6306, 
+     "porcentaje_votos": 13.66, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 51, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 40, 
+     "porcentaje_votos": 0.09, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 258, 
+     "porcentaje_votos": 0.56, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 33, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#202020", 
+     "diputados": 0, 
+     "votos": 17, 
+     "porcentaje_votos": 0.04, 
+     "siglas": "P-LIB", 
+     "id": "0073"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 3392, 
+     "porcentaje_votos": 7.35, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "cuenca", 
+   "name": "Cuenca"
+  }, 
+  "33": {
+   "votos_nulos": 4384, 
+   "code": "33", 
+   "porcentaje_censo_escrutado": 61.65, 
+   "porcentaje_votos_blanco": 1.13, 
+   "abstencion": 146185, 
+   "porcentaje_total_votantes": 72.32, 
+   "mesas_totales": 1573, 
+   "total_votantes": 382016, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 27.68, 
+   "prov_code": "33", 
+   "censo": 856792, 
+   "ccaa_code": "03", 
+   "votos_blanco": 4274, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 528201, 
+   "ccaaName": "Principado de Asturias", 
+   "diputados": 7, 
+   "porcentaje_votos_nulos": 1.15, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 129215, 
+     "porcentaje_votos": 34.22, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 59912, 
+     "porcentaje_votos": 15.87, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 41166, 
+     "porcentaje_votos": 10.9, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 67170, 
+     "porcentaje_votos": 17.79, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 66234, 
+     "porcentaje_votos": 17.54, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#D0D0D0", 
+     "diputados": 0, 
+     "votos": 596, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "ANDECHA ASTUR", 
+     "id": "0004"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 461, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 674, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 2694, 
+     "porcentaje_votos": 0.71, 
+     "siglas": "PACT", 
+     "id": "0056"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 4089, 
+     "porcentaje_votos": 1.08, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 862, 
+     "porcentaje_votos": 0.23, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 279, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PH", 
+     "id": "0072"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "asturias", 
+   "name": "Asturias"
+  }, 
+  "32": {
+   "votos_nulos": 1356, 
+   "code": "32", 
+   "porcentaje_censo_escrutado": 58.61, 
+   "porcentaje_votos_blanco": 0.9, 
+   "abstencion": 41077, 
+   "porcentaje_total_votantes": 73.18, 
+   "mesas_totales": 542, 
+   "total_votantes": 112086, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 26.82, 
+   "prov_code": "32", 
+   "censo": 261306, 
+   "ccaa_code": "11", 
+   "votos_blanco": 1001, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 153163, 
+   "ccaaName": "Galicia", 
+   "diputados": 4, 
+   "porcentaje_votos_nulos": 1.21, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 36769, 
+     "porcentaje_votos": 33.21, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 40639, 
+     "porcentaje_votos": 36.7, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 10838, 
+     "porcentaje_votos": 9.79, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 169, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "VOU", 
+     "id": "0116"
+    }, 
+    {
+     "color": "#76B2E1", 
+     "diputados": 0, 
+     "votos": 4133, 
+     "porcentaje_votos": 3.73, 
+     "siglas": "BNG", 
+     "id": "0012"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 200, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "CxG", 
+     "id": "0024"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 94, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#0095eb", 
+     "diputados": 0, 
+     "votos": 1293, 
+     "porcentaje_votos": 1.17, 
+     "siglas": "EN MAREA", 
+     "id": "0036"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 109, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 795, 
+     "porcentaje_votos": 0.72, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 85, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 9147, 
+     "porcentaje_votos": 8.26, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 5457, 
+     "porcentaje_votos": 4.93, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "ourense", 
+   "name": "Ourense"
+  }, 
+  "31": {
+   "votos_nulos": 2372, 
+   "code": "31", 
+   "porcentaje_censo_escrutado": 63.15, 
+   "porcentaje_votos_blanco": 1.01, 
+   "abstencion": 74382, 
+   "porcentaje_total_votantes": 75.65, 
+   "mesas_totales": 976, 
+   "total_votantes": 231081, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 24.35, 
+   "prov_code": "31", 
+   "censo": 483725, 
+   "ccaa_code": "13", 
+   "votos_blanco": 2318, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 305463, 
+   "ccaaName": "Comunidad Foral de Navarra", 
+   "diputados": 5, 
+   "porcentaje_votos_nulos": 1.03, 
+   "partidos": [
+    {
+     "color": "#b50c17", 
+     "diputados": 2, 
+     "votos": 66331, 
+     "porcentaje_votos": 29.0, 
+     "siglas": "NA+", 
+     "id": "0052"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 2, 
+     "votos": 60086, 
+     "porcentaje_votos": 26.27, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 42012, 
+     "porcentaje_votos": 18.37, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 10978, 
+     "porcentaje_votos": 4.8, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#D62B00", 
+     "diputados": 0, 
+     "votos": 13972, 
+     "porcentaje_votos": 6.11, 
+     "siglas": "GBAI", 
+     "id": "0043"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 706, 
+     "porcentaje_votos": 0.31, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#b1ce02", 
+     "diputados": 0, 
+     "votos": 29427, 
+     "porcentaje_votos": 12.87, 
+     "siglas": "EH Bildu", 
+     "id": "0033"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2060, 
+     "porcentaje_votos": 0.9, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 819, 
+     "porcentaje_votos": 0.36, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "navarra", 
+   "name": "Navarra"
+  }, 
+  "30": {
+   "votos_nulos": 4041, 
+   "code": "30", 
+   "porcentaje_censo_escrutado": 49.77, 
+   "porcentaje_votos_blanco": 0.62, 
+   "abstencion": 130322, 
+   "porcentaje_total_votantes": 74.46, 
+   "mesas_totales": 1687, 
+   "total_votantes": 379946, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 25.54, 
+   "prov_code": "30", 
+   "censo": 1025201, 
+   "ccaa_code": "15", 
+   "votos_blanco": 2340, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 510268, 
+   "ccaaName": "Región de Murcia", 
+   "diputados": 10, 
+   "porcentaje_votos_nulos": 1.06, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 93778, 
+     "porcentaje_votos": 24.95, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 2, 
+     "votos": 73165, 
+     "porcentaje_votos": 19.46, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 2, 
+     "votos": 71091, 
+     "porcentaje_votos": 18.91, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 87026, 
+     "porcentaje_votos": 23.15, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 38270, 
+     "porcentaje_votos": 10.18, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#000000", 
+     "diputados": 0, 
+     "votos": 301, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "DPL", 
+     "id": "0026"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 647, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 590, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 366, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "IZQP", 
+     "id": "0045"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 5345, 
+     "porcentaje_votos": 1.42, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 2446, 
+     "porcentaje_votos": 0.65, 
+     "siglas": "SOMOS REGIÓN", 
+     "id": "0108"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 539, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "murcia", 
+   "name": "Murcia"
+  }, 
+  "51": {
+   "votos_nulos": 75, 
+   "code": "51", 
+   "porcentaje_censo_escrutado": 15.77, 
+   "porcentaje_votos_blanco": 0.7, 
+   "abstencion": 3485, 
+   "porcentaje_total_votantes": 63.12, 
+   "mesas_totales": 96, 
+   "total_votantes": 5964, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 36.88, 
+   "prov_code": "51", 
+   "censo": 59935, 
+   "ccaa_code": "18", 
+   "votos_blanco": 41, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 9449, 
+   "ccaaName": "Ceuta", 
+   "diputados": 1, 
+   "porcentaje_votos_nulos": 1.26, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 1979, 
+     "porcentaje_votos": 33.61, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 680, 
+     "porcentaje_votos": 11.55, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 1575, 
+     "porcentaje_votos": 26.74, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 22, 
+     "porcentaje_votos": 0.37, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 21, 
+     "porcentaje_votos": 0.36, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 250, 
+     "porcentaje_votos": 4.25, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 1321, 
+     "porcentaje_votos": 22.43, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "ceuta", 
+   "name": "Ceuta"
+  }, 
+  "36": {
+   "votos_nulos": 4166, 
+   "code": "36", 
+   "porcentaje_censo_escrutado": 46.95, 
+   "porcentaje_votos_blanco": 0.94, 
+   "abstencion": 92918, 
+   "porcentaje_total_votantes": 74.43, 
+   "mesas_totales": 1335, 
+   "total_votantes": 270407, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 25.57, 
+   "prov_code": "36", 
+   "censo": 773818, 
+   "ccaa_code": "11", 
+   "votos_blanco": 2510, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 363325, 
+   "ccaaName": "Galicia", 
+   "diputados": 7, 
+   "porcentaje_votos_nulos": 1.54, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 85945, 
+     "porcentaje_votos": 32.28, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 70357, 
+     "porcentaje_votos": 26.43, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 27096, 
+     "porcentaje_votos": 10.18, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 45566, 
+     "porcentaje_votos": 17.11, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 11746, 
+     "porcentaje_votos": 4.41, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#101010", 
+     "diputados": 0, 
+     "votos": 372, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "CxG", 
+     "id": "0024"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 444, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#333333", 
+     "diputados": 0, 
+     "votos": 394, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "EB", 
+     "id": "0028"
+    }, 
+    {
+     "color": "#0095eb", 
+     "diputados": 0, 
+     "votos": 3072, 
+     "porcentaje_votos": 1.15, 
+     "siglas": "EN MAREA", 
+     "id": "0036"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 3050, 
+     "porcentaje_votos": 1.15, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 309, 
+     "porcentaje_votos": 0.12, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#76B2E1", 
+     "diputados": 0, 
+     "votos": 15379, 
+     "porcentaje_votos": 5.78, 
+     "siglas": "BNG", 
+     "id": "0012"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "pontevedra", 
+   "name": "Pontevedra"
+  }, 
+  "35": {
+   "votos_nulos": 156, 
+   "code": "35", 
+   "porcentaje_censo_escrutado": 2.03, 
+   "porcentaje_votos_blanco": 0.86, 
+   "abstencion": 6352, 
+   "porcentaje_total_votantes": 61.97, 
+   "mesas_totales": 1510, 
+   "total_votantes": 10349, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 38.03, 
+   "prov_code": "35", 
+   "censo": 820764, 
+   "ccaa_code": "05", 
+   "votos_blanco": 88, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 16701, 
+   "ccaaName": "Canarias", 
+   "diputados": 8, 
+   "porcentaje_votos_nulos": 1.51, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 4, 
+     "votos": 3284, 
+     "porcentaje_votos": 32.22, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 2, 
+     "votos": 1653, 
+     "porcentaje_votos": 16.22, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 1366, 
+     "porcentaje_votos": 13.4, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 1606, 
+     "porcentaje_votos": 15.76, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#00ade9", 
+     "diputados": 0, 
+     "votos": 651, 
+     "porcentaje_votos": 6.39, 
+     "siglas": "CCa-PNC", 
+     "id": "0015"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 642, 
+     "porcentaje_votos": 6.3, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#D0D0D0", 
+     "diputados": 0, 
+     "votos": 31, 
+     "porcentaje_votos": 0.3, 
+     "siglas": "AHORA CANARIAS", 
+     "id": "0003"
+    }, 
+    {
+     "color": "#74A739", 
+     "diputados": 0, 
+     "votos": 610, 
+     "porcentaje_votos": 5.98, 
+     "siglas": "NCa", 
+     "id": "0053"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 29, 
+     "porcentaje_votos": 0.28, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 16, 
+     "porcentaje_votos": 0.16, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 178, 
+     "porcentaje_votos": 1.75, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 14, 
+     "porcentaje_votos": 0.14, 
+     "siglas": "PH", 
+     "id": "0072"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 25, 
+     "porcentaje_votos": 0.25, 
+     "siglas": "PCPE", 
+     "id": "0063"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "las-palmas", 
+   "name": "Las Palmas"
+  }, 
+  "52": {
+   "votos_nulos": 20, 
+   "code": "52", 
+   "porcentaje_censo_escrutado": 4.8, 
+   "porcentaje_votos_blanco": 1.05, 
+   "abstencion": 1057, 
+   "porcentaje_total_votantes": 59.31, 
+   "mesas_totales": 87, 
+   "total_votantes": 1541, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 40.69, 
+   "prov_code": "52", 
+   "censo": 54125, 
+   "ccaa_code": "19", 
+   "votos_blanco": 16, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 2598, 
+   "ccaaName": "Melilla", 
+   "diputados": 1, 
+   "porcentaje_votos_nulos": 1.49, 
+   "partidos": [
+    {
+     "color": "#ea580c", 
+     "diputados": 1, 
+     "votos": 441, 
+     "porcentaje_votos": 29.05, 
+     "siglas": "CpM", 
+     "id": "0021"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 0, 
+     "votos": 145, 
+     "porcentaje_votos": 9.55, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 220, 
+     "porcentaje_votos": 14.49, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 2, 
+     "porcentaje_votos": 0.13, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 0, 
+     "porcentaje_votos": 0.0, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 56, 
+     "porcentaje_votos": 3.69, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 0, 
+     "votos": 283, 
+     "porcentaje_votos": 18.64, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 0, 
+     "votos": 355, 
+     "porcentaje_votos": 23.39, 
+     "siglas": "PP", 
+     "id": "0083"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "melilla", 
+   "name": "Melilla"
+  }, 
+  "19": {
+   "votos_nulos": 530, 
+   "code": "19", 
+   "porcentaje_censo_escrutado": 29.17, 
+   "porcentaje_votos_blanco": 0.73, 
+   "abstencion": 10766, 
+   "porcentaje_total_votantes": 79.73, 
+   "mesas_totales": 547, 
+   "total_votantes": 42345, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 20.27, 
+   "prov_code": "19", 
+   "censo": 182105, 
+   "ccaa_code": "07", 
+   "votos_blanco": 306, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 53111, 
+   "ccaaName": "Castilla - La Mancha", 
+   "diputados": 3, 
+   "porcentaje_votos_nulos": 1.25, 
+   "partidos": [
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 6910, 
+     "porcentaje_votos": 16.53, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#ea433e", 
+     "diputados": 1, 
+     "votos": 13100, 
+     "porcentaje_votos": 31.33, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 10170, 
+     "porcentaje_votos": 24.32, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 0, 
+     "votos": 6270, 
+     "porcentaje_votos": 14.99, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 91, 
+     "porcentaje_votos": 0.22, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#808080", 
+     "diputados": 0, 
+     "votos": 101, 
+     "porcentaje_votos": 0.24, 
+     "siglas": "PCOE", 
+     "id": "0057"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 80, 
+     "porcentaje_votos": 0.19, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 370, 
+     "porcentaje_votos": 0.88, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 0, 
+     "votos": 4417, 
+     "porcentaje_votos": 10.56, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "guadalajara", 
+   "name": "Guadalajara"
+  }, 
+  "18": {
+   "votos_nulos": 2824, 
+   "code": "18", 
+   "porcentaje_censo_escrutado": 38.09, 
+   "porcentaje_votos_blanco": 0.69, 
+   "abstencion": 71059, 
+   "porcentaje_total_votantes": 73.51, 
+   "mesas_totales": 1101, 
+   "total_votantes": 197227, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 26.49, 
+   "prov_code": "18", 
+   "censo": 704313, 
+   "ccaa_code": "01", 
+   "votos_blanco": 1346, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 268286, 
+   "ccaaName": "Andalucía", 
+   "diputados": 7, 
+   "porcentaje_votos_nulos": 1.43, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 3, 
+     "votos": 72004, 
+     "porcentaje_votos": 37.04, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 1, 
+     "votos": 31030, 
+     "porcentaje_votos": 15.96, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 26192, 
+     "porcentaje_votos": 13.47, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 1, 
+     "votos": 25683, 
+     "porcentaje_votos": 13.21, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 34573, 
+     "porcentaje_votos": 17.78, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#b50c17", 
+     "diputados": 0, 
+     "votos": 154, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PCPA", 
+     "id": "0058"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 323, 
+     "porcentaje_votos": 0.17, 
+     "siglas": "AxSI", 
+     "id": "0011"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 197, 
+     "porcentaje_votos": 0.1, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#C0C0C0", 
+     "diputados": 0, 
+     "votos": 223, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "IZAR", 
+     "id": "0044"
+    }, 
+    {
+     "color": "#101977", 
+     "diputados": 0, 
+     "votos": 209, 
+     "porcentaje_votos": 0.11, 
+     "siglas": "PUM+J", 
+     "id": "0100"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 2020, 
+     "porcentaje_votos": 1.04, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 150, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 297, 
+     "porcentaje_votos": 0.15, 
+     "siglas": "JF", 
+     "id": "0047"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "granada", 
+   "name": "Granada"
+  }, 
+  "08": {
+   "votos_nulos": 5133, 
+   "code": "08", 
+   "porcentaje_censo_escrutado": 35.81, 
+   "porcentaje_votos_blanco": 0.56, 
+   "abstencion": 320431, 
+   "porcentaje_total_votantes": 77.6, 
+   "mesas_totales": 5970, 
+   "total_votantes": 1110104, 
+   "year": 2019, 
+   "id_registro": "CI", 
+   "porcentaje_abstencion": 22.4, 
+   "prov_code": "08", 
+   "censo": 3994468, 
+   "ccaa_code": "09", 
+   "votos_blanco": 6178, 
+   "type": "generales_congreso", 
+   "censo_escrutado": 1430535, 
+   "ccaaName": "Cataluña", 
+   "diputados": 32, 
+   "porcentaje_votos_nulos": 0.46, 
+   "partidos": [
+    {
+     "color": "#ea433e", 
+     "diputados": 9, 
+     "votos": 281032, 
+     "porcentaje_votos": 25.43, 
+     "siglas": "PSOE", 
+     "id": "0096"
+    }, 
+    {
+     "color": "#fec42d", 
+     "diputados": 8, 
+     "votos": 250613, 
+     "porcentaje_votos": 22.68, 
+     "siglas": "ERC", 
+     "id": "0037"
+    }, 
+    {
+     "color": "#854383", 
+     "diputados": 6, 
+     "votos": 182554, 
+     "porcentaje_votos": 16.52, 
+     "siglas": "UNIDAS PODEMOS", 
+     "id": "0077"
+    }, 
+    {
+     "color": "#ee8444", 
+     "diputados": 4, 
+     "votos": 130227, 
+     "porcentaje_votos": 11.79, 
+     "siglas": "Cs", 
+     "id": "0022"
+    }, 
+    {
+     "color": "#f77991", 
+     "diputados": 3, 
+     "votos": 109559, 
+     "porcentaje_votos": 9.92, 
+     "siglas": "JxCAT", 
+     "id": "0049"
+    }, 
+    {
+     "color": "#95c955", 
+     "diputados": 1, 
+     "votos": 39873, 
+     "porcentaje_votos": 3.61, 
+     "siglas": "VOX", 
+     "id": "0117"
+    }, 
+    {
+     "color": "#33b0df", 
+     "diputados": 1, 
+     "votos": 52300, 
+     "porcentaje_votos": 4.73, 
+     "siglas": "PP", 
+     "id": "0083"
+    }, 
+    {
+     "color": "#B0B0B0", 
+     "diputados": 0, 
+     "votos": 2001, 
+     "porcentaje_votos": 0.18, 
+     "siglas": "RECORTES CERO-GV", 
+     "id": "0104"
+    }, 
+    {
+     "color": "#606060", 
+     "diputados": 0, 
+     "votos": 662, 
+     "porcentaje_votos": 0.06, 
+     "siglas": "IZQP", 
+     "id": "0045"
+    }, 
+    {
+     "diputados": 0, 
+     "porcentaje_votos": 0.05, 
+     "votos": 537, 
+     "id": "0019", 
+     "color": "#202020"
+    }, 
+    {
+     "color": "#93a607", 
+     "diputados": 0, 
+     "votos": 18444, 
+     "porcentaje_votos": 1.67, 
+     "siglas": "PACMA", 
+     "id": "0054"
+    }, 
+    {
+     "color": "#909090", 
+     "diputados": 0, 
+     "votos": 773, 
+     "porcentaje_votos": 0.07, 
+     "siglas": "PCTE", 
+     "id": "0066"
+    }, 
+    {
+     "color": "#505050", 
+     "diputados": 0, 
+     "votos": 898, 
+     "porcentaje_votos": 0.08, 
+     "siglas": "PCPC", 
+     "id": "0061"
+    }, 
+    {
+     "color": "#707070", 
+     "diputados": 0, 
+     "votos": 29317, 
+     "porcentaje_votos": 2.65, 
+     "siglas": "FRONT REPUBLICÀ", 
+     "id": "0042"
+    }
+   ], 
+   "result_ccaa": "https://elecciones.sta.internet.int/elecciones-generales/resultados/congreso/2019/99/p99.html", 
+   "slug": "barcelona", 
+   "name": "Barcelona"
+  }
+ }
+}

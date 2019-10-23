@@ -26,14 +26,11 @@ class AutonomicasData extends Data
 			$year = $this->year;
 		}
 
-		var_dump($this);
-		die;
+		$path = $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p99.json';
 
-		$provincia = $this->provincia;
-		if (count($this->datos_estado['ccaa'][$this->ccaa]['circunscripciones']) <= 1) {
-			$provincia = '99';
+		if (in_array($this->type, ['elecciones-asturias'])) {
+			$path = $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/99/p99.json';
 		}
-
-		return $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/' . $provincia . '/p99.json';
+		return $path;
 	}
 }

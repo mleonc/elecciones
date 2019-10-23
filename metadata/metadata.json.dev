@@ -37,7 +37,7 @@
     "static_include_name": "main-static-link-style.html",
     "static_include_name_mobile": "main-static-mobile-link-style.html"
   },
-  "js_component": "http://miguelangel.leon.elmundo.dev.internet.int/ueElectionsRedesign/dist",
+  "js_component": "http://10.5.223.66:4000/",
   "assets_desktop": "assets/desktop/master/",
   "assets_mobile": "assets/mobile/master/",
   "publisher": "https://plus.google.com/u/0/+elmundo",
