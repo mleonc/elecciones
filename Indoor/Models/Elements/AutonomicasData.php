@@ -14,23 +14,40 @@ class AutonomicasData extends Data
 		if (empty($year)) {
 			$year = $this->year;
 		}
-		return $this->json_basehost . $this->type . '/resultados/' . $year . '/' . $this->ccaa . '/99/p99.json';
+		$path = $this->json_basehost . $this->type . '/resultados/' . $year . '/' . $this->ccaa . '/99/p99.json';
+		
+		if (in_array($this->type, ['elecciones-baleares'])) {
+			$path = $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . $year . '/' . $this->ccaa . '/99.json';
+		}
+
+		return $path;
 	}
 
 	public function getProvinciaPath($year = '')
 	{
-		if (!isset($this->provincia) || empty($this->provincia) || $this->provincia == '99') {
-			return '';
-		}
 		if (empty($year)) {
 			$year = $this->year;
 		}
-
-		$path = $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/' . $this->provincia . '/p99.json';
+		
+		$path = parent::getProvinciaPath($year);
 
 		if (in_array($this->type, ['elecciones-asturias'])) {
-			$path = $this->json_basehost . $this->type . '/resultados/' . (isset($this->subType)&&!empty($this->subType)?$this->subType. '/' : '') . '/' . $year . '/' . $this->ccaa . '/99/p99.json';
+			$path = $this->json_basehost . $this->type . '/resultados/'. $year . '/' . $this->ccaa . '/99/p99.json';
+		}
+		if (in_array($this->type, ['elecciones-baleares'])) {
+			$path = $this->json_basehost . $this->type . '/resultados/' . $year . '/' . $this->ccaa . '/99.json';
 		}
 		return $path;
+	}
+
+	public function showIndex()
+	{
+		$showIndex = parent::showIndex();
+
+		if (in_array($this->type, ['elecciones-murcia'])) {
+			$showIndex = true;
+		}
+
+		return $showIndex;
 	}
 }
