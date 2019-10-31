@@ -1,0 +1,100 @@
+{% set _ratio = 9/16 %}
+{# VIDEO ELEM #}
+    {% set videoWidth = "width:100%;" %}
+    {% if data.slot.position is defined %}
+        {% if data.slot.width is defined and data.slot.width != '' %}
+            {% set videoWidth = 'width:' ~ (data.slot.width)|number_format(0, '.', ',') ~ 'px;' %}
+        {%- endif %}
+    {%- endif -%}
+    <div id="video-{{ item.resource.getId() }}" style="{{-videoWidth-}}" {% if _videoClass is not empty %}class="{{ _videoClass }}" {% endif%}>
+    {% if action not in ['publish'] %}
+        <img src="{{ urlThumbnail }}" style="width:100%;" />
+    {% endif %}
+    </div>
+{# SCRIPTS #}
+    {% set tvAds = getTvTags(item) %}
+    <script type="text/javascript">
+        function load(element, id, urlThumbnail, sWidth, sHeight, partnerId, hasPubli, tags, topic, section, type, lId, titulo) {
+            var ratio = {{ _ratio }};
+            var img = new Image();
+            img.src = urlThumbnail;
+            function set (ratio) {
+                var width = element.parentElement.offsetWidth;
+                if ( sWidth != '') {
+                    width = sWidth;
+                }
+                element.style.height = Math.round( width * ratio) +"px";
+                element.style.offsetHeight = Math.round( width * ratio);
+                if ( sHeight != '') {
+                    height = sHeight;
+                }
+                if (!element.style.offsetHeight || element.style.offsetHeight < 100 ) {
+                    element.style.height = "450px";
+                    element.style.offsetHeight = 450;
+                }
+                if (typeof KalturaUE === 'object') {
+                    var kalturaPlayer = new KalturaUE.Player('video-' + id, kalturaPlayerConfig);
+                    kalturaPlayer.setConfig({
+                        partnerId: partnerId,
+                        opciones: {responsive: ratio }});
+                    if (new URL(location.href).searchParams.get('autoplay')) {
+                        kalturaPlayer.setConfig({opciones: {thumbnail: false, autoplay: true, autoMute: false}});
+                    }
+                    if (hasPubli == true) {
+                        kalturaPlayer.setTags(tags.split(","));
+                        kalturaPlayer.setTopic(topic);
+                        if (typeof kalturaPlayer.setSection === 'function') {
+                            kalturaPlayer.setSection(section);
+                        };
+                    }
+                    if (type == "audiofile") {
+                        kalturaPlayer.setConfig({opciones: {audioOnly: true, thumbnail: false, autoplay: false}});
+                    }
+                    if (type == "livestreamfile") {
+                        kalturaPlayer.setThumbnailUrl(urlThumbnail);
+                    }
+                    kalturaPlayer.load(id, titulo);
+                }
+            };
+            img.onload = function () {
+                if (img.width > 0) {
+                    ratio = img.height / img.width;
+                    set(ratio);
+                }
+                setTimeout(function() {
+                    var kImg = element.querySelectorAll('img')[0];
+                    if (kImg) {
+                        var aImg = new Image();
+                        aImg.src = kImg.src;
+                        aImg.onerror = function () {
+                            kImg.src = img.src;
+                        };
+                        kImg.alt = 'Retrieving from kaltura';
+                    }
+                }, 3000);
+            };
+            img.onerror = function () {
+                set(ratio);
+            };
+        };
+        var id = '{{ item.resource.getId() }}';
+        var urlThumbnail = '{{ urlThumbnail }}';
+        var sWidth = '{{ data.slot.width }}';
+        var sHeight = '{{ data.slot.height }}';
+        var partnerId = '{{ partner_id }}';
+        var publi = '{%- if data.section|default('')|split('/')|first == 'yodona' -%} kalturaPlayer.setPublicidad('{{ dfp_yodona_adTagUrl }}'); {%- endif -%}';
+        var tags = '';
+        var topic = '';
+        var section = '';
+        var hasPubli = false;
+        {%- if item.publicidad == true -%}
+        var tags = '{{ tvAds.tags }}';
+        var topic = '{{ tvAds.channel | slug }}';
+        var section = '{{ data.section|default('') }}';
+        var hasPubli = true;
+        {% endif %}
+        var titulo = '{{ item.titulo | default('') | wordWrap(70,'...') | encodeQuotationMarks }}';
+        var type = '{{item.resource.type}}';
+        var element = document.getElementById('video-' + id);
+        load(element, id, urlThumbnail, sWidth, sHeight, partnerId, hasPubli, tags, topic, section, type, titulo)
+    </script>

@@ -1,0 +1,24 @@
+{# CSS Classes #}
+{% set _tags = _tags|default('ue-c-article__tags ue-l-article--leftcol-width-from-desktop ue-l-article--float-left-from-desktop ue-l-article--move-to-leftcol-from-desktop ue-l-article--bottom-absolute-from-desktop') %}
+{% set _specialTags = _specialTags|default('ue-l-article--leftcol-width-from-tablet ue-l-article--float-left-from-tablet ue-l-article--move-to-leftcol-from-tablet ue-l-article--bottom-absolute-from-tablet ') %}
+{% set _item = _item|default('ue-c-article__tags-item') %}
+
+{% if isSpecial|default(false) %}
+	{% set _tags = _tags ~ ' ' ~ _specialTags %}
+{% endif %}
+
+{%- set tags = getTags(content.tags, 'ue', false) -%}
+{%- if tags is defined and tags|length > 0 and content.isPreview | default(false) == false -%}
+	<ul class="{{ _tags }}" {{ dataSEO.tags.aria|default("")|raw }}>
+		{%- for tag in tags -%}
+			{% if tag.autocoverUrl is defined and tag.autocoverUrl is not empty %}
+				{% set url = tag.autocoverUrl|trim %}
+				{% if tag.titulo is defined and tag.titulo is not empty %}
+					<li class="{{ _item }}">
+						<a href="{{ url|default("#") }}">{{ tag.titulo|trim }}</a>
+					</li>
+				{% endif %}
+			{% endif %}
+		{%- endfor -%}
+	</ul>
+{%- endif -%}

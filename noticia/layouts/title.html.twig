@@ -1,0 +1,7 @@
+{# CSS Clases#}
+    {% set _title	= _title|default('ue-c-section-title') %}
+    {% set _link	= _link|default('ue-c-section-title-link') %}
+
+<div class="{{_title}}">
+    <a href="#" class="{{_link}}">{{ get_section_pretty_name(content.sectionId)|upper }}</a>
+</div>

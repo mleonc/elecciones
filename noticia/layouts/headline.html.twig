@@ -1,0 +1,15 @@
+{# CSS Classes #}
+	{% set _headline 		= _headline|default('ue-c-article__headline') %}
+	{% set _specialHeadline = _specialHeadline|default('') %}
+	{% set _opinion 		= _opinion|default('ue-c-article__headline--opinion') %}
+
+{% if isSpecial|default(false) == true %}
+	{% set _headline = _headline ~ ' ' ~ _specialHeadline %}
+{% endif %}
+
+{% if content.type == "opinion" %}
+    {% set _headline = _headline ~ ' ' ~ _opinion %}
+{% endif %}
+
+{% set title = content.titulo|default('Título por defecto de prueba')|xul('content.titulo') %}
+<h1 class="{{ _headline }}" {{ dataSEO.headline|default('') }} >{{ title|raw }}</h1>

@@ -1,0 +1,41 @@
+{# CSS Classes #}
+	{% set _multi = _multi|default('ue-c-multipurpose') %}
+	{% set _multiHeader = _multiHeader|default('ue-c-multipurpose__header') %}
+	{% set _multiHeading = _multiHeading|default('ue-c-multipurpose__heading') %}
+	{% set _multiBody = _multiBody|default('ue-c-multipurpose__body') %}
+	{% set _multiItem = _multiItem|default('ue-c-multipurpose__item') %}
+
+	{% set translations = translations|default({
+	    'interest'  : 'Te puede interesar'
+	}) %}
+
+{% set type = type|default('n') %}
+{% if  content.isPremium | default(false) == false %}
+<div class="{{ _multi|trim }}" {{ dataSEO.dfp.aria|default('') }}>
+    <div class="{{ _multiHeader|trim }}">
+        <span class="{{ _multiHeading|trim }}">{{ translations.interest|default('')|trim }}</span>
+    </div>
+    <div class="{{ _multiBody|trim }}">
+	    <div class="{{ _multiItem|trim }}">
+	    	{% set adsItems = [
+				{ 'name': 'native', 'slot': 'nata' },
+			] %}
+			{%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+					'adsItems': adsItems,
+                	'type'     : type|default('n')
+                }
+			-%}
+		</div>
+		<div class="{{ _multiItem|trim }}">
+			{% set adsItems = [
+				{ 'name': 'native', 'slot': 'natb' },
+			] %}
+			{%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+					'adsItems': adsItems,
+                	'type'     : type|default('n')
+                }
+			-%}
+		</div>
+    </div>
+</div>
+{% endif %}

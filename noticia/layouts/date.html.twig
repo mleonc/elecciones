@@ -1,0 +1,35 @@
+{# CSS Classes #}
+    {% set _date = _date|default('ue-c-article__publishdate') %}
+
+{% set translations = {
+    'updated'  : 'Actualizado'
+} %}
+
+{% set isUpdated = false %}
+{% if content.isUpdated is defined and content.isUpdated() == true %}
+    {% set isUpdated = true %}
+{% endif %}
+
+{% set format = 'c' %}
+{% set showDate = showDate is defined ? showDate : true %}
+{% set text %}
+    {{ content.publishedAt.date|default("now")|localizeddate("none", "none", "es_ES", null, "EEEE")|capitalize }},
+    {{ content.publishedAt.date|default("now")|localizeddate("none", "none", "es_ES", null, "d") }}
+    {{ content.publishedAt.date|default("now")|localizeddate("none", "none", "es_ES", null, "MMMM") }}
+    {{ content.publishedAt.date|default("now")|localizeddate("none", "none", "es_ES", null, "y") }}
+    - 
+    {% if isUpdated == true %}<span>{% endif %}
+    {{ content.publishedAt.date|default("now")|date("H:i") }}
+    {% if isUpdated == true %}</span>{% endif %}
+{% endset %}
+
+<div class="{{ _date }}" {{ dataSEO.date.aria|default('')|raw }}>
+    {% if isUpdated == true %}
+        <span>{{ translations['updated']|trim }} </span>
+    {% endif %}
+    <time {{ dataSEO.updated|default('') }} datetime="{{- dateTimeZulu(content.publishedAt|default('now')|date(format)) -}}">
+        {% if showDate == true %}
+            {{ text }}
+        {% endif %}
+    </time>
+</div>

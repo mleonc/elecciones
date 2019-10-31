@@ -1,0 +1,119 @@
+{% set hasPubli = hasPubli|default(isMobile|default(false)) %}
+{# CSS Classes #}
+{% set _firstLetter = _firstLetter|default('ue-c-article--first-letter-highlighted') %}
+{% set firstLetterCapitalizedMinLength = 300     %}
+
+{%- macro showDfp(content, paragraph, paragraphNumber, isMobile, hasPubli, adsDfp, _dfpSection, isAdvertisingDisplayed = false) -%}
+    
+    {%- if paragraph is defined and paragraphNumber == paragraph_number_advertising and isMobile and hasPubli -%}
+        {% set isAdvertisingDisplayed = true %}
+    {%- endif -%}
+
+    {%- if isAdvertisingDisplayed == true -%}
+        {% set adsItems = [
+            { 'name': 'roba', 'slot': 'r', 'isSticky': false },
+        ] %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems' : adsItems,
+                'type'     : content.getType()|dfpElMundoType|default('n') 
+            }
+        -%}
+    {%- endif -%}
+{%- endmacro -%}
+
+{%- macro getIsSpecial(content) -%}
+    {% set layout = content.getLayout()|default(null) %}
+    {% set isSpecial = false %}
+    {%- if layout is defined and layout.getName()|default('') in ['noticia-especial-block'] -%}
+        {% set isSpecial = true %}
+    {%- endif -%}
+{%- endmacro -%}
+
+{% if isSpecial is not defined %}
+    {%- set isSpecial = _self.getIsSpecial(content) -%}
+{% endif %}
+
+{% set body %}
+    {%- import "UEditCmsBundle:Macros:advertising.html.twig" as adsDfp -%}
+    {%- import "UEditCmsBundle:Macros:components.html.twig" as UeComponents -%}
+    {% set isAdvertisingDisplayed = false %}
+    {% set dfp = dfp_portal_web %}
+    {% if isMobile %}
+        {% set dfp = dfp_portal_mobile %}
+    {% endif %}
+    {% set _dfpSection = adsDfp.section(content, dfp, content.getType()|dfpType, action)|trim  %}
+
+    {% set totalParagraphs = content.getTaggedParagraphs()|default([])|length %}
+    {% if totalParagraphs >= 3 %}
+        {% set megaPosition = 3 %}
+    {% else %}
+        {% set megaPosition = totalParagraphs %}
+    {% endif %}
+
+    {% set paragraphNumber = 0 %}
+    {%- for key, paragraph in content.getTaggedParagraphs()|default('') -%}
+        {% set paragraphNumber = key + 1 %}
+
+        {% if isSpecial|default(false) %}
+            {% if key == 0 and paragraph|length >= firstLetterCapitalizedMinLength %}
+                {% set paragraph = paragraph|replace({"<p>":"<p class='" ~ _firstLetter ~ "'>"}) %}
+            {% endif %}
+        {% endif %}
+
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/summaries.html.twig' with {
+          'xData' : {
+            'type':'ueSumario',
+            'paragraph': paragraphNumber,
+            'container': {'tag':'div', 'class':'ue-c-article__summary'},
+            'ribbonTop': '',
+            'ribbonBottom': '',
+            'section':content.sectionId,
+            'portal':'',
+            'containerId':content.id,
+            'isMobile': isMobile,
+            'metadata': {
+              'titulo': content.titulo|default(''),
+              'description': content.texto|default('')|encodeQuotationMarks|striptags|slice(0,180),
+              'updatedAt': content.updatedAt
+            },
+            'header': {
+                'class':'ue-c-article__subheadline'
+            }
+          }
+        } -%}
+
+        {{ paragraph|setParagraphInSnippet(["claves","fichas"]) | raw }}
+
+        {% set next = _self.showDfp(content, paragraph_number_advertising, paragraphNumber, isMobile, hasPubli, adsDfp, _dfpSection) %}
+        {%- if loop.last == true -%}
+            {% set next %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/summaries.html.twig' with {
+                  'xData' : {
+                    'type':'ueSumario',
+                    'paragraph': '9999',
+                    'container': {'tag':'div', 'class':'ue-c-article__summary'},
+                    'ribbonTop': '',
+                    'ribbonBottom': '',
+                    'section':content.sectionId,
+                    'portal':'',
+                    'containerId':content.id,
+                    'isMobile': isMobile,
+                    'metadata': {
+                      'titulo': content.titulo|default(''),
+                      'description': content.texto|default('')|encodeQuotationMarks|striptags|slice(0,180),
+                      'updatedAt': content.updatedAt
+                    },
+                    'header': {
+                        'class':'ue-c-article__subheadline'
+                    }
+                  }
+                } -%}
+            {% endset %}
+        {%- endif -%}
+        {{- next -}}
+    {%- endfor -%}
+{% endset %}
+
+{% set body = body|default('')|xul('content.texto') %}
+
+{{ body|raw }}

@@ -1,0 +1,11 @@
+{% set enable = true %}
+
+{% if enable %}
+    <div class="publicidad publicidad-interlink">
+    {%- if action == 'publish' %}
+        <?php @include('/mnt/filer/html/produccion/datos/portales/es/elmundo/www/includes/editorial/pan-ads/pan.html.inc'); ?>
+    {%- else %}
+        <div id="publi-dev-pan" class="publi-dev">pan</div>
+    {%- endif %}
+    </div>
+{% endif %}

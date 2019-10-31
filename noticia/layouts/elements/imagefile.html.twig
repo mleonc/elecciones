@@ -1,0 +1,79 @@
+{# CSS Classes #}
+    {% set _imgClass = _imgClass|default('full-image') %}
+
+
+{% if item is defined and item is not empty and data is defined and data is not empty %}
+	{%- if item is iterable and item.isArrayItem is not defined -%}
+		{% set found = false %}
+		{% set item  = null %}
+        {%- for element in item if not found %}
+            {%- if 	element.resource.id is defined and 
+            		element.resource.position is not empty and
+            		data.slot.position is defined and 
+            		data.slot.position is not empty and
+            		element.resource.position == data.slot.position and 
+            		element.resource.visibility == true -%}
+                {%- set item = element -%}
+                {%- set found = true -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
+
+    {% if (item is defined and item is not empty) %}
+    	{# DESCRIPTION #}
+	    	{% set alt = item.title|default('')|wordWrap(70,'...')|encodeQuotationMarks %}
+	    	{%- if (item.description is defined and item.description is not empty) -%}
+	            {% set alt = item.description|wordWrap(70,'...')|encodeQuotationMarks %}
+	        {%- endif -%}
+	    {# CROP #}
+	    	{% set mediaSource = item.resource.url|default(path('uedit_multimedia.retrieve_url', {'id': item.resource.id, 'type': item.resource.type})) %}
+	    	{% if data.slot.crop is defined and data.slot.crop == true and item.resource.state == 'pub' and file_exists(item.resource.path) %}
+            	{% set mediaSource = (item.resource.path|thumbnail(data.slot.width, data.slot.height, "url", false))|default(path('uedit_multimedia.retrieve_url', {'id': item.resource.id, 'type': item.resource.type})) %}
+	        {% endif %}
+        {# WRAPPER #}
+        	{%- if data.container is defined and data.container is not empty %}
+            	<{{ data.container.tag|default('div') }}
+            		{%- if data.container.class is defined and data.container.class is not empty %} class="{{ data.container.class }}" {%- endif -%}>
+        	{%- endif -%}
+        {# OPEN LINK #}
+        	{% set hasLink = false %}
+        	{%- if (item.url is defined and item.url is not empty) or (link is defined and link is not empty) -%}
+                {%- if (link is not defined or link is empty) -%}
+                    {%- set link = item.url -%}
+                {%- endif -%}
+        		{% set hasLink = true %}
+        		<a href="{{ link }}" {%- if (item.target) -%}target="_blank"{%- endif -%}>
+        	{%- endif -%}
+        {# MOBILE OPTIMIZE #}
+        	{% set optimizedImage = false %}
+        	{% set imageOptimizationType = '' %}
+        	{%- set dataSrc = false -%}
+            {% if 	isMobileFormat|default(false) == true and 
+            		data.image.size is defined and data.image.size == 'small' and getAutocoverSectionId() in ['portada'] %}
+                {% set optimizedImage = true %}
+                {% set imageOptimizationType = 'small' %}
+                {% if getImagesCounter() >= lazy_loading_mobile_loaded_images %}
+                	{%- set dataSrc = true -%}
+                {% endif %}
+            {% endif %}
+            {%- if getImagesCounter() >= lazy_loading_desktop_loaded_images and isMobileFormat|default(false) == false -%}
+                {%- set dataSrc = true -%}
+            {%- endif -%}
+        {# IMG ELEM #}
+        	{% if mediaSource is not empty %}
+        		{% set media = mediaSource %}
+        		{% if optimizedImage == true %}
+        			{% set media = mediaSource|optimizedImage(imageOptimizationType, data.containerCt) %}
+        		{% endif %}
+            	<img src="{{ media }}" class="{{ data.image.imgClass|default(_imgClass) }}" alt="{{ alt }}" {{ dataSEO.media.img|default('')}} />
+        	{% endif %}
+        {# CLOSE LINK #}
+        	{% if hasLink %}
+        		</a>
+        	{% endif %}
+		{# CLOSE WRAPPER #}
+			{%- if data.container is defined and data.container is not empty %}
+				</{{ data.container.tag|default('div') }}>
+			{%- endif -%}
+    {% endif %}
+{% endif %}

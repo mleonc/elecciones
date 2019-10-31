@@ -1,0 +1,73 @@
+{# CSS Classes #}
+    {% set _class = {
+        'default'   : {
+            'left'        : 'ue-l-article__leftColumn',
+            'right'       : 'ue-l-article__rightColumn',
+        },
+        'article'   : {
+            'left'        : 'ue-l-article--width-2col-from-desktop ue-l-article--float-left-from-desktop ue-l-article--left-2-col-from-desktop',
+            'up'          : 'ue-l-article--order-1-from-mobile ue-l-article--move-up',
+            'down'        : 'ue-l-article--bottom-absolute-from-desktop',
+            'right'       : '',
+            'down-right'  : 'ue-l-article--bottom-absolute-from-desktop ue-l-article--bottom-right-absolute-from-desktop',
+        },
+        'bar'       : {
+            'default'     : 'ue-c-article__bar ue-l-article--leftcol-width-from-desktop ue-l-article--float-left-from-desktop ue-l-article--move-to-leftcol-from-desktop ue-l-article--order-1-from-mobile',
+            'special'     : 'ue-c-article__bar ue-l-article--leftcol-width-from-desktop ue-l-article--width-100 ue-l-article--float-left-from-desktop ue-l-article--float-left-from-tablet ue-l-article--move-to-leftcol-from-tablet ue-l-article--move-to-leftcol-from-desktop ue-l-article--order-1-from-mobile',
+        },
+        'main'      : {
+            'minimum'     : 'ue-l-article__main-column ue-l-article--minimum-content-from-tablet',
+            '300h'        : 'ue-l-article__main-column ue-l-article--height-300-from-tablet',
+            'right'       : 'ue-l-article__secondary-column',
+            'break'       : 'ue-l-article__secondary-column--break'
+        },
+        'secondary' : {
+            'item'        : 'ue-l-article__secondary-column-item',
+            'rail'        : 'ue-l-article__secondary-column-rail',
+            'down'        : 'ue-l-article__secondary-column-bottom',
+            'grow'        : 'ue-l-article--grow',
+            'no-grow'     : 'ue-l-article--no-grow',
+            'fixed-size'  : 'ue-l-article--rightcol-width-from-desktop',
+        },
+        'special'   : {
+            'right'       : 'ue-l-article--width-300 ue-l-article--edge-left-n-right-until-tablet ue-l-article--height-600-from-desktop ue-l-article--move-to-rightcol-from-tablet ue-l-article--move-to-rightcol-from-desktop ue-l-article--rightcol-width-from-tablet ue-l-article--float-right-from-tablet',
+            'bottom-right': 'ue-l-article--bottom-absolute-from-desktop ue-l-article--bottom-right-absolute-from-desktop',
+            'fixed-size'  : 'ue-l-article--rightcol-width-from-desktop',
+        },
+    } %}
+
+{# inner    | string | The value will set the proper css class      | ['default', 'article' ] #}
+{# position | string | Establish the visual position of the element | ['left', 'up', 'down', 'right' ] #}
+{% set inner = inner|default('default') %}
+{% set position = position|default('default')|split(' ') %}
+
+{% set style = '' %}
+{% set class = '' %}
+
+{% for pos in position %}
+    {% if _class[inner][pos] is defined and _class[inner][pos] is not empty %}
+        {% set class = class ~ ' ' ~ _class[inner][pos] %}
+    {% endif %}
+{% endfor %}
+
+{% set aStyles = '' %}
+{% if styles is defined and styles is iterable %}
+    {% for key,value in styles %}
+        {% set aStyles = aStyles ~ ' ' ~ key ~ ':' ~ value ~ ';' %}
+    {% endfor %}
+{% endif %}
+
+{% if items is not empty %}
+    <div class="{{ class|trim }}" {% if aStyles is not empty %}style="{{ aStyles|trim }}"{% endif %}>
+        {% for item in items|default([]) %}
+            {% set aItem = item %}
+            {% if item is iterable %}
+                {% set aItem %}
+                    {% set styles = '' %}
+                    {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with item -%}
+                {% endset%}
+            {% endif %}
+            {{ aItem }}
+        {% endfor %}
+    </div>
+{% endif %}

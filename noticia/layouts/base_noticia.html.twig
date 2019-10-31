@@ -1,0 +1,248 @@
+{% if action is defined -%}
+    {{ setAction(action) }}
+{%- endif -%}
+{%- if content.redirectionUrl is defined and content.redirectionUrl is not empty and action == 'publish' -%}
+    <?php
+        header("Location: {{content.redirectionUrl}}",TRUE,301);
+        exit();
+    ?>
+{%- else -%}
+   <?php
+    $static_path= "{{ statics_includes_path }}";
+    $static_registro_path = "{{ statics_includes_registro_path }}";
+    include_once ('{{ idUsr_cookie }}');
+    include_once ('{{ uePrefs_cookie }}');
+    {% if content.isPreview|default(false) == true %}
+        {%- set mobile_url = content.getPublication('mobile').path|default('') | replace({'.html': '_preview.html'}) -%}
+    {% else %}
+        {%- set mobile_url = content.getPublication('mobile').path|default('') -%}
+    {% endif -%}
+    if ($device == 'm' && is_file("{{ mobile_url }}")) {
+        @include ("{{ mobile_url }}");
+        exit();
+    }
+?>
+{%- set positions = {} -%}
+{# Inicio de definicion de macros #}
+{%- import "UEditCmsBundle:Macros:tools.html.twig" as elMundoTwigTools -%}
+{%- import "UEditCmsBundle:Macros:advertising.html.twig" as adsDfp -%}
+{%- import "UEditCmsBundle:Macros:components.html.twig" as UeComponents -%}
+{%- import "UEditCmsBundle:Macros:tools.html.twig" as ueditTwigTools -%}
+{%- import "UEditCmsBundle:Macros:multimedia.html.twig" as UeMultimedia -%}
+{%- import "UEditCmsBundle:Macros:editorialComponents.html.twig" as UeEditorialCom -%}
+{%- import "UEditCmsBundle:Macros:layoutComponents.html.twig" as layoutComponents -%}
+{# Fin de definicion de macros #}
+{%- if content.getPublication('web').url is defined -%}
+    {%- set baseUrl = content.getPublication('web').url -%}
+{%- else -%}
+    {%- set baseUrl = '' -%}
+{%- endif -%}
+{%- set baseUrlImage = ''  -%}
+{%- set ModelName = content.getPublication('web').getLayout.modelName | slug | default('default') -%}
+
+{%- if action == 'publish' and content.multimedia.items | length > 0 -%}
+    {%- set huecoMultimedia = false -%}
+    {%- for element in content.multimedia.items -%}
+        {%- if element.state == 'pub' and element.resource and element.resource.id is defined and huecoMultimedia == false -%}
+            {%- if element.resource.type == 'videofile' or element.resource.type == 'livestreamfile'  -%}
+                {% if element.resource.videoProvider|default("") == "youtube" %}
+                    {%- set baseUrlImage = (element.resource.id|getYoutubeImgThumbnail)['url']  -%}
+                {% else %}
+                    {%- set baseUrlImage = "https://ak.uecdn.es/p/" ~  partner_id  ~ "/thumbnail/entry_id/" ~  element.resource.id  ~ "/width/657/type/2/bgcolor/000000/" ~  element.resource.id  ~ ".jpg"  -%}
+                {% endif %}
+                {%- if element.resource.type == 'livestreamfile' -%}
+                    {%- set baseUrlImage = baseUrlImage ~ "/cache_st/" ~ xData.metadata.updatedAt|date('U') -%}
+                {%- endif -%}
+            {%- else -%}
+                {%- set baseUrlImage = element.resource.url -%}
+            {%- endif -%}
+            {%- set huecoMultimedia = true -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif -%}
+
+{%- set slots = {} -%}
+{%- set twitterSite = content.section.seccion | viaTwitter -%}
+<?php ob_start(); ?>
+{{ elMundoTwigTools.comentarios(content.id, true) }}
+<?php
+    $num_comments_{{ content.id }} = trim(ob_get_contents()); ob_end_clean();
+    if (!is_numeric($num_comments_{{ content.id }})) {
+        $num_comments_{{ content.id }} = "";
+    }
+?><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset={{ html_charset }}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
+{%- if content.tituloSeo is defined and content.tituloSeo is not empty -%}
+    <title data-ue-u="title" data-ue-c="innerHTML">{{ content.tituloSeo }}: {{ content.titulo|default('')|striptags }} | {{ get_section_pretty_name(content.sectionId) }}</title>
+{%- else -%}
+    {%- set portadilla = findPortadillaBySectionId(content.sectionId) -%}
+    {%- if portadilla.seoTitleForContent is defined and portadilla.seoTitleForContent is not empty -%}
+        <title data-ue-u="title" data-ue-c="innerHTML">{{ portadilla.seoTitleForContent }}: {{ content.titulo|default('')|striptags }} | {{ get_section_pretty_name(content.sectionId) }}</title>
+    {%- else -%}
+        {%- if titleSeoModel is defined and titleSeoModel is not empty and titleSeoModel|trim != ':' -%}
+            <title data-ue-u="title" data-ue-c="innerHTML">{{ titleSeoModel|replace({' :':':'}) }} {{ content.titulo|default('')|striptags }} | {{ get_section_pretty_name(content.sectionId) }}</title>
+        {%- else -%}
+            <title data-ue-u="title" data-ue-c="innerHTML">{{ content.titulo|default('')|striptags }} | {{ get_section_pretty_name(content.sectionId) }}</title>
+        {%- endif -%}
+    {%- endif -%}
+{%- endif -%}
+    {% if action == 'publish' %}
+         {{ elMundoTwigTools.experiments(content.getPublication('web').url,
+            {
+            'portal': content.section.portal,
+            'section': content.section.seccion,
+            'ctType': content.type,
+            'position': 'header',
+            'version': 'web'
+            })
+         }}
+    {% endif %}
+    {%- block head -%}{%- endblock -%}
+    <meta name="theme-color" content="#2e6d9d">
+    <meta name="referrer" content="unsafe-url">
+
+    {%- block cssFiles -%}{%- endblock -%}
+    {%- block jsFiles -%}{%- endblock -%}
+    {%- if action != 'publish' %}
+        <script> var huecosMiniContenidos = {}; </script>
+    {% endif %}
+    {% if portal_environment == 'dev' %}
+        <script type='text/javascript'>
+            var gptadslots=[];
+            var googletag=googletag||{};
+            googletag.cmd=googletag.cmd||[];
+            (function(){
+                var gads=document.createElement('script');
+                gads.async=true;
+                gads.type='text/javascript';
+                var useSSL='https:'==document.location.protocol;
+                gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';
+                var node=document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads,node);
+            })();
+        </script>
+    {% endif %}
+    {{ ueditTwigTools.jsonLD(content) }}
+
+</head>
+<body>
+    <?php @include("{{ statics_includes_path }}/sembrador_segmentacion.php") ?>
+    <?php @include("{{ cont_nav_includes_path }}/nav_continua_active.php") ?>
+    {%- set main_section_class = 'default' -%}
+
+    {%- if content.ttlComments is defined and content.ttlComments != '' and action == 'publish' %}
+        {%- set num_comentarios = UeComponents.getCommentsData(content, true) -%}
+        {%- set pathComentarios = content.id ~ '_comentarios_numero.html' -%}
+        <?php
+            if (file_exists('{{ pathComentarios }}')){
+                $numComentarios = file_get_contents('{{ pathComentarios }}');
+            }
+        ?>
+    {%- else -%}
+        {%- set num_comentarios = '0' -%}
+    {% endif %}
+
+    {%- if action == 'publish' -%}
+       {% include 'UEditCmsBundle:Structures:common/_login_seed.html.twig' %}
+    {%- endif -%}
+
+    {% block contNavScripts %}{% endblock %}
+
+    {%- set tagList = getTags(content.tags, 'ue') -%}
+
+    {%- set _tagListDFP = '' -%}
+    {% for tag in tagList %}
+        {%- if loop.first -%}
+            {%- set _tagListDFP = "'" ~ tag.titulo|slug  ~ "'"  -%}
+        {%- else -%}
+            {%- set _tagListDFP = _tagListDFP ~ ", '" ~  tag.titulo|slug  ~ "'" -%}
+        {%- endif -%}
+    {% endfor %}
+
+    {# METIDA LLAMADA A ADSERVER DE PUBLICIDAD DFP #}
+    {%- set _dfpTheme = content.getPublication('web').getLayout.modelName | slug | default('') -%}
+    {%- set _uniqueCtId = content.id | default('') -%}
+    {%- set dfpData = content.sectionId | getDfpFile(dfp_root_path, content.type, content.isSpecial|default(false)) -%}
+    {%- set _dfpInclude = dfpData['_dfpInclude']-%}
+    {%- set _dfpSection = dfpData['_dfpSection']-%}
+    {%- if content.isPremium|default(false) == true -%}
+        {%- if content.isPreview|default(false) == true -%}
+            {%- set _dfpPremium = 'prm-prw' -%}
+        {% else %}
+            {%- set _dfpPremium = 'prm' -%}
+        {% endif %}
+    {% endif %}
+
+    {%- if content.isSpecial|default(false) == true -%}
+        {%- set _dfpTemplate = 'esp' -%}
+    {% else %}
+        {%- set _dfpTemplate = 'stndr' -%}
+    {% endif %}
+
+    <?php
+        {% autoescape false %}
+            $_dfpSegmentationTags = array ({{ _tagListDFP }});
+        {% endautoescape %}
+        $_dfpTheme = "{{ _dfpTheme }}";
+        {% if _dfpPremium is defined %}
+        $_dfpPremium = "{{ _dfpPremium }}";
+        {% endif %}
+        $_dfpTemplate = "{{ _dfpTemplate }}";
+        $_uniqueCtId="{{ _uniqueCtId }}";
+        {%- if _dfpSection is defined -%} $_dfpSection="{{ _dfpSection }}"; {%- endif -%}
+        @include("{{ _dfpInclude }}");
+    ?>
+
+    {% set type = content.isSpecial|default(false) ? 'ne' : 'n' %}
+    {% if content.type in ['opinion'] %}
+        {% set type = 'o' %}
+    {% endif %}
+    {% set adsItems = [
+        { 'name': 'f' }
+    ] %}
+
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {'adsItems': adsItems}-%}
+    {% block cabecera %}{%- endblock %}
+
+    {%- block contenido %}
+        {%- block texto -%}
+            {% include 'UEditCmsBundle:Structures:base-texto.html.twig' with {'content': content, 'action': action, 'isMobile': isMobileFormat is defined ? true : false } %}
+        {%- endblock -%}
+    {%- endblock %}
+
+    {% if isRedesign|default(false) == true %}
+        {%- include 'UEditCmsBundle:Structures:elements/featured_links.html.twig' -%}
+    {% endif %}
+
+    {{ smartInclude(statics_includes_path ~ "/footer_nuevos.html.inc" | e) }}
+
+    {{ smartInclude(dfp_includes_path ~ "/elmundo/footer_ads.html" | e) }}
+
+    {% if action == 'publish' %}
+        {{ elMundoTwigTools.experiments(content.getPublication('web').url,
+            {
+            'portal': content.section.portal,
+            'section': content.section.seccion,
+            'ctType': content.type,
+            'position': 'footer',
+            'version': 'web'
+            })
+        }}
+    {% endif %}
+
+    {%- if action == "publish" %}
+        {%- block omniture %}
+            {{ elMundoTwigTools.omniture_tag(content, baseUrl, 'web') }}
+        {%- endblock %}
+    {%- endif %}
+    {%- block bodyjs -%}{%- endblock -%}
+
+    {%- if action != 'publish' -%}
+        {% include 'UEditCmsBundle:Lib:jsonfieldlist.html.twig' with {'dragMode': 'rows'} %}
+    {%- endif -%}
+</body>
+</html>
+{%- endif -%}

@@ -1,0 +1,11 @@
+{%- import "UEditCmsBundle:Macros:tools.html.twig" as elMundoTwigTools -%}
+
+{% if action == 'publish'%}
+   {{ elMundoTwigTools.paint_ecommerce('12341234', 'R',  container.sectionId, container.id, container.getTags) }}
+{% else %}
+    <div class="ecommerce">
+        <div class="producto">
+            <a href="" class="nombre">Productos de eccomerce</a>
+        </div>
+    </div>
+{% endif %}

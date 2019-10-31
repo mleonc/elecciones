@@ -1,0 +1,10 @@
+{# CSS Classes #}
+	{% set _standfirst 			= _standfirst|default('ue-c-article__standfirst') %}
+	{% set _specialStandfirst 	= _specialStandfirst|default('') %}
+
+{% if isSpecial|default(false) == true %}
+	{% set _standfirst = _standfirst ~ ' ' ~ _specialStandfirst %}
+{% endif %}
+
+{% set text = text|default(content.entradilla|default('')|xul('content.entradilla')) %}
+<p class="{{ _standfirst|trim }}">{{ text| raw }}</p>

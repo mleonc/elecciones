@@ -1,0 +1,11 @@
+{%- if content.ttlComments is defined and content.ttlComments is not empty and content.ttlComments != 0 and action == 'publish' -%}
+    {%- set num_comentarios = elMundoTwigTools.comentarios(content.id, true) -%}
+    {%- if num_comentarios is not empty -%}
+        <aside>
+            <div class="comentarios">
+                <meta name="interactionCount" itemprop="interactionCount" content="UserComments:{{ num_comentarios }}">
+                <a href="#comentarios" title="Ver comentarios">{{ num_comentarios }}</a>
+            </div>
+        </aside>
+    {%- endif -%}
+{%- endif -%}

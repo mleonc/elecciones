@@ -1,0 +1,113 @@
+{%- if action == 'publish' %}
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+{%- endif -%}
+{%- set meta_ogtitle = content.titulo|default('') -%}
+{%- set cadena_tags = content.section.seccion | default('') -%}
+{%- for tag in content.tags|default(null) -%}
+    {%- if tag.nameTag|lower not in cadena_tags|lower -%}
+        {%- set cadena_tags = cadena_tags ~ "," ~ tag.nameTag -%}
+    {%- endif -%}
+{%- endfor -%}
+{% set link = filer_base_statics_includes_path~'/style/article/elmundo/'~includes.article.elmundo~'/main-article-link-style.html' %}
+{% if manifest.getDesktopCss()|default('') is not empty %}
+    {% set link = manifest.getDesktopCss() %}
+    {% if isSpecial|default(false) == true %}
+        {% set link = manifest.getSpecialDesktopCss() %}
+    {% endif %}
+{% endif %}
+{%- if file_exists( link ) -%}
+    {{ smartInclude( link ) }}
+{%- endif -%}
+<link rel="stylesheet" type="text/css" href="{{ portal_static_url }}/assets/{{assets_style_version}}/css/ue-c-core-noticia-elmundo-desktop.css">
+
+{# ESTILOS PARA USO INTERNO POR PARTE DE UEDIT #}
+{%- if action != 'publish' -%}
+    {% set link = filer_base_statics_includes_path~'/style/article/elmundo/'~includes.article.elmundo~'/main-article-uedit-link-style.html' %}
+    {%- if file_exists( link ) -%}
+        {{ smartInclude( link ) }}
+    {%- endif -%}
+{%- endif -%}
+{%- set meta_description = content.texto|default('')|encodeQuotationMarks|xul('content.texto')|striptags|slice(0, 180) -%}
+<meta data-ue-u="description" name="description" content="{{ meta_description }}"  />
+<meta data-ue-u="keywords" name="keywords" content="{{ cadena_tags }}" />
+<meta data-ue-u="news_keywords" name="news_keywords" content="{{ cadena_tags }}"/>
+<meta name="theme-color" content="#2e6d9d">
+<!-- ##IBEXCLU -->
+<link Href="{{ content.getPublication('web').url|default('') }}" data-ue-c="href" data-ue-u="canonical" rel="canonical" />
+<link rel="amphtml" Href="{{ content.getPublication('web').url|replace({(portal_public_url):(amp_url)})|default('') }}">
+<link rel="alternate" Href="{{ app_indexing_url }}{{ content.getPublication('web').url|replace({':/':''})}}" />
+<!-- ##FBEXCLU -->
+{% if content.indexable is defined and content.indexable is not empty %}
+    <meta name="robots" content="noindex, follow">
+{% else %}
+    <meta name="robots" content="index,follow" />
+{% endif %}
+<meta name="date" content="{{ dateTimeZulu(content.firstPublishedAt|default('now')|date('c')) }}"/>
+<meta property="article:modified_time" content="{{ dateTimeZulu(content.publishedAt|default('now')|date('c')) }}"/>
+<meta property="article:published_time" content="{{ dateTimeZulu(content.firstPublishedAt|default('now')|date('c')) }}"/>
+<meta name="DC.date.issued" content="{{ dateTimeZulu(content.publishedAt|default('now')|date('c')) }}">
+<meta name="organization" content="Unidad Editorial Información General S.L.U."/>
+<meta property="article:section" content="{{ content.section.seccion|capitalize }}"/>
+{%- if cadena_tags != ''%}
+    {% for tag in cadena_tags|split(',') %}
+    <meta property="article:tag" content="{{ tag }}" />
+    {% endfor %}
+{%- endif %}
+{%- set twitterSite = twitterSite|default(content.section.seccion|viaTwitter) -%}
+<meta name="twitter:site" content="@{{ twitterSite }}" />
+<meta data-ue-u="twitter:title" name="twitter:title" content="{{ content.titulo | encodeQuotationMarks }}" />
+<meta data-ue-u="twitter:description" name="twitter:description" content="{{ content.texto|default('') | xul('content.texto') | striptags | slice(0, 180) | encodeQuotationMarks}}" />
+{%- for element in content.firmas.items %}
+{% if element.twitterName is defined and element.twitterName is not empty -%}
+    <meta name="twitter:creator" content="{{element.twitterName}}" />
+{%- endif -%}
+{%- endfor -%}
+<meta data-ue-u="og:title" property="og:title" content="{{ content.titulo | encodeQuotationMarks }}" />
+<meta data-ue-u="og:description" property="og:description" content="{{ content.texto|default('') | xul('content.texto') | striptags | slice(0, 180) | encodeQuotationMarks}}" />
+<meta property="og:url" content="{{ baseUrl }}" />
+{%- set videoInCollection = false -%}
+{%- if content.multimedia.items | length > 0 -%}
+    {%- for item in content.multimedia.items if not videoInCollection -%}
+    {%- if item.type == 'video' and item.resource.position is defined and item.resource.position is not null -%}
+            {%- set videoInCollection = true -%}
+            {% if item.resource.videoProvider|default("") == "youtube" %}
+                {%- set contentUrl = "https://www.youtube.com/watch?v="~ item.resource.id  -%}
+                {%- set imageSrc = (item.resource.id|getYoutubeImgThumbnail)['url'] -%}
+            {% else %}
+                {%- set contentUrl = "https://ak.uecdn.es/index.php/kwidget/wid/_"~ partner_id ~"/uiconf_id/"~ player_id ~"/entry_id/"~ item.resource.id  -%}
+                {%- set imageSrc = "https://ak.uecdn.es/p/"~ partner_id  ~"/thumbnail/entry_id/"~ item.resource.id  ~"/width/657/type/2/bgcolor/000000/"~ item.resource.id  ~".jpg" -%}
+            {% endif %}
+            <meta property="og:video" content="{{ contentUrl }}" />
+            <meta property="og:video:type" content="application/x-shockwave-flash">
+            <link rel="image_src" href="{{ imageSrc }}" />
+            <link rel="video_src" href="{{ contentUrl }}"/>
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta data-ue-u="og:image" name="og:image" content="{{ imageSrc }}"/>
+            <meta data-ue-u="twitter:image" name="twitter:image" content="{{ imageSrc }}" />
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif %}
+{%- if videoInCollection == false %}
+{{ layoutComponents.rrssImageMetadata(content, baseUrlImage) }}
+{%- endif %}
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="ELMUNDO" />
+<meta property="fb:app_id" content="279395918757488" />
+<link rel="shortcut icon" type="image/ico" Href="{{ portal_public_url }}/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" Href="{{ portal_public_url }}/favicon_32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" Href="{{ portal_public_url }}/favicon_96x96.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" Href="{{ portal_public_url }}/apple-touch-icon-precomposed.png">
+
+<script src="{{ portal_static_url }}/assets/{{assets_style_version}}/js/jquery.2.1.4.js" type="text/javascript" ></script>
+<script src="{{ url_assets }}/js/ue-utils.js" type="text/javascript"></script>
+
+
+<!--[if lte IE 9]>
+    <script type="text/javascript" src="{{ portal_static_url }}/assets/{{assets_style_version}}/js/jquery.ie8.js"></script>
+<![endif]-->
+<script src="{{ portal_static_url }}/assets/{{assets_style_version}}/js/kalturaue-elmundo.min.js" type="text/javascript"></script>
+{%- if content.hasYoutubeVideos() == true %}
+<script src="{{ portal_static_url }}/assets/{{assets_style_version}}/js/youtube-api.min.js" type="text/javascript"></script>
+{%- endif %}
+
+{{ content.setIsSpecial(isSpecial|default(false)) }}

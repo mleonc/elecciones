@@ -1,0 +1,85 @@
+{# CSS Classes #}
+    {% set _videoClass = _videoClass|default('') %}
+
+
+{% if item is defined and item is not empty and data is defined and data is not empty %}
+    {%- if item is iterable -%}
+        {% set found = false %}
+        {% set item  = null %}
+        {%- for element in item if not found %}
+            {%- if  element.resource.id is defined and
+                    element.resource.position is not empty and
+                    data.slot.position is defined and
+                    data.slot.position is not empty and
+                    element.resource.position == data.slot.position and
+                    element.resource.visibility == true -%}
+                {%- set item = element -%}
+                {%- set found = true -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
+    {%- if item is defined -%}
+        {# METADATA #}
+            {% if item.resource.videoProvider|default("") == "youtube" %}
+                {%- set urlThumbnail = (item.resource.id|getYoutubeImgThumbnail)['url'] %}
+                {% set urlSeoContent = "https://www.youtube.com/watch?v="~ item.resource.id  %}
+            {% else %}
+                {%- set urlThumbnail = "https://ak.uecdn.es/p/" ~ partner_id ~ "/thumbnail/entry_id/" ~ item.resource.id %}
+                {% set urlSeoContent = "https://ak.uecdn.es/index.php/kwidget/wid/_"~partner_id~"/uiconf_id/"~player_id~"/entry_id/"~item.resource.id %}
+                {%- if item.resource.idFrame is defined and item.resource.idFrame != 0 -%}
+                    {%- set urlThumbnail = "https://ak.uecdn.es/index.php/extwidget/thumbnailUE/asset_id/" ~ item.resource.idFrame -%}
+                {%- endif -%}
+                {%- if data.slot is defined -%}
+                    {%- if data.slot.width  | length > 0 -%}{%- set urlThumbnail = urlThumbnail ~ "/width/" ~ data.slot.width -%}{%- endif -%}
+                    {%- if data.slot.height | length > 0 -%}{%- set urlThumbnail = urlThumbnail ~ "/height/" ~ data.slot.height -%}{%- endif -%}
+                {%- endif -%}
+                {%- if data.metadata is defined -%}
+                    {%- set urlThumbnail = urlThumbnail ~ "/cache_st/" ~ data.metadata.updatedAt|date('U') ~ "/type/2/bgcolor/000000/" ~ item.resource.id ~ ".jpg" -%}
+                {%- endif -%}
+                {% set mediaSource = urlThumbnail|default(path('uedit_multimedia_kaltura_video_frame_by_type', {
+                    'idVideo' : item.resource.id,
+                    'idFrame' : item.resource.idFrame|default('default'),
+                    'idType'  : item.resource.type|slice(0,-4)|default('') })) %}
+            {% endif %}
+            {% if action == 'publish' %}
+                {% set date = 'now'|date('c') %}
+                {%- if data.metadata.containerUpdatedAt is defined and data.metadata.containerUpdatedAt is not empty %}
+                    {% set date = data.metadata.containerUpdatedAt|date('c') %}
+                {%- endif -%}
+                {% set metadata = {
+                    'name': {
+                        'seo'       : dataSEO.media.video.name|default(''),
+                        'content'   : item.titulo | default("Video") | encodeQuotationMarks
+                    },
+                    'description': {
+                        'seo'       : dataSEO.media.video.description|default(''),
+                        'content'   : item.description | default("Descubre más videos") | encodeQuotationMarks
+                    },
+                    'urlThumb': {
+                        'seo'       : dataSEO.media.video.urlThumb|default(''),
+                        'content'   : urlThumbnail
+                    },
+                    'url': {
+                        'seo'       : dataSEO.media.video.urlContent|default('itemprop=contentURL'),
+                        'content'   : urlSeoContent
+                    },
+                    'date': {
+                        'seo'       : dataSEO.media.video.upload|default(''),
+                        'content'   : date
+                    }
+                } %}
+                {% for meta in metadata %}
+                    <meta {{ meta.seo|default('') }} content="{{ meta.content|default('')}}" />
+                {% endfor %}
+                {% if item.resource.type|default("") != 'livestreamfile' %}
+                    <meta {{ dataSEO.media.video.duration|default('') }} content="{{ item.duration | durationFormat }}" />
+                {% endif %}
+            {%- endif -%}
+
+            {% if item.resource.videoProvider|default("") == "youtube" %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/youtube.html.twig'-%}
+            {% else %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/kaltura.html.twig'-%}
+            {% endif %}
+    {% endif %}
+{% endif %}

@@ -1,0 +1,55 @@
+{% set elements = [] %}
+
+{% if isMobileFormat|default(false) == false %}
+    {% set adsItems = [{
+        'name': 'b300_100'
+    }] %}
+    {% set b300_100 %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                'type'     : type|default('n')
+            }
+        -%}
+    {% endset %}
+    {% set componente %}
+        {%- include 'UEditCmsBundle:ContentType:include_fijo.html.twig' with {
+                content : {
+                    'path': statics_includes_path ~ '/banners/banner-newsletter-director-noticia.html',
+                    'includeType': 'include_fijo'
+                }
+            }
+        -%}
+    {% endset %}
+    {% set elements = elements|merge([
+        { 'inner': 'secondary', 'position': 'item', 'items': [b300_100] },
+        { 'inner': 'secondary', 'position': 'item', 'items': [componente] } ]) %}
+    {% set adsItems = [{
+        'name': 'roba'
+    }] %}
+    {% set roba %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                'type'     : type|default('n')
+            }
+        -%}
+    {% endset %}
+    {% set elements = elements|merge([
+        { 'inner': 'secondary', 'position': 'item grow', 'items': [roba] }
+    ]) %}
+{% endif %}
+
+{% set multi %}
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/multipurpose.html.twig' with {
+            'type': type|default('n')
+        }
+    -%}
+{% endset %}
+{% set elements = elements|merge([
+    { 'inner': 'secondary', 'position': 'item no-grow', 'items': [multi] }
+]) %}
+
+{%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+    'inner'         : 'main',
+    'position'      : 'right',
+    'items'         : elements
+} -%}

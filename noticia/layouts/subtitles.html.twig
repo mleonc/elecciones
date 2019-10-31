@@ -1,0 +1,32 @@
+{# CSS Classes #}
+    {% set _subtitles = _subtitles|default('ue-c-article__subtitles ue-c-article__subtitles--boxed ue-l-article--width-1of2-from-mobile ue-l-article--float-right-from-mobile ue-l-article--edge-right-until-tablet ue-l-article--leftcol-width-from-desktop ue-l-article--float-left-from-desktop ue-l-article--move-to-leftcol-from-desktop') %}
+    {% set _item = _item|default('ue-c-article__subtitles-item ue-l-article--top-separator ue-l-article--top-separator-from-mobile') %}
+    {% set _subtitleKicker = _subtitleKicker|default('ue-c-article__subtitles-kicker') %}
+    {% set _specialSubtitles = _specialSubtitles|default('ue-l-article--leftcol-width-from-tablet ue-l-article--float-left-from-tablet ue-l-article--move-to-leftcol-from-tablet') %}
+
+{% set showSubtitles = showSubtitles is defined ? showSubtitles : true %}
+{% set xulname = 'content.subtitulos.items' %}
+
+{% if isSpecial|default(false) %}
+    {% set _subtitles = _subtitles ~ ' ' ~ _specialSubtitles %}
+{% endif %}
+
+{% if showSubtitles == true and content.subtitulos.items is not empty %}
+    <ul class="{{ _subtitles }}" {{ dataSEO.related.aria|default("")|raw }}>
+        {%- filter idAux('content.subtitulos', 'onStrongModify', {'print': 'false'}) %}
+            {%- for subtitle in addXul(content.subtitulos.items, xulname) %}
+                <li class="{{ _item }}">
+                    {%- if (subtitle.cintillo is defined and subtitle.cintillo is not empty) -%}
+                        {%- set kicker = subtitle.cintillo|default('') ~ '.' -%}
+                    {%- endif -%}
+                    <span class="{{ _subtitleKicker }}">
+                        {{ kicker|default('')|xul("#{xulname}.#{loop.index}.cintillo") }}
+                    </span>
+                    <a {{ xulClasses(subtitle.enlace|xul("#{xulname}.#{loop.index}.enlace")|idAux("#{xulname}.enlace"), 'href') }} href="{{ subtitle.enlace }}">
+                        {{ subtitle.titulo|xul("#{xulname}.#{loop.index}.titulo")|idAux("#{xulname}.titulo")}}
+                    </a>
+                </li>
+            {%- endfor %}
+        {%- endfilter %}
+    </ul>
+{% endif %}

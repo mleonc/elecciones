@@ -1,0 +1,143 @@
+{# CSS Classes #}
+    {% set _article = _article|default('ue-c-article') %}
+    {% set _special = _special|default('special') %}
+    {% set _header = _header|default('ue-l-article__header') %}
+    {% set _body = _body|default('ue-l-article__body ue-c-article__body') %}
+
+{% set showImage = showImage is defined ? showImage : true %}
+{% set position = position|default('Vertical') %}
+{% set id = id|default(content.id) %}
+{% set sourceId = sourceId|default(content.sourceId) %}
+{% set containerCt = containerCt|default('noticia') %}
+
+{# has media content #}
+    {% if showImage %}
+        {%- set slot = slot|default({'position': position, 'name': position, 'width' : '', 'height': '', 'tipo': 'destacada', 'id': sourceId }) -%}
+        {%- set indexMedia = UeMultimedia.getIndexMedia(content.multimedia.items, {
+                'containerCt': containerCt,
+                'containerId': id,
+                'isMobile': isMobileFormat|default(false),
+                'slot': slot
+            })|trim -%}
+        {% if indexMedia is defined and indexMedia is not empty %}
+            {%- set item = content.multimedia.items[indexMedia]  -%}
+            {% set _article = _article|trim ~ ' has-image' -%}
+            {% set renderIcon = false %}
+            {% if item.hasIcon|default('') != '' %}
+                {% set renderIcon = true %}
+            {% endif %}
+            
+            {% set data = {
+                'containerCt': containerCt,
+                'containerId': id,
+                'aClass': aClass|default(''),
+                'image': {
+                    'imgClass': imgClass|default('ue-c-article__media--image')
+                },
+                'titulo': content.titulo,
+                'renderIcon': renderIcon,
+                'aTag': false,
+                'slot': slot,
+                'xulname': xulname|default('content.multimedia.items'),
+                'indexMedia': indexMedia
+            } %}
+        {% endif %}
+    {% endif %}
+
+<article class="{{ _article|trim }}" {{ dataSEO.article.item|default('') }}>
+    <meta content="{{ baseUrl }}">
+    {%- filter xul('content.template', 'onModify', {'print': 'false'}) %}{%- endfilter %}
+    <!-- === Esta condicion es para evitar que el live parse del CMS falle al no enontrar html con el que hacer binding === -->
+    <div class="{{ _header }}">
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/kicker.html.twig' -%}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/headline.html.twig' -%}
+        
+        {% set byline %}
+            {% include 'UEditCmsBundle:Structures:noticia/layouts/byline.html.twig' %}
+        {% endset %}
+        {% set date %}
+            {% include 'UEditCmsBundle:Structures:noticia/layouts/date.html.twig' %}
+        {% endset %}
+        {% set social %}
+            {% include 'UEditCmsBundle:Structures:noticia/layouts/social.html.twig' %}
+        {% endset %}
+        {% set headerItems = [ byline, date, social ] %}
+        {% if isMobileFormat|default(false) == true %}
+            {% set headerItems = [ byline, date ] %}
+        {% endif %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+                'inner'         : 'bar',
+                'position'      : 'default',
+                'items'         : headerItems} -%}
+        
+        {% if not isMobileFormat|default(false) %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/standfirst.html.twig' -%}
+        {% endif %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/media.html.twig' with {
+                'position': 'Vertical'
+            }
+        -%}
+        {% if isMobileFormat|default(false) == true %}
+            {% set adsItems = [{
+                'name'    : 'mega',
+                'slot'    : 'msup'
+            }] %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with { 
+                    'adsItems': adsItems,
+                    'type'    : type|default('n')
+                } 
+            -%}
+            {% set adsItems = [{
+                'name'    : 'mega',
+                'slot'    : 'm',
+                'onlyDfp' : true,
+                'dfpAria' : true,
+            }] %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                '_mega'   : 'ue-c-ad--fixed-bottom sticky',
+                'type'     : type|default('n')
+            }
+            -%}
+        {% endif %}
+    </div>
+    <div class="{{ _body }}" {{ dataSEO.article.body|default('') }}>
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/subtitles.html.twig' -%}
+
+        {%- if atomizeView is defined and content.isPreview|default(false) == false -%}
+            {{ atomizeView|raw }}
+        {% else %}
+            <!-- === Cuerpo de la noticia === -->
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/body.html.twig' with {
+                'content'   : content,
+                'isMobile'  : isMobileFormat|default(false),
+                'hasPubli'  : isMobileFormat|default(false),
+                'action'    : action
+            } -%}
+
+            {% if content.isPreview|default(false) == true and action == 'publish' %}
+
+                <?php @include("{{statics_includes_path}}/premium/include_preview.html"); ?>
+            {% endif %}
+            <!-- === Fin Cuerpo de la noticia === -->
+        {%- endif -%}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/trust.html.twig' -%}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/tags.html.twig' -%}
+        {% if not isMobileFormat|default(false) %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/related.html.twig' -%}
+        {% endif %}
+    </div>
+</article>
+
+{% if action != 'publish' %}
+    <script type="text/javascript">
+        window.onload = function() {
+            accordions = document.getElementsByClassName('accordion');
+            if (accordions) {
+                for (var i = 0; i < accordions.length; i++) {
+                    window.Accordion(accordions[i]);
+                }
+            }
+        };
+    </script>
+{% endif %}

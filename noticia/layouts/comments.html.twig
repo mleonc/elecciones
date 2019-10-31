@@ -1,0 +1,74 @@
+{% if content.isPreview|default(false) == true %}
+    <script type="text/javascript">
+        window._{{ content.codeComments }}_allowNewComments = false;
+    </script>
+{% endif %}
+
+{% set comments %}
+    <!-- === Inicio bloque_comentarios === -->
+    {{ UeComponents.getCommentsData(content, false, '', true) }}
+    <!-- === Fin bloque_comentarios === -->
+{% endset %}
+
+{% set robaType = 'rc' %}
+
+{% if isMobileFormat|default(false) %}
+    {% set robaType = 'rb' %}
+    {%- set mobileCommentsData = {
+        'id': content.id,
+        'ttlComments': content.ttlComments,
+        'path' : content.getPublication('web').path,
+        'url' : content.getPublication('web').url,
+        'seccion' : content.section.seccion,
+        'title' : content.titulo,
+        'action': action
+    } -%}
+    {% set comments %}
+        <!-- === Inicio bloque_comentarios === -->
+        {%- if content.ttlComments is defined and content.ttlComments != '' and action == 'publish' %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/boton-comentar.html.twig' with {
+                'action' : action
+            } -%}
+        {% endif %}
+    {% endset %}
+{% endif %}
+
+{%- if content.isPreview | default(false) == false -%}
+{%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+    'inner'         : 'main',
+    'position'      : '300h',
+    'items'         : [ comments ]
+} -%}
+{% endif %}
+
+{%- if atomizeView is not defined or not isMobileFormat|default(false) -%}
+    {% set adsItems = [{
+        'name'      : 'roba',
+        'slot'      : robaType,
+        'isSticky'  : false
+    }] %}
+    {% set publi %}
+        {% if isSpecial|default(false) == true %}
+            {% set type = 'ne' %}
+        {% endif %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                'type'    : type|default('n')
+            }
+        -%}
+    {% endset %}
+
+    {% set parentPosition = ['right'] %}
+    {% set childPosition = ['item'] %}
+
+    {% if isSpecial|default(false) %}
+        {% set parentPosition = parentPosition|merge(['break']) %}
+        {% set childPosition = childPosition|merge(['fixed-size']) %}
+    {% endif %}
+
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+        'inner'         : 'main',
+        'position'      : parentPosition|join(' '),
+        'items'         : [{'inner' : 'secondary', 'position' : childPosition|join(' '), 'items' : [publi] }]
+    } -%}
+{%- endif -%}

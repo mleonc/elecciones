@@ -1,0 +1,41 @@
+<ul class="redes-sociales">
+    <li id="facebook{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="facebook jsfacebook" title="Compartir en Facebook" data-tooltip="" onclick="envioEventoRedSocial('facebook');">
+        <img src="{{ url_assets }}/img/redes-sociales/facebook.png" alt="Facebook">
+    </li>
+    <li id="twitter{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="twitter jstwitter" title="Compartir en Twitter" data-tooltip="" onclick="envioEventoRedSocial('twitter');">
+        <img src="{{ url_assets }}/img/redes-sociales/twitter.png" alt="Twitter">
+    </li>
+    <li class="mas-redes" onclick="ueUtils.toggleClass('ver-otras-redes{%- if posicion is defined -%}{{ posicion }}{%- endif -%}','open');">
+        <span><img src="{{ url_assets }}/img/iconos/mas.png" alt="Ver más"></span>
+        <ul id="ver-otras-redes{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="otras-redes">
+
+            <li id="comunidad{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="comunidad jscomunidad" title="Compartir en la comunidad" onclick="envioEventoRedSocial('comunidad');">
+                <img src="{{ url_assets }}/img/redes-sociales/compartir_comunidad.png" id="boton-comunidad" alt="Compartir en la comunidad" >
+                <div class="mensaje error" id="mensaje-comunidad" onclick="ueUtils.toggleClass('mensaje-comunidad','open');"></div>
+            </li>
+            <li id="linkedin{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="linkedin jslinkedin" title="Compartir en Linkedin" onclick="envioEventoRedSocial('linkedin');">
+                <img src="{{ url_assets }}/img/redes-sociales/linkedin2.png" alt="Linkedin">
+            </li>
+            <li id="google{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="google jsgoogle" title="Compartir en Google">
+                 <div class="g-plusone" data-size="medium" data-callback="cargarButtonGooglePlus"></div>
+            </li>
+            <li id="tumblr{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="tumblr jstumblr" title="Compartir en Tumblr" onclick="envioEventoRedSocial('tumblr');">
+                <img src="{{ url_assets }}/img/redes-sociales/tumblr.png" alt="Tumblr">
+            </li>
+            <li id="pinterest{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="pinterest jspinterest" title="Compartir en Pinterest" onclick="envioEventoRedSocial('pinterest');">
+                <img src="{{ url_assets }}/img/redes-sociales/pinterest.png" alt="Pinterest">
+            </li>
+            <li id="kindle{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="kindle kindleWidget" title="Compartir en Kindle"  onclick="envioEventoRedSocial('kindle');">
+                <img src="{{ url_assets }}/img/redes-sociales/kindle.png" alt="Kindle">
+            </li>
+            <li id="meneame{%- if posicion is defined -%}{{ posicion }}{%- endif -%}" class="meneame jsmeneame" title="Compartir en Meneame" onclick="envioEventoRedSocial('meneame');">
+                <img src="{{ url_assets }}/img/redes-sociales/meneame.png" alt="Meneame">
+            </li>
+
+        </ul>
+
+    </li>
+</ul>
+<script type="text/javascript">
+otras_redes();
+</script>

@@ -1,0 +1,18 @@
+{# CSS Classes #}
+    {% set _related = _related|default('ue-c-article__related-news ue-l-article--top-separator') %}
+    {% set _item = _item|default('ue-c-article__related-news-item ue-l-article--top-separator ue-l-article--top-separator-from-mobile') %}
+    {% set _kicker = _kicker|default('ue-c-article__related-news-kicker') %}
+
+{% set showRelated = showRelated is defined ? showRelated : true %}
+{% set xulname = 'content.ademas.items' %}
+
+{% if showRelated == true %}
+    <div class="{{ _related }}" {{ dataSEO.related_links.aria|default("")|raw }}>
+        <!-- === El proximo comentario no se puede quitar,
+        ya que es el que se reemplaza para agregar las noticias relacionadas === -->
+        <!-- ====RelatedNewsTags==== -->
+        {%- if action == 'preview' -%}
+            <h4 class="list-header"><span>Noticias relacionadas</span></h4>
+        {%- endif -%}
+    </div>
+{% endif %}

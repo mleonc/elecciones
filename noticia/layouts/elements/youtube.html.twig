@@ -1,0 +1,26 @@
+<div id="player_{{ item.resource.id }}"></div>
+<script type="text/javascript">
+    (function (id) {
+        var load = function () {
+            var target = this['player_'+ id];
+            if (target) {
+                var iframe = document.createElement('iframe');
+                var autoplay = "";
+                if ("{{ action }}" == "publish"){
+                    autoplay = new URL(location.href).searchParams.get('autoplay') ? '&autoplay=1' : '';
+                    iframe.setAttribute('allow', 'autoplay');
+                }
+                var width =  target.offsetWidth;
+                var height =  width * 9/16;
+                iframe.setAttribute('src', 'https://www.youtube.com/embed/' + id + "?modestbranding=1&rel=1&enablejsapi=1" +autoplay);
+                iframe.setAttribute('allowfullscreen', 'allowfullscreen');
+                iframe.setAttribute('width', "100%");
+                iframe.setAttribute('height', height);
+                iframe.setAttribute('id', id);
+                target.parentNode.replaceChild(iframe, target);
+            }
+            window.removeEventListener('DOMContentLoaded', load);
+        };
+        window.addEventListener('DOMContentLoaded', load);
+    }("{{ item.resource.id }}"));
+</script>

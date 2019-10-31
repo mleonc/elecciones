@@ -1,0 +1,177 @@
+{%- if action is defined -%}
+    {{ setAction(action) }}
+{%- endif -%}
+{%- if content.redirectionUrl is defined and content.redirectionUrl is not empty and action == 'publish' -%}
+    <?php
+        header("Location: {{content.redirectionUrl}}",TRUE,301);
+        exit();
+    ?>
+{%- else -%}
+<?php
+    header("Vary: User-Agent");
+    $static_path= "{{ statics_includes_path }}";
+    $static_registro_path = "{{ statics_includes_registro_path }}";
+    include_once ('{{ idUsr_cookie }}');
+    include_once ('{{ elmundoPrefs_cookie }}');
+    if ($device == 'm' && is_file("{{ content.getPublication('mobile').path|default('') }}")) {
+        @include ("{{ content.getPublication('mobile').path|default('') }}");
+        exit();
+    }
+?>
+{%- set positions = {} -%}
+{# Inicio de definicion de macros #}
+{%- import "UEditCmsBundle:Lib:macro_controls.html.twig" as ueditControls -%}
+{%- import "UEditCmsBundle:Macros:tools.html.twig" as elMundoTwigTools -%}
+{%- import "UEditCmsBundle:Macros:advertising.html.twig" as adsDfp -%}
+{%- import "UEditCmsBundle:Macros:multimedia.html.twig" as UeMultimedia -%}
+{%- import "UEditCmsBundle:Macros:layoutComponents.html.twig" as layoutComponents -%}
+{# Fin de definicion de macros #}
+{%- if content.getPublication('web').url is defined -%}
+    {%- set baseUrl = content.getPublication('web').url -%}
+{%- else -%}
+    {%- set baseUrl = '' -%}
+{%- endif -%}
+{%- set baseUrlImage = ''  -%}
+{%- set ModelName = content.getPublication('web').getLayout.modelName | slug | default('default') -%}
+{%- if action == 'publish' and content.multimedia.items | length > 0 -%}
+    {%- set huecoMultimedia = false -%}
+    {%- set positions = ['Principal', 'Vertical'] -%}
+    {%- for position in positions -%}
+        {%- for element in content.multimedia.items -%}
+            {%- if element.resource and element.resource.id is defined and element.resource.position is defined and
+                element.resource.position == position and huecoMultimedia == false -%}
+                {%- if element.resource.type == 'videofile' or element.resource.type == 'livestreamfile' -%}
+                    {% if element.resource.videoProvider|default("") == "youtube" %}
+                        {%- set baseUrlImage = (element.resource.id|getYoutubeImgThumbnail)['url']  -%}
+                    {% else %}
+                        {%- set baseUrlImage = "https://ak.uecdn.es/p/" ~  partner_id  ~ "/thumbnail/entry_id/" ~  element.resource.id  ~ "/width/657/type/2/bgcolor/000000/" ~  element.resource.id  ~ ".jpg"  -%}
+                    {% endif %}
+                    {%- if element.resource.type == 'livestreamfile' -%}
+                        {%- set baseUrlImage = baseUrlImage ~ "/cache_st/" ~ xData.metadata.updatedAt|date('U') -%}
+                    {%- endif -%}
+                {%- else -%}
+                    {%- set baseUrlImage = element.resource.url -%}
+                {%- endif -%}
+                {%- set huecoMultimedia = position -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endif -%}
+{%- set slots = {} -%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% if action == 'publish' %}
+        {{ elMundoTwigTools.experiments(content.getPublication('web').url,
+            {
+            'portal': content.section.portal,
+            'section': content.section.seccion,
+            'ctType': content.type,
+            'position': 'header',
+            'version': 'web'
+            })
+        }}
+    {% endif %}
+{%- include 'UEditCmsBundle:Structures:noticia/inc/_head_reportaje_largo.html.twig' with {"titleSeoModel":titleSeoModel|default('')} -%}
+<link href="{{ url_assets }}/css/reportaje/reportaje.css" rel="stylesheet" type="text/css">
+{% block cssFiles %}{% endblock %}
+{% block jsFiles %}{% endblock %}
+    {% if portal_environment == 'dev' %}
+        <script type='text/javascript'>
+            var gptadslots=[];
+            var googletag=googletag||{};
+            googletag.cmd=googletag.cmd||[];
+            (function(){
+                var gads=document.createElement('script');
+                gads.async=true;
+                gads.type='text/javascript';
+                var useSSL='https:'==document.location.protocol;
+                gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';
+                var node=document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads,node);
+            })();
+        </script>
+    {% endif %}
+</head>
+<body class="Noticia {{ BodyClass }} {{ content.sectionId|slug|capitalize|default('') }} {{ModelName|slug|capitalize}}">
+    <?php @include("{{ statics_includes_path }}/sembrador_segmentacion.php") ?>
+    {%- if action == 'publish' -%}
+       {% include 'UEditCmsBundle:Structures:common/_login_seed.html.twig' %}
+    {%- endif -%}
+
+    {%- set tagList = getTags(content.tags, 'ue') -%}
+    {%- set _tagListDFP = '' -%}
+    {% for tag in tagList %}
+        {%- if loop.first -%}
+            {%- set _tagListDFP = "'" ~ tag.titulo ~ "'"  -%}
+        {%- else -%}
+            {%- set _tagListDFP = _tagListDFP ~ ", '" ~  tag.titulo ~ "'" -%}
+        {%- endif -%}
+    {% endfor %}
+
+    {# METIDA LLAMADA A ADSERVER DE PUBLICIDAD DFP #}
+    {%- set _dfpTheme = content.getPublication('web').getLayout.modelName | slug | default('') -%}
+    {%- set _uniqueCtId = content.id | default('') -%}
+    {%- set dfpData = content.sectionId | getDfpFile(dfp_root_path, content.type) -%}
+    {%- set _dfpInclude = dfpData['_dfpInclude']-%}
+    {%- set _dfpSection = dfpData['_dfpSection']-%}
+    <?php
+        {% autoescape false %}
+            $_dfpSegmentationTags = array ({{ _tagListDFP }});
+        {% endautoescape %}
+        $_dfpTheme = "{{ _dfpTheme }}";
+        $_uniqueCtId="{{ _uniqueCtId }}";
+        @include("{{ _dfpInclude }}");
+    ?>
+
+    {{ adsDfp.advertising(action, '', _dfpSection, 'n' , 'f', content.id) }}
+    {%- if action != 'publish' -%}
+        <script>
+            var huecosMiniContenidos = {};
+        </script>
+    {%- endif -%}
+
+    {%- set mini_cabecera =  statics_includes_path ~ '/cabecera_mini_canales.html.inc' -%}
+    {%- if action == "preview" -%}
+        {{ getFileContents(mini_cabecera) }}
+    {%- else -%}
+        {{ smartInclude(mini_cabecera) }}
+    {%- endif -%}
+    <div id="contenedor" class="contenedor">
+        <div class="publicidad publicidad-superior">
+            <div class="publicidad publicidad-980">
+                {{ adsDfp.advertising(action, '', _dfpSection, 'n' , 'm', content.id) }}
+            </div>
+        </div>
+
+        {% block breadcrumb %}{% endblock %}
+        <div id="contenido" class="contenido" role="main"  data-ue-contenido="" id="js_{{content.id}}">
+            <?php @include_once('{{ alerts_path }}/alerta.html'); ?>
+            {% block contenido %}{% endblock %}
+        </div>
+        <?php include ('{{ statics_includes_path }}/footer.html.inc'); ?>
+        {{ smartInclude(dfp_includes_path ~ "/elmundo/footer_ads.html" | e) }}
+
+        {% if action == 'publish' %}
+            {{ elMundoTwigTools.experiments(content.getPublication('web').url,
+                {
+                'portal': content.section.portal,
+                'section': content.section.seccion,
+                'ctType': content.type,
+                'position': 'footer',
+                'version': 'web'
+                })
+            }}
+        {% endif %}
+
+        <div class="publicidad publicidad-inferior">
+            {{ adsDfp.advertising(action, '', _dfpSection, 'n' , 'mb', content.id) }}
+        </div>
+    </div><!-- === #contenedor === -->
+    {%- if action == "publish" -%}
+        {{ elMundoTwigTools.redesSociales(baseUrl, content.type, content) }}
+        {{ elMundoTwigTools.omniture_tag(content, baseUrl, 'web') }}
+    {%- endif -%}
+</body>
+</html>
+{%- endif -%}

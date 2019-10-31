@@ -1,0 +1,68 @@
+{% set _mainColumn = _mainColumn|default('') %}
+{%- set article -%}
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/article.html.twig' -%}
+{%- endset -%}
+{%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+    'inner'         : 'main',
+    'position'      : 'minimum',
+    'items'         : [article]
+} -%}
+{% set elements = [] %}
+{% if isMobileFormat|default(false) == false %}
+    {% set b300_100 %}
+    {% set adsItems = [{'name':'b300_100'}] %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                'type'     : type|default('n')
+            }
+        -%}
+    {% endset %}
+    {% set banner_path = bannerPath|default(statics_includes_path ~ '/banners/banner-newsletter-director-noticia.html') %}
+    {% set componente %}
+        {%- include 'UEditCmsBundle:ContentType:include_fijo.html.twig' with {
+                content : {
+                    'path': banner_path,
+                    'includeType': 'include_fijo'
+                }
+            }
+        -%}
+    {% endset %}
+    {% set elements = elements|merge([
+        { 'inner': 'secondary', 'position': 'item', 'items': [b300_100] },
+        { 'inner': 'secondary', 'position': 'item', 'items': [componente] } ]) %}
+    {% set robaA %}
+        {% set adsItems = [{'name':'roba'}] %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                'adsItems': adsItems,
+                'type'     : type|default('n')
+            }
+        -%}
+    {% endset %}
+    {% set elements = elements|merge([
+        { 'inner': 'secondary', 'position': 'item grow', 'items': [robaA] }
+    ]) %}
+    {% set robaType = 'rb' %}
+    {% if isMobileFormat|default(false) == true %}
+        {% set robaType = 'rc' %}
+    {% endif %}
+    {% set robaB %}
+        {% set adsItems = [{ 
+            'name'      : 'roba',
+            'slot'      : robaType,
+            'isSticky'  : false
+        }] %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with { 
+                'adsItems' : adsItems,
+                'type'     : type|default('n')
+            } 
+        -%}
+    {% endset %}
+    {% set elements = elements|merge([
+        { 'inner': 'secondary', 'position': 'item no-grow', 'items': [robaB] }
+    ]) %}
+{% endif %}
+{%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+    'inner'         : 'main',
+    'position'      : 'right',
+    'items'         : elements
+ } -%}

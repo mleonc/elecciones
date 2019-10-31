@@ -1,0 +1,10 @@
+{% filter idAux('content.ademas.items') %}
+	{% if content.ademas.items is defined and content.ademas.items is not empty %}
+    	<section class="ademas">
+	        <h1>Además</h1>
+	        {{ ueditControls.listado(content.ademas.items, {'type':'ueAdemas',
+	        'xulname':'content.ademas.items',
+	        'onChange': ''}) }}
+    	</section>
+	{% endif %}
+{% endfilter %}

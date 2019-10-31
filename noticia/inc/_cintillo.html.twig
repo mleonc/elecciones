@@ -1,0 +1,29 @@
+{%- filter idAux('content.cintillo', 'onStrongModify') -%}{%- endfilter -%}
+{# noticia #}
+{# tenemos cintillo defectivo #}
+{%- if content.section.seccion | slug == content.cintillo | slug -%}
+    {%- set cinName = content.cintillo | upper -%}
+    {%- set cinLink = '/' ~ content.section.seccion ~ '.html' -%}
+{# tenemos uno manual #}
+{%- else -%}
+    {%- set cinName = content.cintillo -%}
+    {%- set cinLink = content.cintilloUrl | default('') | lower -%}
+{%- endif -%}
+{# tenemos el titulo seo #}
+{%- set titleSeo = '' -%}
+{%- if content.tituloSeo is defined and content.tituloSeo is not empty -%}
+    {%- set titleSeo = content.tituloSeo -%}
+{%- else -%}
+    {%- set portadilla = findPortadillaBySectionId(content.sectionId) -%}
+    {%- if portadilla.seoTitleForContent is defined and portadilla.seoTitleForContent is not empty -%}
+        {%- set titleSeo = portadilla.seoTitleForContent -%}
+     {%- elseif titleSeoModel is defined and titleSeoModel is not empty and titleSeoModel != ': ' -%}
+        {%- set titleSeo = titleSeoModel|trim(': ') -%}
+    {%- endif -%}
+{%- endif -%}
+
+{# pintamos solo si tenemos el contenido #}
+{%- if cinLink != '' and (cinName != '' or titleSeo != '') -%}<a href="{{ cinLink }}">{%- endif -%}
+{%- if cinName != '' and titleSeo == ''-%}{{ cinName | xul('content.cintillo') }}{%- endif -%}
+{%- if titleSeo != '' -%}{{ titleSeo | xul('content.tituloSeo') }}{%- endif -%}
+{%- if cinLink != '' and (cinName != '' or titleSeo != '') -%}</a>{%- endif -%}

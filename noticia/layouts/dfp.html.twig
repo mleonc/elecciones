@@ -1,0 +1,141 @@
+{# CSS Classes #}
+	{% set _skyRight = _skyRight|default('ue-l-article__sky ue-l-article__sky--right') %}
+	{% set _skyLeft = _skyLeft|default('ue-l-article__sky ue-l-article__sky--left') %}
+	{% set _mega = _mega|default('ue-l-article__mega') %}
+	{% set _b300_100 = _b300_100|default('') %}
+	{% set _roba = _roba|default('') %}
+	{% set _float = _float|default('') %}
+	{% set _html5 = _html5|default('') %}
+	{% set _native = _native|default('') %}
+	{% set _label = _label|default('ue-c-ad--label') %}
+	{% set _sticky = _sticky|default('ue-c-ad--sticky') %}
+	{% set _dfpAdsUnitsSufix = _dfpAdsUnitsSufix|default('n') %}
+
+<h1>{{b300}}</h1>
+
+{% set dfpItems = {} %}
+{% set adsItems = adsItems|default([]) %}
+{% set type = type|default('n') %}
+{% for item in adsItems %}
+	{# filter ads in premium content and premium preview:
+	  open content allow all
+	  premium full content allow m, r, rb, rc
+	  premium preview all but desktop special, allow m
+	  desktop preview allow r
+	#}
+  {% if content.isPremium | default(false) == false or
+	    (content.isPremium | default(false) == true and content.isPreview | default(false) == false and
+			((item.name == 'mega' and (item.name == 'mega' and item.slot|default('m') == 'm')) or
+	  		(item.name == 'roba' and
+	  			(item.slot|default('r') == 'r' or item.slot|default('r') == 'rb' or item.slot|default('r') == 'rc')))) or
+	    (content.isPreview | default(false) == true and (content.isSpecial|default(false) == false or isMobileFormat|default(false)) == true and (item.name == 'mega' and item.slot|default('m') == 'm')) or
+	   	(content.isPreview | default(false) == true and  isMobileFormat|default(false) == false and item.name == 'roba' and item.slot|default('r') == 'r')
+  %}
+
+	{% if (item.name == 'mega') %}
+		{% set dfpItems = dfpItems|merge({
+			'mega'		: megaItem|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , item.slot|default('m'), content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_mega),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : true,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+				'onlyDfp'	: item.onlyDfp is defined ? item.onlyDfp : false,
+				'dfpAria'   : item.dfpAria is defined ? item.dfpAria : false
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'skyRight') %}
+		{% set dfpItems = dfpItems|merge({
+			'skyRight'		: skyRightItem|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , 'sd', content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_skyRight),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'skyLeft') %}
+		{% set dfpItems = dfpItems|merge({
+			'skyLeft'		: skyLeft|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , 'si', content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_skyLeft),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'b300_100') %}
+		{% set dfpItems = dfpItems|merge({
+			'b300_100'	: b300_100|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , 'b300x100', content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_b300_100),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : true,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'roba') %}
+		{% set dfpItems = dfpItems|merge({
+			'roba'		: roba|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , item.slot|default('r'), content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_roba),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : true,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : true,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'f') %}
+		{% set dfpItems = dfpItems|merge({
+			'f'				: f|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , 'f', content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_float),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+				'onlyDfp'	: true,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'float') %}
+		{% set dfpItems = dfpItems|merge({
+			'float'			: float|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , item.slot, content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_float),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'html5') %}
+		{% set dfpItems = dfpItems|merge({
+			'html5'			: float|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , 'html5', content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_html5),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+				'onlyDfp'	: true,
+			})})
+		%}
+	{% endif %}
+	{% if (item.name == 'native') %}
+		{% set dfpItems = dfpItems|merge({
+			'native'		: float|default({
+				'elem'		: adsDfp.advertising(action, '', _dfpSection, type , item.slot, content.id, content.isPremium | default(false), content.isPreview | default(false)),
+				'class'		: item.class|default(_native),
+				'needLabel'	: item.needLabel is defined ? item.needLabel : false,
+				'isSticky'	: item.isSticky is defined ? item.isSticky : false,
+				'onlyDfp'	: true,
+			})})
+		%}
+	{% endif %}
+  {% endif %}
+{% endfor %}
+
+{% for item in dfpItems %}
+	{% if item.class|default('') is not empty %}
+		<div class="{{ item.class|trim }}" {%- if item.dfpAria is defined and item.dfpAria -%}{{ dataSEO.dfp.aria|default('')|trim }}{%- endif -%}>
+	{% endif %}
+			{% include 'UEditCmsBundle:Structures:noticia/layouts/elements/dfp_block.html.twig' %}
+	{% if item.class|default('') is not empty %}
+		</div>
+	{% endif %}
+{% endfor %}

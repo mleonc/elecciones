@@ -1,0 +1,13 @@
+{%- if content.isPreview | default(false) == false -%}
+    {% set taboola %}
+        <!-- === Modulo taboola === -->
+        {% include 'UEditCmsBundle:Structures:common/taboola/_taboola_module.html.twig' with { 'action': action } %}
+        <!-- === Fin Modulo taboola === -->
+    {% endset %}
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+        'inner'         : 'main',
+        'position'      : '300h',
+        'items'         : [taboola]
+    } -%}
+{%- endif -%}
+

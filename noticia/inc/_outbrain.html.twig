@@ -1,0 +1,24 @@
+{% set enable = true %}
+{% if enable %}
+    {% if action == 'publish' %}
+    <div class="OUTBRAIN" data-src="{{ content.getPublication('web').url|default('') }}" data-widget-id="AR_2" data-ob-template="elmundo"></div>
+    <div class="OUTBRAIN" data-src="{{ content.getPublication('web').url|default('') }}" data-widget-id="AR_4" data-ob-template="elmundo"></div>
+        <script type="text/javascript">
+            (function () {
+                if (jQuery && jQuery('script[src*="outbrain.js"]').length === 0) {
+                    try {
+                        var scriptEl = document.createElement('script');
+                        scriptEl.type = 'text/javascript';
+                        scriptEl.async = 'true';
+                        scriptEl.src = 'https://widgets.outbrain.com/outbrain.js';
+                        var targetEl = document.getElementsByTagName('script')[0];
+                        targetEl.parentNode.insertBefore(scriptEl, targetEl);
+                    } catch (e) {
+                    };
+                }
+            })();
+        </script>
+    {% else %}
+    <div class="OUTBRAIN" data-src="kk" data-widget-id="TR_1" data-ob-template="elmundo">Outbrain</div>
+    {% endif %}
+{% endif %}

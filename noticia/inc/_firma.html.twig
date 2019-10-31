@@ -1,0 +1,7 @@
+{%- filter idAux('content.firmas.items') -%}
+    {%- if content.firmas.items is defined -%}
+        {{ ueditControls.firmas(content.firmas.items, {'type':'ueFirmas',
+        'xulname':'content.firmas.items',
+        'onChange': ''}) }}
+    {%- endif -%}
+{%- endfilter -%}

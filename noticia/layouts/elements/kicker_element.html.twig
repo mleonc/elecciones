@@ -1,0 +1,52 @@
+{# CSS Classes #}
+{%- set _seoKicker = _seoKicker|default('ue-c-article__kicker-seo') -%}
+
+{%- set isSEO = false -%}
+{%- set kicker = cintillo|default('') -%}
+{%- if section|slug == cintillo|slug -%}
+    {# tenemos cintillo defecto #}
+    {%- set kicker = cintillo|upper -%}
+{%- endif -%}
+
+{%- if tituloSeo is defined and tituloSeo is not empty -%}
+    {%- set kicker = tituloSeo -%}
+    {%- set isSEO = true -%}
+{%- else %}
+    {%- set portadilla = findPortadillaBySectionId(sectionId) -%}
+    {%- if portadilla.seoTitleForContent is defined and portadilla.seoTitleForContent is not empty -%}
+        {%- set kicker = portadilla.seoTitleForContent -%}
+        {%- set isSEO = true -%}
+    {%- elseif titleSeoModel is defined and titleSeoModel is not empty and titleSeoModel|trim != ':' -%}
+            {%- set kicker = titleSeoModel|trim(': ') -%}
+            {%- set isSEO = true -%}
+    {%- endif -%}
+{%- endif -%}
+
+{# la url del cintillo prevalece siempre #}
+{%- set cinLink = cintilloUrl|default('')|lower -%}
+{%- if (cintillo|slug == section|slug and isSEO == false) -%}
+    {%- set cinLink = '/' ~ section ~ '.html' -%}
+{%- endif -%}
+
+{# pintamos solo si tenemos el contenido #}
+{%- if (kicker is not empty) -%}
+    {%- if isSEO == true -%}
+        <h2 class="{{ _seoKicker|trim }}">
+    {%- endif -%}
+
+    {%- if cinLink is not empty -%}
+        <a href="{{ cinLink }}">
+    {%- endif -%}
+
+    {% if isSEO == false %}
+        {{ kicker|xul('content.cintillo') }}
+    {%- else -%}
+        {{ kicker|xul('content.kicker') }}
+    {%- endif -%}
+    {%- if cinLink is not empty -%}
+        </a>
+    {%- endif -%}
+    {%- if isSEO == true -%}
+        </h2>
+    {%- endif -%}
+{%- endif -%}

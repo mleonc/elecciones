@@ -1,0 +1,24 @@
+{# CSS Classes #}
+	{% set _ads = _ads|default('ue-c-ad') %}
+	{% set _adsInner = _adsInner|default('ue-c-ad__inner') %}
+
+{% set inner = _ads %}
+{% if item.needLabel|default(false) == true %}
+	{% set inner = inner ~ ' ' ~ _label %}
+{% endif%}
+{% if item.isSticky|default(false) == true %}
+	{% set inner = inner ~ ' ' ~ _sticky %}
+{% endif%}
+
+{% set block %}
+	<div class="{{ inner|trim }}" {{ dataSEO.dfp.aria|default('')|trim }}>
+		<div class="{{ _adsInner|trim }}">
+			{{ item.elem }}
+		</div>
+	</div>
+{% endset %}
+{% if item.onlyDfp|default(false) == true %}
+	{% set block = item.elem %}
+{% endif %}
+
+{{ block }}

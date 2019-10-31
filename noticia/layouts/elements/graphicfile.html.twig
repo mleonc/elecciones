@@ -1,0 +1,48 @@
+{% if item is defined and item is not empty and data is defined and data is not empty %}
+    {%- if item is iterable -%}
+        {% set found = false %}
+        {% set item  = null %}
+        {%- for element in item if not found %}
+            {%- if  element.resource.id is defined and 
+                    element.resource.position is not empty and
+                    data.slot.position is defined and 
+                    data.slot.position is not empty and
+                    element.resource.position == data.slot.position and 
+                    element.resource.visibility == true -%}
+                {%- set item = element -%}
+                {%- set found = true -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
+
+    {%- if item is defined -%}
+        {# STATIC RENDER #}
+        {%- if (item.renderMode is defined) and (item.renderMode == 'static') -%}
+            {%- set mediaSource = item.url -%}
+            {%- set titulo = item.titulo|default('Gráfico') -%}
+            {%- if isMobileFormat is defined -%}
+                {% if data.image.size is defined and data.image.size == 'small' and isMobileFormat == true and getAutocoverSectionId() == 'portada' %}
+                    {% set optimizedImage = true %}
+                    {% set imageOptimizationType = 'small' %}
+                {% endif %}
+                {%- if getImagesCounter() >= lazy_loading_desktop_loaded_images and isMobileFormat == false -%}
+                    {%- set dataSrc = true -%}
+                {%- elseif getImagesCounter() >= lazy_loading_mobile_loaded_images and isMobileFormat == true -%}
+                    {%- set dataSrc = true -%}
+                {%- endif -%}
+            {%- endif -%}
+            <img {% if dataSrc is defined and dataSrc == true %}src="{{ lazy_loading_pixel_url }}" onload="lzld(this)" data-{% endif %}src="{% if optimizedImage is defined and optimizedImage == true %}{{ mediaSource | optimizedImage(imageOptimizationType, data.containerCt) }}{% else %}{{ mediaSource }}{% endif %}" class="{{ data.image.imgClass|default('full-image') }}" alt="{{ titulo }}">
+            {%- if action == 'publish' -%}
+                {{ increaseImagesCounter() }}
+            {%- endif -%}
+        {%- else -%}
+        {# DYNAMIC RENDER #}
+            {%- set url = (portal_environment == 'dev') ? portal_app_url~'/app_dev.php' : portal_app_url -%}
+            {%- if isMobileFormat is defined and isMobileFormat -%}
+                {%- set source = getFileContents(url~"/service/graphic/getHtml/"~item.resource.id~"/mobile") -%}
+            {%- else -%}
+                {%- set source = getFileContents(url~"/service/graphic/getHtml/"~item.resource.id) -%}
+            {%- endif -%}
+        {%- endif -%}
+    {% endif %}
+{% endif %}

@@ -1,0 +1,163 @@
+{# CSS Classes #}
+    {% set _figure = _figure|default('ue-c-article__media') %}
+    {% set _specialFigure = _specialFigure|default('ue-l-article--expand-edge-left-from-tablet ue-l-article--expand-left-full-from-desktop ue-l-article--expand-edge-right-from-tablet ue-l-article--expand-right-full-from-desktop') %}
+    {% set _positions = {
+        'default'   : 'ue-l-article--edge-left-n-right-until-tablet',
+        'izquierda' : 'ue-l-article--edge-left-n-right-until-tablet ue-l-article--width-2of3-from-tablet ue-l-article--float-left-from-tablet ue-l-article--float-left-from-desktop ue-l-article--expand-left-full-from-tablet ue-l-article--expand-left-full-from-desktop ue-c-article__media--caption-left-from-tablet ue-c-article__media--caption-left-from-desktop',
+        'derecha'   : 'ue-l-article--edge-left-n-right-until-tablet ue-l-article--width-2of3-from-tablet ue-l-article--float-right-from-tablet ue-l-article--float-right-from-desktop ue-l-article--expand-right-full-from-tablet ue-l-article--expand-right-half-from-desktop ue-c-article__media--caption-right-from-tablet ue-c-article__media--caption-right-from-desktop',
+        'grande'    : 'ue-l-article--edge-left-n-right-until-tablet ue-l-article--expand-edge-left-from-tablet ue-l-article--expand-left-full-from-desktop ue-l-article--expand-edge-right-from-tablet ue-l-article--expand-right-full-from-desktop ue-c-article__media--caption-left-from-tablet-edge ue-c-article__media--caption-left-from-desktop',
+        'grande'    : 'ue-l-article--edge-left-n-right-until-tablet ue-l-article--expand-edge-left-from-tablet ue-l-article--expand-left-full-from-desktop ue-l-article--expand-edge-right-from-tablet ue-l-article--expand-right-full-from-desktop ue-c-article__media--caption-left-from-tablet-edge ue-c-article__media--caption-left-from-desktop',
+    } %}
+    {% set _types = {
+        'imagefile'     : 'ue-c-article__media--image',
+        'videofile'     : 'ue-c-article__media--video',
+        'graphicfile' : 'ue-c-article__media--graph',
+        'audiofile'     : 'ue-c-article__media--audio',
+        'livestreamfile': 'ue-c-article__media--streaming'
+    } %}
+
+    {% set _caption = _caption|default('ue-c-article__media-caption') %}
+    {% set _basicCaption = _basicCaption|default('ue-c-article__media--caption-bottom-over-media-from-mobile ue-c-article__media--caption-bottom-standard-from-tablet ue-c-article__media--caption-inverted-color-from-mobile ue-c-article__media--caption-standard-color-from-tablet') %}
+    {% set _specialCaption = _specialCaption|default('ue-c-article__media--caption-inverted-color-from-mobile ue-c-article__media--caption-standard-color-from-tablet ue-c-article__media--caption-bottom-over-media-from-mobile ue-c-article__media--caption-bottom-standard-from-tablet ue-c-article__media--caption-bottom-standard-from-desktop') %}
+    {% set _description = _description|default('ue-c-article__media-description') %}
+    {% set _source = _source|default('ue-c-article__media-source') %}
+    {% set _author = _author|default('ue-c-article__media-author') %}
+    {% set _agency = _agency|default('ue-c-article__media-agency') %}
+    {% set _icon = _icon|default('ue-c-article__media-icon') %}
+    {% set _figIcon = _figIcon|default('ue-c-article--media-icon-m-from-phablet') %}
+
+{% set figurePosition = figurePosition|default('default') %}
+{% set class = _figure %}
+{% set showNewsCaption = showNewsCaption is defined ? showNewsCaption : true %}
+{% set position = position is defined ? position : '' %}
+{% set id = id|default(content.id) %}
+{% set sourceId = sourceId|default(content.sourceId) %}
+{% set containerCt = containerCt|default('noticia') %}
+{% set link = link|default('') %}
+{% set hideIcon = false %}
+
+{%- set aSlot = {'position': position, 'name': position, 'width' : '', 'height': '', 'tipo': 'destacada', 'id': sourceId } -%}
+{%- set slot = slot is defined ? slot|merge(aSlot) : aSlot -%}
+{%- set indexMedia = UeMultimedia.getIndexMedia(content.multimedia.items, {
+    'containerCt': containerCt,
+    'containerId': id,
+    'isMobile': isMobileFormat|default(false),
+    'slot': slot
+})|trim -%}
+{% set item = null %}
+{% if indexMedia is defined and indexMedia is not empty %}
+    {%- set item = content.multimedia.items[indexMedia] -%}
+    {% set data = {
+        'containerCt': containerCt,
+        'containerId': id,
+        'aClass': aClass|default(''),
+        'image': {
+            'imgClass': imgClass|default(_types['imagefile'])
+        },
+        'titulo': content.titulo,
+        'renderIcon': false,
+        'aTag': false,
+        'slot': slot,
+        'xulname': xulname|default('content.multimedia.items'),
+        'indexMedia': indexMedia,
+        'section': content.sectionId
+    } %}
+{% endif %}
+
+{% if item is defined and item is not empty %}
+    {% set class = class|trim ~ ' ' ~ _types[item.resource.type]|default('') %}
+    {% if not isSpecial|default(false) %}
+        {% if position in ['Vertical'] %}
+            {% set class = class|trim ~ ' ue-l-article--edge-left-n-right-until-tablet ue-c-article--media-icon-m-from-phablet' %}
+        {% endif %}
+    {% endif %}
+    {%- if (item.resource.type in ['videofile','graphicfile']) -%}
+        {% set hideIcon = true %}
+    {%- endif -%}
+    {% if isSpecial|default(false) %}
+        {% if position in ['Vertical'] %}
+            {% set class = class|trim ~ ' ' ~ _specialFigure %}
+            {% set openingContainerClass = 'ue-c-article__media--linear-gradient-bottom-from-tablet' %}
+        {% endif %}
+        {% if figurePosition|default('') is not empty %}
+            {% set class = class|trim ~ ' ' ~ _positions[figurePosition] %}
+        {% endif %}
+    {% endif %}
+    {%- if not hideIcon|default(false) -%}
+        {% set mediaIcon = UeMultimedia.getMediaIconClass(item, {
+            'ct_type' : content.type|default(''),
+            'index'   : indexMedia })|trim|default('') %}
+        {%- if mediaIcon is not empty -%}
+            {% set class = class ~ ' ' ~ _figIcon %}
+        {%- endif -%}
+    {%- endif -%}
+
+    <figure {% if item.resource.type == "graphicfile" %} id="graphic-{{ item.resource.id }}" {% endif %}
+            class="{{ class|trim }}" {{ dataSEO.media.figure[item.resource.type]|default('') }}>
+        {%- set type = '' -%}
+        {%- if item.resource.type is defined and item.resource.type is not empty -%}
+            {%- set type = item.resource.type -%}
+            {%- if item.resource.type in ['videofile', 'livestreamfile', 'audiofile'] -%}
+                {%- set type = 'multimediafile' -%}
+                {%- if item.resource.type == 'livestreamfile' -%}
+                    {% set data = data|merge({'metadata' : {'updatedAt': content.updatedAt }}) %}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
+
+        {% if isSpecial|default(false) %}
+            {% set data = data|merge({
+                'container':{
+                    'tag'  : 'div',
+                    'class': 'ue-c-article__media-img-container' ~ ' ' ~ openingContainerClass|default('')
+                }
+            }) %}
+        {% endif %}
+
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/'~ type ~'.html.twig' ignore missing with {
+            'link' : link,
+            'data' : data
+        } -%}
+        {% if showNewsCaption %}
+            {% if data.indexMedia is defined and data.xulname is defined %}
+                {% filter xul(data.xulname ~'.' ~  (data.indexMedia+1) ~ '.titulo', 'ifExists', {'print': 'false'}) %}{% endfilter %}
+                {% filter xul(data.xulname ~'.' ~  (data.indexMedia+1) ~ '.author', 'ifExists', {'print': 'false'}) %}{% endfilter %}
+                {% filter xul(data.xulname ~'.' ~  (data.indexMedia+1) ~ '.distributor', 'ifExists', {'print': 'false'}) %}{% endfilter %}
+                {% set title  = item.titulo|default("")|xul(data.xulname ~ '.' ~ (data.indexMedia+1) ~  '.titulo') %}
+                {% set author = item.author|default("")|xul(data.xulname ~'.' ~ (data.indexMedia+1) ~  '.author') %}
+                {% set agency = item.distributor|default("")|xul(data.xulname ~'.' ~ (data.indexMedia+1) ~  '.distributor') %}
+                {% if title is not empty or author is not empty or agency is not empty %}
+                    {% if position in ['Vertical'] %}
+                        {% set captClass = _basicCaption %}
+                        {% if isSpecial|default(false) == true %}
+                            {% set captClass = _specialCaption %}
+                        {% endif %}
+                        {% set _caption = _caption ~ ' ' ~ captClass %}
+                    {% endif %}
+                    <figcaption class="{{ _caption }}" {{ dataSEO.caption.item|default('') }}>
+                        {%- if title is not empty -%}
+                            <span class="{{ _description }}">
+                                {{ title|raw }}
+                            </span>
+                        {%- endif -%}
+                        {%- if author is not empty or agency is not empty -%}
+                            <span class="{{ _source }}">
+                            {%- if author is not empty -%}
+                                <span class="{{ _author }}" {{ dataSEO.caption.source|default('') }}>{{ author|raw }} </span>
+                            {%- endif -%}
+                                {%- if agency is not empty -%}
+                                    <span class="{{ _agency }}">{{ agency|raw }}</span>
+                                {%- endif -%}
+                            </span>
+                        {%- endif -%}
+                    </figcaption>
+                    {%- if mediaIcon|default('') is not empty and not hideIcon|default(false) -%}
+                        <div class="{{ _icon }}">
+                            {{ mediaIcon|raw }}
+                        </div>
+                    {%- endif -%}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    </figure>
+{% endif %}

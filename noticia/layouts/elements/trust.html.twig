@@ -1,0 +1,23 @@
+{# CSS Classes #}
+	{% set _trust = _trust|default('ue-c-article__trust') %}
+	{% set _trustDescription = _trustDescription|default('ue-c-article__trust-description') %}
+	{% set _trustContainer = _trustContainer|default('ue-c-article__trust-container') %}
+	{% set _trustLink = _trustLink|default('ue-c-article__trust-link') %}
+	{% set _trustText = _trustText|default('ue-c-article__trust-text') %}
+
+	{% set translations = translations|default({
+		'trust'		: 'The Trust Project',
+	    'criteria'  : 'Conforme a los criterios de',
+	    'knowMore'	: 'Saber m&aacute;s',
+	}) %}
+
+<div class="{{ _trust|trim }}">
+    <div class="{{ _trustDescription|trim }}">
+    	<p class="{{ _trustContainer|trim }}">
+	        <span class="{{ _trustText|trim }}">{{ translations.criteria|raw }}</span>
+        	{%- include "UEditCmsBundle:Structures:noticia/layouts/elements/trust.svg.twig" -%}
+	        <title>{{ translations.trust|raw }}</title>
+	    </p>
+    </div>
+    <a class="{{ _trustLink|trim }}" href="https://www.elmundo.es/em/codigo-etico.html">{{ translations.knowMore|raw }}</a>
+</div>

@@ -1,0 +1,103 @@
+{%- import "UEditCmsBundle:Macros:multimedia.html.twig" as UeMultimedia -%}
+
+{% set showTitle     = showTitle is defined     ? showTitle     : true %}
+{% set showAuthor    = showAuthor is defined    ? showAuthor    : true %}
+{% set showLink      = showLink is defined      ? showLink      : true %}
+{% set showFrame     = showFrame is defined     ? showFrame     : true %}
+{% set showPosition  = showPosition is defined  ? showPosition  : true %}
+{% set showBody      = showBody is defined      ? showBody      : true %}
+{% set showContainer = showContainer is defined ? showContainer : true %}
+
+{% set link = '' %}
+
+{%- set container = '' -%}
+{%- if showContainer == true -%}
+    {%- set container -%}
+        <{{ xData.container.tag|default('aside') }} {%- if xData.container.class is defined and xData.container.class is not empty %} class="{{ xData.container.class }}"{%- endif -%}>
+    {%- endset -%}
+{%- endif -%}
+
+{%- if content is defined -%}
+    {% set summaries = content.getSumarios() %}
+    {%- if summaries is defined -%}
+        {%- for summaryKey, summary in summaries.items -%}
+            {% set summaryKey = summaryKey + 1 %}
+            {%- if summary.paragraph == xData.paragraph -%}
+                {%- if action == 'preview' -%}
+                    <ue:beginContainerSumario
+                      name="content.sumarios.items.{{ summaryKey }}"
+                      paragraph="{{ xData.paragraph }}"
+                      params='{"type": "ueSumario", "xulname": "content.sumarios.items.{{ summaryKey }}", "sumarioKey" : "{{ summaryKey }}", "paragraphNumber" : "{{ xData.paragraph }}"}'
+                      order="{{ summaryKey }}"></ue:beginContainerSumario>
+                {%- endif -%}
+                {{ container }}
+                {%- if xData.ribbonTop is defined and xData.ribbonTop is not empty %}
+                    {{xData.ribbonTop|raw}}
+                {% endif %}
+                    {%- if showLink == true and summary.link is defined and summary.link is not empty -%}
+                        {% set link = summary.link %}
+                    {%- endif -%}
+                    {%- if showTitle == true and summary.title -%}
+                        <{{ xData.header.tag|default('h2') }} {%- if xData.header.class is defined and xData.header.class is not empty %} class="{{ xData.header.class }}"{%- endif -%}>
+                            {%- if showLink == true and summary.link is defined and summary.link is not empty -%}
+                                <a href="{{ summary.link }}">
+                            {%- endif -%}
+                            {{ summary.title | xul('content.sumarios.items.' ~ summaryKey ~ '.title', 'onStrongModify') }}
+                            {%- if showLink == true and summary.link is defined and summary.link is not empty -%}
+                                </a>
+                            {%- endif -%}
+                        </{{ xData.header.tag|default('h2') }}>
+                    {%- endif -%}
+                    {%- set format = '' -%}
+                    {# MULTIMEDIA EN SUMARIOS #}
+                    {%- include 'UEditCmsBundle:Structures:noticia/layouts/media.html.twig' with {
+                        'position'      : '',
+                        'slot'          : { 'showId': summary.multimediaId },
+                        'link'          : link,
+                        'figurePosition': summary.position|default('')
+                    } -%}
+                    {%- if showBody == true and summary.body -%}
+                        {% filter xul('content.sumarios.items.' ~ summaryKey ~'.body', 'onStrongModify') %}
+                            {%- for key, paragraph in summary.getTaggedParagraphs()|default('') -%}
+                                {%- if summary.title is empty and summary.link is defined and summary.link is not empty -%}
+                                    <a href="{{ summary.link }}">
+                                {%- endif -%}
+                                <!-- === Borra el <p> en caso de que no haya texto en el sumario  === -->
+                                {%- set body = paragraph|trim -%}
+
+                                {%- if body != "" -%}
+                                    <!-- === Comprueba que no sea un snippet === -->
+                                    {%- if summary.body[3:] == '<p>'-%}
+                                        {%- set paragraph = paragraph|replace({'<p>':'<p class="summary-content">'}) -%}
+                                    {%- endif -%}
+                                    {{ paragraph|setParagraphInSnippet(["claves","fichas"]) | raw  }}
+                                {%- endif -%}
+                                {%- if summary.title is empty and summary.link is defined and summary.link is not empty -%}
+                                    </a>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        {% endfilter %}
+                    {%- endif -%}
+                    {%- if showAuthor == true and summary.author -%}
+                        <p class="ue-c-article__summary-author">
+                            {{ summary.author | xul('content.sumarios.items.' ~ summaryKey ~'.author', 'onStrongModify') }}
+                        </p>
+                        {# Change by firm #}
+                    {%- endif -%}
+                    {%- if xData.ribbonBottom is defined and xData.ribbonBottom is not empty %}
+                        {{xData.ribbonBottom|raw}}
+                    {% endif %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.author', 'onModify', {'print': 'false'}) %}{% endfilter %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.position', 'onModify', {'print': 'false'}) %}{% endfilter %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.body', 'ifExists', {'print': 'false'}) %}{% endfilter %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.size', 'onModify', {'print': 'false'}) %}{% endfilter %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.paragraph', 'onModify', {'print': 'false'}) %}{% endfilter %}
+                    {% filter xul('content.sumarios.items.' ~ summaryKey ~'.multimediaId', 'onModify', {'print': 'false'}) %}{% endfilter %}
+                </{{ xData.container.tag|default('aside') }}>
+                {%- if action == 'preview' -%}
+                    <ue:endContainerSumario></ue:endContainerSumario>
+                {%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {% endif %}
+{%- endif -%}

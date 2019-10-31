@@ -1,0 +1,8 @@
+<time datetime="{{ content.publishedAt.date|default("now")|date("Y-m-d") }}">
+    Actualizado:
+    {%- if content.publishedAt.date is defined and content.publishedAt.date is not empty -%}
+    	<span class="fecha" itemprop="dateModified">{{ content.publishedAt.date|date("d/m/Y") }}</span> <span class="hora">{{ content.publishedAt.date|date("H:i") }} horas</span>
+    {%- else -%}
+    	<span class="fecha" itemprop="dateModified">-</span>
+    {%- endif -%}
+</time>

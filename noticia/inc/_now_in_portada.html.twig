@@ -1,0 +1,9 @@
+<section class="ahora-en-portada">
+    <h1><a href="http://www.elmundo.es">Ahora en portada</a></h1>
+    <ul>
+        {% for item in content %}
+		    <li>{{item.titulo}}</li>
+        {% endfor %}
+        <li><a href="http://www.elmundo.es">Vea más titulares en portada</a></li>
+    </ul>
+</section>

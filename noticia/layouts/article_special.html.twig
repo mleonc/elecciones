@@ -1,0 +1,164 @@
+{# CSS Classes #}
+	{% set _mainColumn      = _mainColumn|default('ue-l-article__main-column ue-l-article--minimum-content-from-tablet') %}
+    {% set _article         = _article|default('ue-c-article') %}
+    {% set _header          = _header|default('ue-l-article__header ue-c-article__header--inverted ue-l-article__header--content-absolute') %}
+    {% set _specialHeader   = _specialHeader|default('ue-l-article__header--content-over-media') %}
+    {% set _headerContent   = _headerContent|default('ue-l-article__header-content ue-l-article--edge-left-n-right-until-tablet') %}
+    {% set _kickerGroup     = _kickerGroup|default('ue-c-article__kicker-group ue-c-article__kicker--boxed ue-l-article--expand-left-full-from-tablet  ue-l-article--expand-right-full-from-tablet') %}
+    {% set _kickerContainer = _kickerContainer|default('ue-c-article__kicker-container') %}
+    {% set _kicker          = _kicker|default('ue-c-article__kicker') %}
+    {% set _body            = _body|default('ue-l-article__body ue-c-article__body') %}
+
+{% set isSpecial = true %}
+{% set showImage = showImage is defined ? showImage : true %}
+{% set position = position|default('Vertical') %}
+{% set id = id|default(content.id) %}
+{% set sourceId = sourceId|default(content.sourceId) %}
+{% set containerCt = containerCt|default('noticia') %}
+
+{# has media content #}
+    {% if showImage %}
+        {%- set slot = slot|default({'position': position, 'name': position, 'width' : '', 'height': '', 'tipo': 'destacada', 'id': sourceId }) -%}
+        {%- set indexMedia = UeMultimedia.getIndexMedia(content.multimedia.items, {
+            'containerCt': containerCt,
+            'containerId': id,
+            'isMobile': isMobileFormat|default(false),
+            'slot': slot
+        })|trim -%}
+        {% if indexMedia is defined and indexMedia is not empty %}
+            {%- set item = content.multimedia.items[indexMedia] -%}
+            {% set _article = _article|trim ~ ' has-image' -%}
+            {% set renderIcon = false %}
+            {% if item.hasIcon|default('') != '' %}
+                {% set renderIcon = true %}
+            {% endif %}
+
+            {% set data = {
+                'containerCt': containerCt,
+                'containerId': id,
+                'aClass': aClass|default(''),
+                'image': {
+                    'imgClass': imgClass|default('ue-c-article__media--image')
+                },
+                'titulo': content.titulo,
+                'renderIcon': renderIcon,
+                'aTag': false,
+                'slot': slot,
+                'xulname': xulname|default('content.multimedia.items'),
+                'indexMedia': indexMedia
+            } %}
+        {% endif %}
+    {% endif %}
+<div class="{{ _mainColumn|trim }}">
+    <article class="{{ _article|trim }}" {{ dataSEO.article.item|default('') }}>
+        <meta itemprop="mainEntityOfPage" content="{{ baseUrl }}">
+        {%- filter xul('content.template', 'onModify', {'print': 'false'}) %}{%- endfilter %}
+        {% if isSpecial|default(false) %}
+            {% set _header = _header ~ ' ' ~ _specialHeader %}
+        {% endif %}
+        <div class="{{ _header|trim }}">
+            <div class="{{ _headerContent|trim }}">
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/kicker.html.twig' -%}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/headline.html.twig' -%}
+                {% if not isMobileFormat|default(false) %}
+                    {%- include 'UEditCmsBundle:Structures:noticia/layouts/standfirst.html.twig' -%}
+                {% endif %}
+            </div>
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/media.html.twig' -%}
+        </div>
+        <div class="{{ _body }}" {{ dataSEO.article.body|default('') }}>
+            {% if isMobileFormat|default(false) %}
+                {% set adsItems = [{
+                    'name' : 'mega'
+                }] %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with {
+                    '_mega'       : 'ue-l-article__mega ue-l-article--expand-left-full-from-tablet ue-l-article--expand-left-full-from-desktop ue-l-article--expand-right-full-from-tablet ue-l-article--expand-right-full-from-desktop',
+                    'innerNeeded' : true,
+                    'adsItems'    : adsItems,
+                    'type'        : 'ne'
+                } -%}
+            {% endif %}
+            {% if not isMobileFormat|default(false) %}
+                {% set adsItems = [{
+                    'name'      : 'roba',
+                    'slot'      : 'r',
+                    'isSticky'  : false
+                }]%}
+
+                {% set publi %}
+                    {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with
+                        {
+                            'adsItems': adsItems,
+                            'type': 'ne'
+                        }
+                    -%}
+                {% endset %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+                    'inner'         : 'special',
+                    'position'      : 'fixed-size right',
+                    'items'         : [publi]} -%}
+            {% endif %}
+
+            {% set byline %}
+	            {% include 'UEditCmsBundle:Structures:noticia/layouts/byline.html.twig' %}
+	        {% endset %}
+	        {% set date %}
+            	{% include 'UEditCmsBundle:Structures:noticia/layouts/date.html.twig' %}
+        	{% endset %}
+	        {% set social %}
+	            {% include 'UEditCmsBundle:Structures:noticia/layouts/social.html.twig' %}
+	        {% endset %}
+	        {% set headerItems = [ byline, date, social ] %}
+            {% if isMobileFormat|default(false) == true %}
+                {% set headerItems = [ byline, date ] %}
+            {% endif %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+                'inner'         : 'bar',
+                'position'      : 'special',
+                'items'         : headerItems} -%}
+
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/subtitles.html.twig' -%}
+
+            {%- if atomizeView is defined and content.isPreview|default(false) == false -%}
+	            {{ atomizeView|raw }}
+	        {% else %}
+	            <!-- === Cuerpo de la noticia === -->
+	            {%- include 'UEditCmsBundle:Structures:noticia/layouts/body.html.twig' with {
+	                'content'   : content,
+	                'isMobile'  : isMobileFormat|default(false),
+	                'hasPubli'  : isMobileFormat|default(false),
+	                'action'    : action
+	            } -%}
+	            <!-- === Fin Cuerpo de la noticia === -->
+	        {%- endif -%}
+
+            {% if content.isPreview|default(false) == true and action == 'publish' %}
+
+                <?php @include("{{statics_includes_path}}/premium/include_preview.html"); ?>
+            {% endif %}
+
+            {% if isMobileFormat|default(false) == false %}
+                {% set adsItems = [{
+                    'name'      : 'roba',
+                    'slot'      : 'rb',
+                    'isSticky'  : false
+                }] %}
+                {% set publi %}
+                    {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with
+                        {
+                            'adsItems': adsItems,
+                            'type': 'ne'
+                        }
+                    -%}
+                {% endset %}
+                {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+                    'inner'         : 'special',
+                    'position'      : 'fixed-size bottom-right',
+                    'items'         : [publi]} -%}
+            {% endif %}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/elements/trust.html.twig' -%}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/tags.html.twig' with {'isSpecial':isSpecial} -%}
+            {%- include 'UEditCmsBundle:Structures:noticia/layouts/related.html.twig' -%}
+        </div>
+    </article>
+</div>

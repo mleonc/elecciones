@@ -1,0 +1,32 @@
+{% set outbrain %}
+    <!-- === Modulo outbrain === -->
+    {%- include 'UEditCmsBundle:Structures:common/_outbrain.html.twig' with { 'action': action} -%}
+    <!-- === Cierre modulo outbrain === -->
+{% endset %}
+
+{%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+    'inner'         : 'main',
+    'position'      : '300h',
+    'items'         : [outbrain]
+} -%}
+
+{% if isMobileFormat|default(false) == false %}
+    {% set adsItems = [{ 
+        'name'      : 'roba',
+        'slot'      : 'rb',
+        'isSticky'  : false
+    }] %}
+    {% set publi %}
+        {%- include 'UEditCmsBundle:Structures:noticia/layouts/dfp.html.twig' with { 
+                'adsItems': adsItems,
+                'type'     : type|default('n')
+            } 
+        -%}
+    {% endset %}
+
+    {%- include 'UEditCmsBundle:Structures:noticia/layouts/column.html.twig' with {
+        'inner'         : 'main',
+        'position'      : 'right',
+        'items'         : [{'inner' : 'secondary', 'position' : 'item', 'items' : [publi] }]
+    } -%}
+{% endif %}

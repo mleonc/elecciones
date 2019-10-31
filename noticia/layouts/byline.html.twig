@@ -1,0 +1,63 @@
+{# CSS Classes #}
+    {% set _byline  = _byline|default('ue-c-article__byline ue-c-article__byline--boxed') %}
+    {% set _item    = _item|default('ue-c-article__byline-item ue-l-article--direction-column-from-desktop ue-l-article--direction-row-from-mobile') %}
+    {% set _name    = _name|default('ue-c-article__byline-name') %}
+    {% set _role    = _role|default('ue-c-article__byline-role') %}
+    {% set _social  = _social|default('ue-c-article__byline-social') %}
+    {% set _location= _location|default('ue-c-article__byline-location') %}
+
+{% set showByline       = showByline is defined ? showByline : true %}
+{% set showName         = showName is defined ? showName : true %}
+{% set showRole         = showRole is defined ? showRole : true %}
+{% set showTwitterName  = showTwitterName is defined ? showTwitterName : true %}
+{% set showLocation     = showLocation is defined ? showLocation : true %}
+{% set xulname          = 'content.firmas.items' %}
+
+{% if showByline == true and content.firmas.items is not empty %}
+    <ul class="{{ _byline }}" {{dataSEO.byline.aria|default('')}}>
+    {%- filter idAux('content.firmas', 'onStrongModify', {'print': 'false'}) %}
+        {%- for firma in addXul(content.firmas.items, xulname) -%}
+            {%- filter xul("#{xulname}.#{loop.index}.twitterName", "onModify", {"print": "false"}) -%}{%- endfilter -%}
+            {%- filter xul("#{xulname}.#{loop.index}.location", "onModify", {"print": "false"}) -%}{%- endfilter -%}
+            {%- filter xul("#{xulname}.#{loop.index}.link", "onModify", {"print": "false"}) -%}{%- endfilter -%}
+            {%- filter xul("#{xulname}.#{loop.index}.twitterLink", "onModify", {"print": "false"}) -%}{%- endfilter -%}
+            <li class="{{ _item }}" {{ dataSEO.byline.list|default('') }}>
+                {% if showName == true and firma.name is defined and firma.name is not empty %}
+                    {% set link = firma.link|xul("#{xulname}.#{loop.index}.link")|idAux("#{xulname}.link") %}
+                    <div class="{{ _name }}" {{ dataSEO.byline.name|default('') }}>
+                    {%- if firma.link is not empty -%}
+                        <a href="{{ firma.link }}">
+                    {%- endif -%}
+                            {{- firma.name|upper|xul("#{xulname}.#{loop.index}.name")|idAux("#{xulname}.name") -}}
+                    {%- if link is not empty -%}
+                        </a>
+                    {%- endif -%}
+                    </div>
+                {% endif %}
+                {% if showRole == true and firma.status is defined and firma.status is not empty %} 
+                    <div class="{{ _role }}" {{ dataSEO.status|default('') }}>
+                        {{- firma.status|xul("#{xulname}.#{loop.index}.status")|idAux("#{xulname}.status") -}}
+                    </div>
+                {% endif %}
+                {% if showTwitterName == true and firma.twitterName is defined and firma.twitterName is not empty %}
+                    {%- set twitterLink = firma.twitterLink|xul("#{xulname}.#{loop.index}.twitterLink")|idAux("#{xulname}.twitterLink")|raw -%}
+                    <div class="{{ _social }}" {{ dataSEO.byline.name|default('') }}>
+                    {%- if firma.twitterLink is not empty -%}
+                        <a href="{{- firma.twitterLink -}}">
+                    {%- endif -%}
+                            {{- firma.twitterName|xul("#{xulname}.#{loop.index}.twitterName")|idAux("#{xulname}.twitterName") -}}
+                    {%- if twitterLink is not empty -%}
+                        </a>
+                    {%- endif -%}
+                    </div>
+                {% endif %}
+                {% if showLocation == true and firma.location is defined and firma.location is not empty %}
+                    <div class="{{ _location }}" {{ dataSEO.byline.location.address|default('') }}> {{- firma.location|xul("#{xulname}.#{loop.index}.location")|idAux("#{xulname}.location") -}} </div>
+                {% endif %}
+            </li>
+        {%- endfor -%}
+    {%- endfilter %}
+    </ul>
+{% endif %}
+
+
