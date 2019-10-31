@@ -8,6 +8,7 @@
  "mesas_totales": 60038, 
  "total_votantes": 11228312, 
  "year": 2019, 
+ "month": "noviembre",
  "id_registro": "TO", 
  "porcentaje_abstencion": 24.97, 
  "censo": 34840570, 
@@ -17,8 +18,7 @@
  "censo_escrutado": 14964513, 
  "diputados": 350, 
  "porcentaje_votos_nulos": 1.08,
- "month": "NOV",
- "partidos": [
+  "partidos": [
   {
    "color": "#ea433e", 
    "diputados": 100, 

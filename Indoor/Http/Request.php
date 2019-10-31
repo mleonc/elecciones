@@ -19,6 +19,8 @@ class Request
         	include dirname(dirname(__DIR__)).'/config.inc.php';
         }
 
+        $_REQUEST['q'] = preg_replace('/^\/elecciones\/(.*)/', '$1', $_REQUEST['q']);
+
         $vars = get_defined_vars();
 		$request = new Request();
 		foreach ($vars as $key => $value) {

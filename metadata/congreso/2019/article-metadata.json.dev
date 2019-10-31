@@ -1,0 +1,14 @@
+{
+  "main_class": "ue-l-article--basic",
+  "style_theme": "elmundo-theme",
+  "style_theme_version": "elmundo-theme-release",
+  "publishedAtText": "Domingo, 10 noviembre 2019 - 22:00",
+  "styles": {
+    "path": "/mnt/filer/html/staging/datos/portales/es/elmundo/www/includes/style/article/elmundo",
+    "version": "release",
+    "widget_include_name": "main-article-link-style.html",
+    "widget_include_name_mobile": "main-article-mobile-link-style.html",
+    "static_include_name": "main-article-link-style.html",
+    "static_include_name_mobile": "main-article-mobile-link-style.html"
+  }
+}

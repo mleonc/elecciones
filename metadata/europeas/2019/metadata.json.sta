@@ -1,0 +1,17 @@
+{
+  "seo_name": "Elecciones Europeas",
+  "miga": {
+    "type": "import",
+    "desktop": "migas/elecciones_generales/miga_b.html",
+    "hijos": "migas/elecciones_generales/miga_c.html",
+    "mobile": "migas/elecciones_generales/miga_mb.html"
+  },
+  "theme": "elecciones-europeas",
+  "section": "elecciones",
+  "dfp_section": "elecciones-europeas",
+  "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",
+  "dfp_mobile": "/mnt/filer/html/produccion/datos/include/dfp/elmundo_movil/espana/p.html",
+  "last_election_year": "2014",
+  "bodyClass": "europa elecciones-europeas",
+  "past_data": "2014"
+}

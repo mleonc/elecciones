@@ -73,14 +73,29 @@ class Data
 
 	public function setProvincia($value)
 	{
-		$this->provincia = preg_replace('/p(.*)\.html|p(.*)/', '', $value);
+		$this->provincia = preg_replace('/[p(.*)\.html|p(.*)]+/', '', $value);
 		return $this;
 	}
 
 	public function setMunicipio($value)
 	{
-		$this->municipio = preg_replace('/p(.*)\.html|p(.*)/', '$1', $value);
+		$this->municipio = preg_replace('/[p(.*)\.html|p(.*)]+/', '$1', $value);
 		return $this;
+	}
+
+	public function getComunidad()
+	{
+		return $this->ccaa;
+	}
+
+	public function getProvincia()
+	{
+		return $this->provincia;
+	}
+
+	public function getMunicipio()
+	{
+		return $this->municipio;
 	}
 
 	public function isComunidad()
@@ -313,7 +328,7 @@ class Data
 			'past' 		=> 'data-json-past="'.$this->getPastData().'"',
 			'total'		=> 'data-json-total="'.$this->getComunidadPath().'"',
 		];
-		if ($this->isLocalidad() || $this->isProvincia()) {
+		if ($this->isLocalidad()) {
 			$attributes['parent'] = 'data-json-parent="'.$this->getParentData().'"';
 		}
 		return implode(' ', $attributes);

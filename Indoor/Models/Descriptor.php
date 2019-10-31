@@ -31,4 +31,5 @@ interface Descriptor
 	const _STATEDATA	= 'datos_estado';
 	const _URI			= 'uri';
 	const _URL			= 'url';
+	const _MAINCLASS	= 'main_class';
 }

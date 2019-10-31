@@ -13,6 +13,7 @@
     "mobile": "migas/elecciones_generales/miga_mb.html"
   },
   "theme": "elecciones-generales",
+  "header_theme": "elmundo-theme-release",
   "section": "elecciones",
   "dfp_section": "elecciones-generales",
   "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",

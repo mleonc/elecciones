@@ -12,6 +12,7 @@ class Route
 		'elecciones-europeas' 		=> 'EuropeasController',
 		'elecciones-municipales' 	=> 'MunicipalesController',
 		'elecciones-(.*)' 			=> 'AutonomicasController',
+		'article-elecciones-generales' 	=> 'ArticleGeneralesController',
 	];
 
 	static function route(Request $request)

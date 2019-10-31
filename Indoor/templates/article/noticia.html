@@ -1,0 +1,37 @@
+<body class="<?php echo str_replace('%type%', $this->type, $this->metadata['bodyClass']); ?>">
+	<?php 
+		$_dfpTheme= $this->metadata['theme'];
+		$_dfpSegmentationTags= $this->metadata['theme'];
+		@include($this->dfp_include);
+	?>
+	<?php echo Indoor\Models\Elements\Dfp::render($this->float, $this->metadata['dfp_section'], [
+		Indoor\Models\Elements\Dfp::_BLOCK => false,
+	]); ?>
+
+	<?php echo Indoor\Models\Elements\Header::render($this->metadata, $this->format); ?>
+
+	<div class="skin-ad"></div>
+
+	<main role="main" class="<?php echo $this->getMainClass(); ?> news news-item js_navContinua <?php echo $this->metadata['dfp_section']; ?> <?php echo $this->metadata['style_theme']. ' '. $this->metadata['style_theme_version']; ?>" data-ue-contenido="" id="js_<?php echo $this->metadata['id_contenido']; ?>" data-theme="<?php echo $this->metadata['style_theme']; ?>" data-theme-version="<?php echo $this->metadata['style_theme_version']; ?>">
+		<?php $this->getTitle(); ?>
+		<div class="skin-ad"></div>
+		<div class="ue-l-article">
+    		<div class="ue-l-article__inner">
+				<?php echo Indoor\Models\Elements\Dfp::render($this->adsItems, $this->metadata['dfp_section'], [
+					Indoor\Models\Elements\Dfp::_TYPE => Indoor\Models\Elements\Dfp::_ARTICLE,
+					Indoor\Models\Elements\Dfp::_BLOCK => false,
+				]); ?>
+			</div>
+		</div>
+
+		<?php $this->getArticle(); ?>
+		
+	</main>
+
+    <?php include($this->getFooter()); ?>
+    <?php $this->getOmniture(); ?>
+
+    <?php if (in_array($this->environment, ['sta'])): ?>
+    	<script type="text/javascript">_satellite.pageBottom();</script>
+	<?php endif; ?>
+</body>

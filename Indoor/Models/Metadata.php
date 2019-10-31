@@ -15,6 +15,7 @@ class Metadata
 	const _CONGRESO 	= 'congreso';
 	const _SENADO	 	= 'senado';
 	const _GENERALES 	= 'generales';
+	const _NOTICIA	 	= 'article';
 
 	private $type;
 	private $dataPath;
@@ -37,21 +38,29 @@ class Metadata
 			return '';
 		}
 		$type = $electionType;
-		if ($electionType == 'elecciones-municipales') {
-		    $type = self::_MUNICIPALES;   
+		switch ($electionType) {
+			case 'elecciones-municipales':
+		    	$type = self::_MUNICIPALES;
+				break;
+			case 'elecciones-europeas':
+		    	$type = self::_EUROPEAS;
+		    	break;
+		    case 'elecciones-generales':
+				if ($subtype == self::_CONGRESO) {
+					$type = self::_CONGRESO;
+				}
+				if ($subtype == self::_SENADO) {
+					$type = self::_SENADO;
+				}
+				break;
+			case 'article-elecciones-generales':
+				$type = self::_NOTICIA;
+				break;
+			default: 
+				$type = str_replace('elecciones-', '', $type);
+				break;
 		}
-		if ($electionType == 'elecciones-europeas') {
-		    $type = self::_EUROPEAS;
-		}
-		if ($electionType == 'elecciones-generales') {
-			if ($subtype == self::_CONGRESO) {
-				$type = self::_CONGRESO;
-			}
-			if ($subtype == self::_SENADO) {
-				$type = self::_SENADO;
-			}
-		}
-		return str_replace('elecciones-', '', $type);
+		return $type;
 	}
 
 	public function setDataPath($value = '')
@@ -70,7 +79,7 @@ class Metadata
 		return $this->filer;
 	}
 
-	public function render()
+	public function render($isArticle = false)
 	{
 		$metadata = [];
 		if (isset($this->dataPath) && !empty($this->dataPath) && file_exists($this->dataPath.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: ''))) {
@@ -81,6 +90,7 @@ class Metadata
 			}
 		}
 		$path = $this->dataPath.$this->type.'/'.$this->year.'/'.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: '');
+
 		if (file_exists($path)) {
 			$content = file_get_contents($path);
 			$aMetadata = json_decode($content, true);
@@ -88,6 +98,19 @@ class Metadata
 				return [];
 			}
 			$metadata = array_merge($metadata, $aMetadata);
+		}
+
+		if ($isArticle === true) {
+			$path = $this->dataPath.$this->type.'/'.$this->year.'/'.'article-'.self::_FILENAME.(in_array($this->environment, ['sta', 'dev'])? '.'.$this->environment: '');
+
+			if (file_exists($path)) {
+				$content = file_get_contents($path);
+				$aMetadata = json_decode($content, true);
+				if (json_last_error() != JSON_ERROR_NONE) {
+					return [];
+				}
+				$metadata = array_merge($metadata, $aMetadata);
+			}
 		}
 
 		if (!empty($this->host) && !empty($this->uri)) {

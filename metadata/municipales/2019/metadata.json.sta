@@ -1,0 +1,17 @@
+{
+  "seo_name": "Elecciones Municipales",
+  "miga": {
+    "type": "import",
+    "desktop": "migas/elecciones_municipales/miga_b.html",
+    "hijos": "migas/elecciones_municipales/miga_c.html",
+    "mobile": "migas/elecciones_municipales/miga_mb.html"
+  },
+  "theme": "elecciones-municipales",
+  "section": "elecciones",
+  "dfp_section": "elecciones-municipales",
+  "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",
+  "dfp_mobile": "/mnt/filer/html/produccion/datos/include/dfp/elmundo_movil/espana/p.html",
+  "last_election_year": "2014",
+  "bodyClass": "espana elecciones-municipales",
+  "past_data": "2015"
+}

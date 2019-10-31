@@ -52,7 +52,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo $this->metadata['cdn']; ?>apple-touch-icon-152x152-precomposed.png">
 
     <?php
-        $path = $this->metadata['assets']['css_main_path'] . '/main-elections-link-style.html';
+        $path = $this->metadata['styles']['path'] . '/'. $this->metadata['styles']['version'] .'/'. $this->metadata['styles']['static_include_name'];
+        if ($this->format == 'mobile') {
+            $path = $this->metadata['styles']['path'] . '/'. $this->metadata['styles']['version'] .'/'. $this->metadata['styles']['static_include_name_mobile'];
+        }
         if (file_exists($path)) {
             echo file_get_contents($path);
         }

@@ -1,0 +1,7 @@
+<?php
+
+$path_datos = "/mnt/filer/html/staging/DATOS/portales/es/elmundo/www/includes/elecciones/";
+$environment = "dev";
+$portal = 'EL MUNDO';
+$filer_path = '/mnt/filer/html/staging/datos/portales/es/elmundo/www/includes/';
+$json_basehost = 'http://elecciones.sta.internet.int/';

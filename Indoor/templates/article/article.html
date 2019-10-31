@@ -1,0 +1,18 @@
+<div class="ue-l-article">
+    <div class="ue-l-article__inner">
+        <div class="ue-l-article__main-column ue-l-article--minimum-content-from-tablet">
+            <article class="ue-c-article">
+                <meta content="<?php echo $this->metadata['canUrl']; ?>">
+                <div class="ue-l-article__header">
+                    <?php $this->getKicker(); ?>
+                    <?php $this->getHeadline(); ?>
+                    <div class="ue-c-article__bar ue-l-article--leftcol-width-from-desktop ue-l-article--float-left-from-desktop ue-l-article--move-to-leftcol-from-desktop ue-l-article--order-1-from-mobile">
+                        <?php $this->getByline(); ?>
+                        <?php $this->getPublishDate(); ?>
+                        <?php $this->getBarFooter(); ?>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>

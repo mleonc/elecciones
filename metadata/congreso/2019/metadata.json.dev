@@ -2,11 +2,12 @@
   "seo_name": "Elecciones Generales",
   "miga": {
     "type": "import",
-    "desktop": "migas/elecciones_generales/miga_b.html",
-    "hijos": "migas/elecciones_generales/miga_c.html",
-    "mobile": "migas/elecciones_generales/miga_mb.html"
+    "desktop": "migas/elecciones/elecciones_generales/miga_b.html",
+    "hijos": "migas/elecciones/elecciones_generales/miga_c.html",
+    "mobile": "migas/elecciones/elecciones_generales/miga_mb.html"
   },
   "theme": "elecciones-generales",
+  "section": "elecciones",
   "dfp_section": "elecciones-generales",
   "dfp": "/mnt/filer/html/produccion/datos/include/dfp/elmundo/espana/p.html",
   "dfp_mobile": "/mnt/filer/html/produccion/datos/include/dfp/elmundo_movil/espana/p.html",
@@ -14,5 +15,8 @@
   "bodyClass": "espana elecciones-generales",
   "past_data": "2019/abril",
   "past_data_slug": "Abril",
-  "actual_data_slug": "Noviembre"
+  "actual_data_slug": "Noviembre",
+  "main_class": "ue-l-article--basic",
+  "style_theme": "elmundo-theme",
+  "style_theme_version": "elmundo-theme-release"
 }

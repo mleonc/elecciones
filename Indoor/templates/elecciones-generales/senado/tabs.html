@@ -1,11 +1,11 @@
 <div class="ue-l-tab">
-    <ul class="ue-l-tab__list" role="tablist">
-        <li class="ue-l-tab__item" role="presentation">
-            <a href="<?php echo $url; ?>" role="tab" id="tab1" tabindex="-1">Congreso</a>
+    <ul class="ue-l-tab__list">
+        <li class="ue-l-tab__item">
+            <a href="<?php echo $url; ?>" id="tab1">Congreso</a>
         </li>
         <?php if (!$this->isComunidad()): ?>
-            <li class="ue-l-tab__item" role="presentation">
-                <a href="#" role="tab" id="tab2" aria-selected="true">Senado</a>
+            <li class="ue-l-tab__item">
+                <a href="#" id="tab2">Senado</a>
             </li>
         <?php endif ?>
     </ul>

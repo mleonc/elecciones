@@ -1,13 +1,13 @@
-<header class="super-menu-header js-cnav-header inside" data-menu-nivel="home" >
+<header class="super-menu-header js-cnav-header <?php echo $params['header_theme']; ?> inside" data-menu-nivel="home" >
     <?php
         $sectionSeccion = $params['section'];
         $static_registro_path = $params['filer_path'].$params['static_registro_path'];
-        include($header);
+        @include($header);
     ?>
     <div class="breadcrumbs">
         <div class="container-header">
             <?php
-                include($breadcrumb);
+                @include($breadcrumb);
             ?>
             <div class="tab-news">
                 <span class="tab-news-title js-newsTitle"></span>
@@ -28,6 +28,12 @@
         </div>
     </div>
     <?php
-        include($superMenu);
+        @include($superMenu);
     ?>
 </header>
+<script type="text/javascript">
+    var primary = document.querySelector('.ue-c-main-header__primary');
+    primary.style.display = 'none';
+    var nav = document.querySelector('.ue-c-main-header__nav');
+    nav.style.display = 'none';
+</script>
