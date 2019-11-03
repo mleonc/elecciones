@@ -1,0 +1,8 @@
+<img src="<?php echo $this->getImageUrl(); ?>" class="ue-c-article__media--image" alt="">
+<?php if (!empty($this->getCaption())): ?>
+	<figcaption class="ue-c-article__media-caption ue-c-article__media--caption-bottom-over-media-from-mobile ue-c-article__media--caption-bottom-standard-from-tablet ue-c-article__media--caption-inverted-color-from-mobile ue-c-article__media--caption-standard-color-from-tablet">
+    	<span class="ue-c-article__media-description">
+        	<?php echo $this->getCaption(); ?>
+    	</span>
+<?php endif; ?>
+</figcaption>

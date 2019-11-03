@@ -49,7 +49,7 @@ class ArticleGeneralesController extends Controller
 		    Descriptor::_PLACE    	=> $place,
 		    Descriptor::_ISLOCALIDAD=> $data->isLocalidad(),
 		]);
-		$head->render();
+		//$head->render();
 
 		$body = new ArticleBody([
 			Descriptor::_FILER_PATH => $request->get('filer_path'),

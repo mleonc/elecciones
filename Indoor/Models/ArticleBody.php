@@ -38,7 +38,8 @@ class ArticleBody
 		    	['name' => 'skyLeft'], 
 		    	['name' => 'mega']
 		    ];
-		}if (isset($params[Descriptor::_FORMAT])) {
+		}
+		if (isset($params[Descriptor::_FORMAT])) {
 			$this->format = $params[Descriptor::_FORMAT];
 		}
 		if (isset($params[Descriptor::_URLPORTAL])) {
@@ -134,6 +135,58 @@ class ArticleBody
 	public function getBarFooter()
 	{
 		include(dirname(__DIR__).'/templates/article/footer.html');
+	}
+
+	public function getStandfirst()
+	{
+		return '/// TODO Entradilla ///';
+	}
+
+	public function getFigure()
+	{
+		include(dirname(__DIR__).'/templates/article/figure.html');
+	}
+
+	public function getImageUrl()
+	{
+		return 'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/11/02/15726508664205.jpg';
+	}
+
+	public function getCaption()
+	{
+		return 'Adriana Lastra (d), Cayetana Álvarez de Toledo (i), Inés Arrimadas (2d), Irene Montero (c) Iván Espinosa de los Monteros (3i), Gabriel Rufián (3d) y Aitor Estéban.';
+	}
+
+	public function getSubtitles()
+	{
+		$places = [];
+		if (isset($this->place['comunidad'])) {
+			$url = [
+				'base' => $this->metadata['common']['election_url'].'article-elecciones-generales/resultados/congreso',
+				'year' => $this->year,
+				'comunidad' => $this->place['comunidad']['code']
+			];
+			if (isset($this->place['provincia'])) {
+				$places[] = [
+					'title' 	=> 'Elecciones.',
+					'subtitle' 	=> 'Resultados para las elecciones en la comunidad de '. $this->place['comunidad']['name'],
+					'url'		=> implode('/', $url).'/p99.html',
+				];
+			}
+			if (isset($this->place['municipio'])) {
+				$places[] = [
+					'title' 	=> 'Elecciones.',
+					'subtitle' 	=> 'Resultados para las elecciones en la provincia de '. $this->place['provincia']['name'],
+					'url'		=> implode('/', $url).'/'.$this->place['provincia']['code'].'/p99.html',
+				];
+			}
+		}
+		include(dirname(__DIR__).'/templates/article/subtitle.html');
+	}
+
+	public function getBody()
+	{
+		include(dirname(__DIR__).'/templates/article/body.html');
 	}
 
 	public function getFooter()

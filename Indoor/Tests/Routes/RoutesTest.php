@@ -15,6 +15,7 @@ class RoutesTest extends TestCase
 			'elecciones-europeas' 		=> 'EuropeasController',
 			'elecciones-municipales' 	=> 'MunicipalesController',
 			'elecciones-(.*)' 			=> 'AutonomicasController',
+			'article-elecciones-generales' 	=> 'ArticleGeneralesController',
 		];
 
 		$this->assertEquals($expected_list, \Indoor\Http\Route::_list());

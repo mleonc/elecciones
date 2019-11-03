@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="https://e00-elmundo.uecdn.es/assets/article/elmundo/v1/main-article.2b707e99346657b1d7fc.css">
 <body class="<?php echo str_replace('%type%', $this->type, $this->metadata['bodyClass']); ?>">
 	<?php 
 		$_dfpTheme= $this->metadata['theme'];
@@ -6,6 +7,7 @@
 	?>
 	<?php echo Indoor\Models\Elements\Dfp::render($this->float, $this->metadata['dfp_section'], [
 		Indoor\Models\Elements\Dfp::_BLOCK => false,
+		Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
 	]); ?>
 
 	<?php echo Indoor\Models\Elements\Header::render($this->metadata, $this->format); ?>
@@ -20,6 +22,7 @@
 				<?php echo Indoor\Models\Elements\Dfp::render($this->adsItems, $this->metadata['dfp_section'], [
 					Indoor\Models\Elements\Dfp::_TYPE => Indoor\Models\Elements\Dfp::_ARTICLE,
 					Indoor\Models\Elements\Dfp::_BLOCK => false,
+					Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
 				]); ?>
 			</div>
 		</div>
@@ -28,7 +31,7 @@
 		
 	</main>
 
-    <?php include($this->getFooter()); ?>
+    <?php @include($this->getFooter()); ?>
     <?php $this->getOmniture(); ?>
 
     <?php if (in_array($this->environment, ['sta'])): ?>

@@ -11,8 +11,12 @@ class Dfp
 
 	const _BLOCK 	= 'block';
 	const _TYPE 	= 'type';
+	const _DFPTYPE 	= 'dfptype';
 	const _ARTICLE 	= 'article';
 	const _STATIC 	= 'static';
+
+	const _DFPARTICLE = 'n';
+	const _DFPOTHER = 'p';
 
 	const _CLASSES = [
 		'static' => [
@@ -39,6 +43,11 @@ class Dfp
 	    	$type = $params[self::_TYPE];
 	    }
 
+	    $dfptype = self::_DFPOTHER;
+	    if (isset($params[self::_DFPTYPE])) {
+	    	$dfptype = $params[self::_DFPTYPE];
+	    }
+
 	    foreach ($items as $key => $item) {
 	        switch ($item['name']) {
 	            case 'mega':
@@ -60,7 +69,7 @@ class Dfp
 	                $isSticky = false;
 	                break;
 	            case 'roba':
-	                $position = 'r';
+	                $position = $item['slot'];
 	                $class = (isset ($item['class'])) ? $item['class'] : '';
 	                $needLabel = true;
 	                $isSticky = true;
@@ -92,6 +101,12 @@ class Dfp
 	                $isSticky = false;
 	                $onlyDfp = true;
 	                break;
+	            case 'b300x100':
+	                $position = $item['name'];
+	                $class = (isset ($item['class'])) ? $item['class'] : '';
+	                $needLabel = true;
+	                $isSticky = false;
+	                break;
 
 	        }
 
@@ -114,9 +129,9 @@ class Dfp
 	        					<div class=\"".self::_CLASSES['adsInner']."\">";
 	        }
 
-	        $output .= "<div id='div-gpt-ad-{$section}_p_$position' class=\"publicidad\">
+	        $output .= "<div id='div-gpt-ad-{$section}_{$dfptype}_$position' class=\"publicidad\">
 	                		<script type='text/javascript'>
-	                    		googletag.cmd.push(function () { googletag.display('div-gpt-ad-{$section}_p_$position'); });
+	                    		googletag.cmd.push(function () { googletag.display('div-gpt-ad-{$section}_{$dfptype}_$position'); });
 	                		</script>
 	            		</div>";
 	        

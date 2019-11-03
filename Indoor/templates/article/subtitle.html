@@ -1,0 +1,8 @@
+<ul class="ue-c-article__subtitles ue-c-article__subtitles--boxed ue-l-article--width-1of2-from-mobile ue-l-article--float-right-from-mobile ue-l-article--edge-right-until-tablet ue-l-article--leftcol-width-from-desktop ue-l-article--float-left-from-desktop ue-l-article--move-to-leftcol-from-desktop" aria-label="Contenido relacionado">
+	<?php foreach ($places as $place) : ?>
+		<li class="ue-c-article__subtitles-item ue-l-article--top-separator ue-l-article--top-separator-from-mobile">
+			<span class="ue-c-article__subtitles-kicker"><?php echo $place['title']; ?></span>
+			<a href="<?php echo $place['url']; ?>"><?php echo $place['subtitle']; ?></a>
+		</li>
+	<?php endforeach; ?>
+</ul>

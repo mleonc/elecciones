@@ -11,8 +11,77 @@
                         <?php $this->getPublishDate(); ?>
                         <?php $this->getBarFooter(); ?>
                     </div>
+                    <p class="ue-c-article__standfirst">
+                        <?php echo $this->getStandfirst(); ?> 
+                    </p>
+                    <figure class="ue-c-article__media ue-c-article__media--image ue-l-article--edge-left-n-right-until-tablet ue-c-article--media-icon-m-from-phablet">
+                        <?php $this->getFigure(); ?>
+                    </figure>
                 </div>
+                <div class="ue-l-article__body ue-c-article__body" data-section="articleBody">
+                    <?php $this->getSubtitles(); ?>
+                    <?php $this->getBody(); ?>
+                </div>
+                <?php include('trust.html'); ?>
             </article>
+        </div>
+        <div class="ue-l-article__secondary-column">
+            <div class="ue-l-article__secondary-column-item">
+                <?php echo Indoor\Models\Elements\Dfp::render([['name'=> 'b300x100']], $this->metadata['dfp_section'], [
+                    Indoor\Models\Elements\Dfp::_BLOCK => true,
+                    Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
+                ]); ?>
+            </div>
+
+            <div class="ue-l-article__secondary-column-item">
+                <?php include('banner-newsletter.html'); ?>
+            </div>
+            <div class="ue-l-article__secondary-column-item ue-l-article--grow">
+                <?php echo Indoor\Models\Elements\Dfp::render([['name'=> 'roba', 'slot' => 'r']], $this->metadata['dfp_section'], [
+                    Indoor\Models\Elements\Dfp::_BLOCK => true,
+                    Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
+                ]); ?>
+            </div>
+
+            <div class="ue-l-article__secondary-column-item ue-l-article--grow">
+            </div>
+
+            <div class="ue-l-article__secondary-column-item ue-l-article--no-grow">
+                <?php echo Indoor\Models\Elements\Dfp::render([['name'=> 'roba', 'slot' => 'rb']], $this->metadata['dfp_section'], [
+                    Indoor\Models\Elements\Dfp::_BLOCK => true,
+                    Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
+                ]); ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ue-l-article">
+    <div class="ue-l-article__inner">
+        <div class="ue-l-article__main-column ue-l-article--height-300-from-tablet">
+            <?php include('taboola.html'); ?>
+        </div>
+        <div class="ue-l-article__secondary-column">
+            <div class="ue-l-article__secondary-column-item">
+                <div class="ue-c-multipurpose" aria-roledescription="Publicidad" role="region">
+                    <div class="ue-c-multipurpose__header">
+                        <span class="ue-c-multipurpose__heading">Te puede interesar</span>
+                    </div>
+                    <div class="ue-c-multipurpose__body">
+                        <div class="ue-c-multipurpose__item">
+                            <?php echo Indoor\Models\Elements\Dfp::render([['name'=> 'native', 'slot' => 'nata']], $this->metadata['dfp_section'], [
+                                Indoor\Models\Elements\Dfp::_BLOCK => false,
+                                Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
+                            ]); ?>
+                        </div>
+                        <div class="ue-c-multipurpose__item">
+                            <?php echo Indoor\Models\Elements\Dfp::render([['name'=> 'native', 'slot' => 'natb']], $this->metadata['dfp_section'], [
+                                Indoor\Models\Elements\Dfp::_BLOCK => false,
+                                Indoor\Models\Elements\Dfp::_DFPTYPE => Indoor\Models\Elements\Dfp::_DFPARTICLE,
+                            ]); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
